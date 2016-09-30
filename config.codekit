@@ -432,6 +432,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/starterkit_exp\/assets\/css\/4.modules\/_header_on_scroll.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/starterkit_exp\/assets\/css\/4.modules\/_header_on_scroll.scss",
+		"outputAbbreviatedPath": "\/starterkit_exp\/assets\/css\/css\/_header_on_scroll.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/starterkit_exp\/assets\/css\/4.modules\/_img_hover.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,

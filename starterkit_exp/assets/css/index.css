@@ -304,7 +304,7 @@ label {
 .option {
   display: flex; }
 
-#content {
+#body {
   margin-top: 60px; }
 
 .wrapper {
@@ -423,10 +423,9 @@ a.hamburger-menu.menu {
   font-weight: 600; }
 
 .fixed-image {
-  background: url(https://unsplash.it/1280/561/?image=923) no-repeat center center fixed;
+  background: url(https://unsplash.it/2500/801/?image=923) no-repeat center center fixed;
   background-size: cover;
-  height: 700px;
-  margin-bottom: 40px;
+  height: 70vh;
   width: 100%; }
   .fixed-image .wrapper {
     display: flex;
@@ -442,6 +441,7 @@ a.hamburger-menu.menu {
 .modal {
   background: #fff;
   width: 70%;
+  max-width: 1000px;
   margin: 0 auto;
   position: fixed;
   transform: translateY(100%);
@@ -629,7 +629,7 @@ figure {
     position: relative; }
   figure figcaption span {
     font-size: 1.3rem;
-    color: #009688; }
+    color: #cecece; }
   figure figcaption span:before {
     content: 'effect: '; }
 
@@ -707,3 +707,16 @@ figure {
     .img-slide:hover figcaption {
       opacity: 1;
       transform: translateY(0px); }
+
+header, a.hamburger-menu.menu {
+  position: absolute;
+  transition: .3s all ease; }
+
+.show-header header {
+  transform: translateY(-60px);
+  position: fixed;
+  transition: none; }
+
+.scrolled header {
+  transform: translateY(0px);
+  transition: .3s all ease; }
