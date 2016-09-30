@@ -6,9 +6,7 @@
 <style type="text/css">
 	.st0{fill:#212121;}
 </style>
-<g>
-	<g id="menu">
-		<path class="st0" d="M0,397.5h459v-51H0V397.5z M0,270h459v-51H0V270z M0,91.5v51h459v-51H0z"/>
-	</g>
-</g>
+<path class="st0" d="M49.2,373.7l36.1,36.1L409.8,85.3l-36.1-36.1L49.2,373.7z"/>
+<rect x="204" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -95.062 229.5)" class="st0" width="51" height="459"/>
 </svg>
+ 

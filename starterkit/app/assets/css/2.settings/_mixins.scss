@@ -6,7 +6,7 @@
 
 @mixin mobile-up {
   @media (min-width: #{$mobile-width}) {
-    @content;
+    @content; 
   }
 }
 
