@@ -60,3 +60,14 @@ $('#modal-overlay, .modal-exit').click(function(){
 	$('.modal').removeClass('modal-active');
 	$('#modal-overlay').hide();
 });
+
+// Animate on scroll
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 700) {
+        $("body").addClass("scrolled");
+    } else {
+        $("body").removeClass("scrolled");
+    }
+});
