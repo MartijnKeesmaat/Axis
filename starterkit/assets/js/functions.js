@@ -33,7 +33,7 @@ $('.hamburger-menu').on('click', function() {
 });
 
 // Menu overlay
-$('#content').prepend('<div id="menu-overlay"></div>');
+$('#content').prepend('<div id="menu-overlay"></div>'); 
 $('#menu-overlay').on('click', function() {
 		$('body').removeClass('menu-open');
 		$('a.hamburger-menu').removeClass('active');
