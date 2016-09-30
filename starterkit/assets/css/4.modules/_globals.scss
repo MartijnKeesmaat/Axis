@@ -1,0 +1,152 @@
+// Based on nav height
+#content {
+  margin-top: $nav-height;
+}
+
+// wrapper
+.wrapper{
+	padding: 40px 40px 45px 40px;
+	max-width: 1200px;
+	width: 80%;
+  height: 100%;
+	margin: 0 auto;
+
+	@include mobile {
+		padding: 20px 20px 23px 20px;
+    width: 100%;
+	}
+}
+
+// nav
+.logo{
+	height: $nav-height;
+	width: auto;
+	margin-left: 30px;
+
+	img{
+		height: 100%;
+		width: auto;
+	}
+}
+
+#main-nav{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: #fff;
+	z-index: 90;
+
+	ul li{
+		display: inline;
+	}
+
+	@include mobile {
+    display: none;
+  }
+}
+
+#main-nav a, nav a{
+	margin-right: 30px;
+	transition: $transition1;
+	font-size: 1.6rem;
+	color: $header-color;
+  text-transform: uppercase;
+
+	&:hover{
+		color: $main-color;
+	}
+}
+
+// mobile
+.menu {
+	transition: 0.1s transform linear;
+	position: absolute;
+	background: 0;
+	width: 100%;
+	right: 0;
+	margin: 6px;
+	height: 27px;
+	width: 35px;
+	z-index: 1;
+	outline: 0;
+	padding: 0;
+	border: 0;
+}
+
+.hamburger img{
+	width: 30px;
+	height: 30px;
+}
+
+// Header
+header{
+	z-index: 100;
+	background: #fff;
+	position: fixed;
+	top: -1px;
+	border-bottom: 1px $divider-color solid;
+	width: 100%;
+	min-height: $nav-height;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	a{
+		margin: 0
+	}
+}
+
+nav {
+	z-index: 80;
+	width: 65%;
+	overflow: scroll;
+	height: 100vh;
+	background: #fff;
+	border-right: 1px $divider-color solid;
+	position: fixed;
+	transform: translateX(-100%);
+	transition: transform 0.22s ease;
+	padding: 1rem;
+
+	li{
+		list-style: none;
+		margin: 30px 0;
+	}
+
+	li a{
+		font-size: 1.8rem;
+	}
+
+	.menu-open & {
+		transform: translateX(0);
+	}
+}
+
+#menu-overlay{
+  display: none;
+}
+
+#menu-overlay{
+	width: 100vw;
+	height: 120vh;
+	background: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	z-index: 70;
+	cursor: pointer;
+}
+
+a.hamburger-menu.menu {
+  position: fixed;
+	top: 10px;
+  right: 10px;
+	cursor: pointer;
+
+	@include mobile-up {
+		display: none;
+	}
+}
+
+#main-nav .active, nav .active{
+	color: $main-color;
+	font-weight: 600;
+}

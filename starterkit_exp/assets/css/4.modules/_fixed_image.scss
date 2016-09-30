@@ -1,0 +1,22 @@
+// fixed image
+.fixed-image{
+	background: url(https://unsplash.it/1280/561/?image=923) no-repeat center center fixed;
+	background-size: cover;
+	height: 70vh;
+	width: 100%;
+
+	.wrapper{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	h1{
+		color: #fff;
+		text-shadow: $text-shadow;
+	}
+
+  @include tablet {
+    background-attachment: initial;
+  }
+}

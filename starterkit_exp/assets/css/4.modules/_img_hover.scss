@@ -1,0 +1,170 @@
+// Image zoom
+figure{
+  width: 100%;
+  margin: 0;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+
+  figcaption{
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: $transition1;
+    text-transform: uppercase;
+    width: 100%;
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 2.4rem;
+  }
+}
+
+  img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: $transition1;
+    display: block;
+    position: relative;
+}
+
+  figcaption span{
+    font-size: 1.3rem;
+    color: $accent-color;
+}
+
+  figcaption span:before {
+    content: 'effect: ';
+}
+}
+
+
+.img-zoom-in{
+  background: linear-gradient(to bottom, rgba(35, 38, 45, 0.6) 0%, rgba(35, 38, 45, 0.6) 75%);
+
+  img{
+    opacity: 0.7;
+}
+
+    figcaption{
+      padding: 20px;
+      height: 100px;
+      transform: translateY(100%);
+}
+
+    &:hover{
+      background: linear-gradient(to bottom, rgba(35, 38, 45, 0.7) 0%, rgba(35, 38, 45, 1) 75%);
+
+        img{
+          transform: scale(1.25);
+          opacity: 1;
+        }
+
+        figcaption{
+          opacity: 1;
+          transform: translateY(0px);
+        }
+    }
+  }
+
+
+.img-up{
+
+  img{
+    transform: scale(1.36) translateX(0px);
+}
+
+    figcaption{
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      padding: 0 20px;
+      background: transparentize($header-color, .1);
+      min-height: 80px;
+      transform: translateY(100%);
+}
+
+    &:hover{
+        img{
+            transform: scale(1.3) translateY(-35px);
+        }
+
+        figcaption{
+          opacity: 1;
+          transform: translateY(0px);
+        }
+    }
+  }
+
+
+  .img-zoom-out{
+    background: linear-gradient(to bottom, rgba(35, 38, 45, 0.6) 0%, rgba(35, 38, 45, 0.8) 75%);
+
+    img{
+      opacity: 0.8;
+      transform: scale(1.2);
+  }
+
+      figcaption{
+        padding: 20px;
+        height: 100px;
+        transform: translateY(100%);
+  }
+
+      &:hover{
+        background: linear-gradient(to bottom, rgba(35, 38, 45, 0.7) 0%, rgba(35, 38, 45, 1) 75%);
+
+          img{
+              transform: scale(1);
+          }
+
+          figcaption{
+            opacity: 1;
+            transform: translateY(0px);
+          }
+      }
+    }
+
+
+  .img-slide{
+    background: linear-gradient(to left, rgba(35, 38, 45, 0.6) 0%, rgba(35, 38, 45, 0.6) 75%);
+
+      img{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: $transition1;
+        display: block;
+        position: relative;
+        opacity: 0.9;
+        transform: scale(1.36) translateX(-30px);
+    }
+
+        figcaption{
+          padding: 20px;
+          height: 100px;
+          transform: translateX(-30px);
+    }
+
+        &:hover{
+          background: linear-gradient(to bottom, rgba(35, 38, 45, 0.7) 0%, rgba(35, 38, 45, 1) 75%);
+
+            img{
+              transform: scale(1.3) translateX(0px);
+            }
+
+            figcaption{
+              opacity: 1;
+              transform: translateY(0px);
+          }
+        }
+      }
