@@ -47,11 +47,12 @@ $('nav ul li a, #main-nav ul li a').click(function () {
 
 
 // Modal
+$('body').prepend('<div id="modal-overlay"></div>');
 $('#modal-overlay').hide();
 
 // btn trigger
 $('.modal-btn').click(function () {
-	$('#modal-projecten').addClass('modal-active');
+	$('#modal').addClass('modal-active');
 	$('#modal-overlay').fadeIn();
 });
 
@@ -59,4 +60,27 @@ $('.modal-btn').click(function () {
 $('#modal-overlay, .modal-exit').click(function(){
 	$('.modal').removeClass('modal-active');
 	$('#modal-overlay').hide();
+});
+
+// Animate on scroll
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+
+  if (scroll >= 600) {
+      $("body").addClass("scrolled");
+  } else {
+      $("body").removeClass("scrolled");
+  }
+});
+
+// header scrolled
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+
+  if (scroll >= 60) {
+    $("body").addClass("show-header");
+  }
+	else {
+    $("body").removeClass("show-header");
+  }
 });

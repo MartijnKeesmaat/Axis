@@ -1,0 +1,12 @@
+header, a.hamburger-menu.menu{
+  position: absolute;
+  transform: translateY(700px);
+}
+
+.scrolled{
+
+  header{
+    transform: translateY(0);
+    position: fixed;
+  }
+}
