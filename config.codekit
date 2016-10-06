@@ -212,34 +212,34 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/starterkit\/app\/assets\/js\/functions.js": {
+	"\/starterkit\/app\/assets\/js\/1-jquery-2.1.1.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/starterkit\/app\/assets\/js\/functions.js",
-		"outputAbbreviatedPath": "\/starterkit\/app\/assets\/js\/min\/functions-min.js",
+		"inputAbbreviatedPath": "\/starterkit\/app\/assets\/js\/1-jquery-2.1.1.min.js",
+		"outputAbbreviatedPath": "\/starterkit\/app\/assets\/js\/min\/1-jquery-2.1.1.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/starterkit\/app\/assets\/js\/jquery-2.1.1.min.js": {
+	"\/starterkit\/app\/assets\/js\/2-functions.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/starterkit\/app\/assets\/js\/jquery-2.1.1.min.js",
-		"outputAbbreviatedPath": "\/starterkit\/app\/assets\/js\/min\/jquery-2.1.1.min-min.js",
+		"inputAbbreviatedPath": "\/starterkit\/app\/assets\/js\/2-functions.js",
+		"outputAbbreviatedPath": "\/starterkit\/app\/assets\/js\/min\/2-functions-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/starterkit\/app\/assets\/js\/min\/functions-min.js": {
+	"\/starterkit\/app\/assets\/js\/dist\/main.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/starterkit\/app\/assets\/js\/min\/functions-min.js",
-		"outputAbbreviatedPath": "\/starterkit\/app\/assets\/js\/min\/min\/functions-min-min.js",
+		"inputAbbreviatedPath": "\/starterkit\/app\/assets\/js\/dist\/main.js",
+		"outputAbbreviatedPath": "\/starterkit\/app\/assets\/js\/dist\/min\/main-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -262,6 +262,28 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/starterkit\/gulpfile.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/starterkit\/gulpfile.js",
+		"outputAbbreviatedPath": "\/starterkit\/min\/gulpfile-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/starterkit\/package.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/starterkit\/package.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/starterkit\/package-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/starterkit_exp\/404.html": {
 		"fileType": 8192,

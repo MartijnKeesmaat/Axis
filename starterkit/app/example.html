@@ -1,103 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Starterkit</title>
-  <meta name="description" content="Een basis starter kit">
-  <meta name="author" content="Martijn Keesmaat">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="assets/css/index.css">
-</head>
+<html lang="nl">
+	<head>
+		<title>Starterkit</title>
+		<meta name="description" content="Een basis starter kit">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="author" content="Martijn Keesmaat">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="assets/css/index.css">
+	</head>
 
-<body>
-<header>
-<a class="hamburger-menu menu">
-	<span class="hamburger">
-		<img src="assets/img/menu.svg" alt="hamburger icon">
-	</span>
-</a>
+	<body>
+		<div id="top-nav">
+			<header>
+				<div class="logo">
+					<a href="index.html#content">
+						<img src="assets/img/logo.png" alt="logo">
+					</a>
+				</div>
 
-<div class="logo">
-	<a href="index.html#content">
-		<img src="assets/img/logo.png" alt="logo">
-	</a>
-</div>
+				<div id="main-nav">
+					<ul>
+						<li><a href="#[sectie-naam]" class="active">item 1</a></li>
+						<li><a href="#[sectie-naam]">item 2</a></li>
+						<li><a href="#[sectie-naam]">item 3</a></li>
+					</ul>
+				</div>
 
-<div id="main-nav">
-	<ul>
-		<li><a href="#about" class="active">about</a></li>
-		<li><a href="#projecten">projecten</a></li>
-		<li><a href="#contact">contact</a></li>
-	</ul>
-</div>
-</header>
+				<!-- Hamburger -->
+				<a class="hamburger-menu menu">
+					<span class="hamburger">
+						<img src="assets/img/menu.svg" alt="hamburger icon">
+					</span>
+				</a>
+			</header>
 
-<!-- Mobile nav -->
-<nav>
-	<ul>
-		<li><a href="#about" class="active">about</a></li>
-		<li><a href="#projecten">projecten</a></li>
-		<li><a href="#contact">contact</a></li>
-	</ul>
-</nav>
-
-<!-- Content -->
-<div id="content">
-<div id="menu-overlay"></div>
-
-<!-- About Section -->
-<div class="section" id="about">
-	<div class="wrapper">
-		<h3>Basis</h3>
-		<h4>Starterkit</h4>
-		<hr>
-		<p class="strong">
-			Strong class or strong tag, dolor sit amet consectetur adipisicing elit. Reiciendis molestiae nihil,
-			fugiat? Ad maiores placeat numquam amet deserunt quibusdam natus a aliquid,
-			pariatur suscipit, doloribus necessitatibus adipisci harum vero officiis.
-		</p>
-		<p>
-			Normal text dolor sit amet, consectetur adipisicing elit.
-			Omnis aperiam nesciunt doloremque nostrum, voluptatibus sit suscipit, consectetur
-			<span class="text-link"><a href="#" target="_blank">text link</a></span> adipisci ipsum est cupiditate reiciendis voluptates, itaque modi eius eaque.
-			Fugiat rem, ducimus!
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			Omnis aperiam nesciunt doloremque nostrum, voluptatibus sit suscipit,
-			perspiciatis adipisci ipsum est cupiditate reiciendis voluptates,
-			itaque modi eius eaque. Fugiat rem, ducimus!
-		</p>
-		<h5>Secundary Subheading</h5>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			Omnis aperiam nesciunt doloremque nostrum, voluptatibus sit suscipit,
-			perspiciatis adipisci ipsum est cupiditate reiciendis voluptates, itaque modi eius eaque.
-			Fugiat rem, ducimus!
-		</p>
-
-		<a href="#" class="btn">Button</a>
-		<a href="#content" class="btn2">Button 2</a>
-
-	</div> <!-- End wrapper -->
-</div> <!-- End section -->
-</div> <!-- End content -->
+			<!-- Left-drawer -->
+			<nav>
+				<ul>
+					<li><a href="#[sectie-naam]" class="active">item 1</a></li>
+					<li><a href="#[sectie-naam]">item 2</a></li>
+					<li><a href="#[sectie-naam]">item 3</a></li>
+				</ul>
+			</nav>
+		</div>
 
 
-<!-- Vervang XX-XXXXXXXX-X met de Trackingcode-->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		<!-- Content -->  
+		<div id="content">
 
-	  ga('create', 'UA-XXXXXXXX-X', 'auto');
-	  ga('send', 'pageview');
+			<div class="section" id="">
+				<div class="wrapper">
+					<h3>Boilerplate</h3>
+					<h4>Starterkit</h4>
+					<hr>
 
-	</script>
-<script src="assets/js/jquery-2.1.1.min.js"></script>
-<script src="assets/js/functions.js"></script>
+					<p class="strong">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non soluta maxime quae repellat esse commodi quisquam at culpa. Esse molestias perferendis harum animi possimus numquam et veritatis error repellat iure.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa exercitationem animi quae assumenda, hic, saepe id, quos illum nulla sint repudiandae, dolorem cupiditate. Temporibus inventore est perferendis, assumenda tempore dolorem?</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates velit provident autem labore in sed delectus incidunt consequuntur, a atque quas tempore! Sint perspiciatis ad voluptates in, sequi, mollitia placeat.</p>
+					<h5>Secundary subheading</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel pariatur sint repellat nesciunt incidunt voluptatibus illum architecto quam facilis totam, repellendus vero at harum nemo iure iusto maxime porro recusandae!</p>
+					<a href="#" class="btn">Button</a>
+					<a href="#" class="btn2">Button 2</a>
+				</div>
+			</div>
 
-</body>
+		</div> <!-- End content -->
+
+
+		<script src="assets/js/dist/main.js"></script>
+
+	</body>
 </html>
