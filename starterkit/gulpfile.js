@@ -32,9 +32,6 @@ function errorLog(error){
 // Watch tasks
 gulp.task("watch", function(){
   gulp.watch('app/assets/js/*.js', ["concat"]);
-  // gulp.watch('app/assets/js/*.js', ["concat"], ["uglify"]);
-  // gulp.watch('app/assets/css/**/*.scss', ["sass"]);
-  // gulp.watch('app/*.html');
 });
 
 // sass
@@ -52,14 +49,4 @@ gulp.task('concat', function(){
     .pipe(gulp.dest('app/assets/js/dist'));
 });
 
-// Uglify
-// gulp.task('uglify', function(){
-//   gulp.src('app/assets/js/main.js')
-//   .pipe(uglify())
-//   .on("error", errorLog)
-//   .pipe(gulp.dest('app/assets/js/'));
-// });
-
-
 gulp.task("default", ['watch', 'sass', 'concat', 'serve']);
-// gulp.task("default", ['watch', 'sass', 'concat', 'uglify']);

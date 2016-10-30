@@ -1,7 +1,7 @@
 {
   "name": "basicgulpfile",
   "version": "1.0.0",
-  "description": "Concat/Uglify/sass",
+  "description": "Concat/sass/browserSync",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
@@ -9,10 +9,16 @@
     "gulp-uglify": "^2.0.0",
     "gulp-concat": "^2.6.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "doc": "docs"
+  }
 }
