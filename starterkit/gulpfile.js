@@ -9,33 +9,25 @@ function errorLog(error){
 }
 
 gulp.task('serve', ['sass'], function() {
-  browserSync.init({
-    server: "./app"
-  });
 
-  gulp.watch("app/assets/css/**/*.scss", ['sass']).on('change', browserSync.reload);;
-  gulp.watch("app/*.html").on('change', browserSync.reload);
+    browserSync.init({
+        server: "./app"
+    });
+
+    gulp.watch("app/assets/css/**/*.scss", ['sass']);
+    gulp.watch("app/*.html").on('change', browserSync.reload);
 });
 
-// Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-  return gulp.src("app/scss/*.scss")
+  return gulp.src("app/assets/css/**/*.scss")
     .pipe(sass())
-    .pipe(gulp.dest("app/css"))
+    .pipe(gulp.dest("app/assets/css"))
     .pipe(browserSync.stream());
 });
 
 // Watch tasks
 gulp.task("watch", function(){
   gulp.watch('app/assets/js/*.js', ["concat"]);
-});
-
-// sass
-gulp.task('sass', function () {
-  gulp.src('app/assets/css/index.scss')
-  .pipe(sass())
-  .on("error", errorLog)
-  .pipe(gulp.dest('app/assets/css/'));
 });
 
 // Concat
@@ -46,4 +38,4 @@ gulp.task('concat', function(){
 });
 
 
-gulp.task("default", ['watch', 'sass', 'concat', 'serve']);
+gulp.task("default", ['watch', 'concat', 'serve']);
