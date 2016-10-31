@@ -157,7 +157,7 @@ body {
 
 ::selection {
   background: #da4445;
-  text-shadow: 1px 4px 9px rgba(0, 0, 0, 0.09), 0 4px 17px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 1px 4px rgba(29, 29, 29, 0.5);
   color: #fff; }
 
 ::-webkit-scrollbar {
@@ -169,60 +169,57 @@ body {
   color: #da4445;
   background-color: #da4445; }
 
-h1, h2, h3, h4, h5, th, a {
+h1, h2, h3, h4, h5, h6, th, a {
   font-family: "Lato", sans-serif;
   color: #1C1E23; }
 
 h1 {
   font-size: 5.9rem;
   font-weight: 300;
-  margin: 1rem 0; }
-  @media (max-width: 468px) {
-    h1 {
-      font-size: 5rem; } }
+  margin: .2em 0; }
 
 h2 {
   font-size: 4.1rem;
   font-weight: 400;
-  margin: 1rem 0; }
+  margin: .2em 0; }
 
 h3 {
   font-size: 3.5rem;
   font-weight: 400;
-  margin: 1rem 0; }
+  margin: .2em 0; }
 
 h4 {
   font-size: 2.9rem;
   font-weight: 400;
-  margin: 1rem 0; }
+  margin: .2em 0; }
 
 h5 {
   font-size: 2.3rem;
   font-weight: 500;
-  margin: 0.6rem 0 0.5rem 0;
+  margin: 0.6em 0 0.5em 0;
   color: #1C1E23; }
 
 h6 {
   font-size: 1rem;
-  margin: 0rem 0 0.5rem 0;
+  margin: 0em 0 0.5em 0;
   font-weight: 400;
   color: #38415F; }
 
 p, li, ul, td, span {
   font-family: "Lato", sans-serif;
-  color: #38415F; }
+  color: #38415F;
+  font-weight: 400; }
 
 p {
   font-size: 1.7rem;
-  font-weight: 400;
   line-height: 1.7;
   margin-top: 0;
-  margin-bottom: 22px; }
+  margin-bottom: 1.5em 0 0.5em 0; }
 
 a {
   margin: 1rem 0;
-  font-size: 1.7rem;
   text-decoration: none;
+  font-size: 0.8rem;
   transition: 0.28s all ease; }
 
 strong, .strong {
@@ -234,24 +231,24 @@ img {
   height: auto;
   border: 0; }
 
-button, .btn {
+button, .btn, input[type=submit] {
   box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.09), 0 4px 17px rgba(0, 0, 0, 0.1);
-  color: #fff;
   background: #da4445;
-  padding: 9px 27px;
-  border-radius: 4%;
-  font-size: 1.4rem;
+  padding: 0.7em 2.6em;
+  color: #fff;
+  border-radius: .1em;
+  font-size: 1.3rem;
   border: none;
   text-transform: uppercase;
   transition: 0.28s all ease; }
-  button:hover, .btn:hover {
+  button:hover, .btn:hover, input[type=submit]:hover {
     background: #c82829;
     color: #fff;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.08), 1px 8px 46px rgba(0, 0, 0, 0.09); }
 
 .btn2 {
   text-decoration: none;
-  padding: 9px 27px;
+  padding: 0.7em 2.6em;
   color: #da4445;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -263,37 +260,37 @@ button, .btn {
 .text-link, .text-link a {
   color: #da4445;
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.4rem; }
+  font-weight: 600; }
   .text-link:hover, .text-link a:hover {
     color: #c82829; }
 
 hr, .hr {
   display: block;
-  height: 1px;
+  height: .1rem;
   border: 0;
   margin: 1em 0;
   padding: 0;
   border-top: 1px solid rgba(182, 182, 182, 0.3); }
 
 form {
-  max-width: 350px; }
+  max-width: 350px;
+  width: 100%; }
 
 input, textarea {
   outline: none;
   display: block;
   width: 100%;
-  border: 1px solid #d9d9d9;
-  margin: 0 0 20px;
-  padding: 10px 15px;
+  border: 1px solid rgba(182, 182, 182, 0.3);
+  margin: 0 0 2em;
+  padding: 0.8em 1em;
+  font-weight: 400;
   box-sizing: border-box;
-  font-wieght: 400;
   transition: 0.28s all ease;
   font-size: 1.3rem; }
 
 input:focus, textarea:focus {
   border: 1px solid #da4445;
-  color: #333333; }
+  color: #38415F; }
 
 .form-label {
   margin-bottom: 4px; }
@@ -340,111 +337,7 @@ label {
       display: none; } }
 
 #main-nav a, nav a {
-  margin-right: 30px;
-  transition: 0.28s all ease;
-  font-size: 1.6rem;
-  color: #1C1E23;
-  text-transform: uppercase; }
-  #main-nav a:hover, nav a:hover {
-    color: #da4445; }
-
-.menu {
-  transition: 0.1s transform linear;
-  position: absolute;
-  background: 0;
-  width: 100%;
-  right: 0;
-  margin: 6px;
-  height: 27px;
-  width: 35px;
-  z-index: 1;
-  outline: 0;
-  padding: 0;
-  border: 0; }
-
-.hamburger img {
-  width: 30px;
-  height: 30px; }
-
-header {
-  z-index: 100;
-  background: #fff;
-  position: fixed;
-  top: -1px;
-  border-bottom: 1px rgba(182, 182, 182, 0.3) solid;
-  width: 100%;
-  min-height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  header a {
-    margin: 0; }
-
-nav {
-  z-index: 80;
-  width: 65%;
-  overflow: scroll;
-  height: 100vh;
-  background: #fff;
-  border-right: 1px rgba(182, 182, 182, 0.3) solid;
-  position: fixed;
-  transform: translateX(-100%);
-  transition: transform 0.22s ease;
-  padding: 1rem; }
-  nav li {
-    list-style: none;
-    margin: 30px 0; }
-  nav li a {
-    font-size: 1.8rem; }
-  .menu-open nav {
-    transform: translateX(0); }
-
-#menu-overlay {
-  display: none; }
-
-#menu-overlay {
-  width: 100vw;
-  height: 120vh;
-  background: rgba(0, 0, 0, 0.4);
-  position: fixed;
-  z-index: 70;
-  cursor: pointer; }
-
-a.hamburger-menu.menu {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  cursor: pointer; }
-  @media (min-width: 468px) {
-    a.hamburger-menu.menu {
-      display: none; } }
-
-#main-nav .active, nav .active {
-  color: #da4445;
-  font-weight: 600; }
-
-.logo {
-  height: 60px;
-  width: auto;
-  margin-left: 30px; }
-  .logo img {
-    height: 100%;
-    width: auto; }
-
-#main-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: #fff;
-  z-index: 90; }
-  #main-nav ul li {
-    display: inline; }
-  @media (max-width: 468px) {
-    #main-nav {
-      display: none; } }
-
-#main-nav a, nav a {
-  margin-right: 30px;
+  margin-right: 3rem;
   transition: 0.28s all ease;
   font-size: 1.6rem;
   color: #1C1E23;

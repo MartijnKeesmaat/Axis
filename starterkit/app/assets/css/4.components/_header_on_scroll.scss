@@ -1,0 +1,21 @@
+header, a.hamburger-menu.menu{
+  position: absolute;
+  transition: .3s all ease;
+}
+
+
+.show-header{
+  header{
+    transform: translateY(-60px);
+    position: fixed;
+    transition: none;
+  }
+}
+
+.scrolled{
+
+  header{
+    transform: translateY(0px);
+    transition: .3s all ease;
+  }
+}
