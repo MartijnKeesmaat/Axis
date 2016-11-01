@@ -10,12 +10,12 @@ function errorLog(error){
 
 gulp.task('serve', ['sass'], function() {
 
-    browserSync.init({
-        server: "./app"
-    });
+  browserSync.init({
+      server: "./app"
+  });
 
-    gulp.watch("app/assets/css/**/*.scss", ['sass']);
-    gulp.watch("app/*.html").on('change', browserSync.reload);
+  gulp.watch("app/assets/css/**/*.scss", ['sass']);
+  gulp.watch("app/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
