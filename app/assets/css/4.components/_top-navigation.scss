@@ -1,4 +1,7 @@
-// nav
+/*------------------------------------*\
+  #TOP NAVIGATION
+\*------------------------------------*/
+
 .logo{
 	height: 60px;
 	width: auto;
@@ -10,7 +13,7 @@
 	}
 }
 
-#main-nav{
+.main-nav{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -26,7 +29,7 @@
   }
 }
 
-#main-nav a, nav a{
+.main-nav a, nav a{
 	margin-right: 3rem;
 	transition: $transition1;
 	font-size: 1.6rem;
@@ -36,27 +39,6 @@
 	&:hover{
 		color: $main-color;
 	}
-}
-
-// mobile
-.menu {
-	transition: 0.1s transform linear;
-	position: absolute;
-	background: 0;
-	width: 100%;
-	right: 0;
-	margin: 6px;
-	height: 27px;
-	width: 35px;
-	z-index: 1;
-	outline: 0;
-	padding: 0;
-	border: 0;
-}
-
-.hamburger img{
-	width: 30px;
-	height: 30px;
 }
 
 // Header
@@ -77,7 +59,34 @@ header{
 	}
 }
 
-nav {
+
+
+
+
+/*------------------------------------*\
+  #MOBILE
+\*------------------------------------*/
+.hamburger-menu {
+	transition: 0.1s transform linear;
+	position: absolute;
+	background: 0;
+	width: 100%;
+	right: 0;
+	margin: 6px;
+	height: 27px;
+	width: 35px;
+	z-index: 1;
+	outline: 0;
+	padding: 0;
+	border: 0;
+
+	&-icon img{
+		width: 30px;
+		height: 30px;
+	}
+}
+
+aside.mobile-nav {
 	z-index: 80;
 	width: 65%;
 	overflow: scroll;
@@ -127,7 +136,7 @@ a.hamburger-menu.menu {
 		  }
 }
 
-#main-nav .active, nav .active{
+.main-nav .active, nav .active{
 	color: $main-color;
 	font-weight: 600;
 }

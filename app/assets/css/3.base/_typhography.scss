@@ -1,0 +1,70 @@
+/*------------------------------------*\
+  #TYPOGHRAPY
+\*------------------------------------*/
+
+// Load fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+
+
+// Basic text
+h1, h2, h3, h4, h5, h6, th{
+	font-family: $header-font;
+	color: $header-color;
+	margin: 0 0 .4em 0;
+	font-weight: 400;
+}
+
+h6{
+	font-weight: 500;
+}
+
+p, li, ul, td, span{
+	font-family: $text-font;
+	color: $text-color;
+	font-weight: 400;
+}
+
+h1{
+	font-size: 6.4rem;
+}
+
+h2{
+	font-size: 4.8rem;
+}
+
+h3{
+	font-size: 3.6rem;
+}
+
+h4{
+	font-size: 2.4rem;
+}
+
+h5{
+	font-size: 2rem;
+}
+
+h6, .font-style__h6 {
+	font-size: 1.8rem;
+	color: $text-color;
+}
+
+p, .font-style__p {
+	font-size: 1.8rem;
+	margin: 0 0 1em 0;
+	line-height: 1.7;
+}
+
+strong, .strong, .lead {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: $header-color;
+}
+
+a {
+	margin: 1rem 0;
+	text-decoration: none;
+	font-size: 0.8rem;
+	transition: $transition1;
+	text-decoration: none;
+}

@@ -1,0 +1,39 @@
+/*------------------------------------*\
+  #Form
+\*------------------------------------*/
+
+form {
+  max-width: 350px;
+	width: 100%;
+}
+
+input, textarea {
+  outline: none;
+  display: block;
+  width: 100%;
+  border: 1px solid $border-color;
+  margin: 0 0 2em;
+  padding: 0.8em 1em;
+	font-weight: 400;
+  box-sizing: border-box;
+  transition: $transition1;
+	font-size: 1.3rem;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid $main-color;
+  color: $text-color;
+}
+
+.form-label {
+    margin-bottom: 4px;
+}
+
+label {
+	font-size: 1.5rem;
+	color: $text-color;
+}
+
+.option {
+	display: flex;
+}

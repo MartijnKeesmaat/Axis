@@ -1,20 +1,16 @@
-// Load fonts
-@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
-
-// Standard
-html{
-	font-size: 62.5%;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-body{
-	background: $background-color;
-}
+/*------------------------------------*\
+  #Base styles
+\*------------------------------------*/
 
 *{
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 ::selection{
@@ -24,83 +20,15 @@ body{
 }
 
 ::-webkit-scrollbar{
-    height: 6px;
-    width: 3.5px;
-    background: transparent;
+    width: 4px;
 }
 
 ::-webkit-scrollbar-thumb{
-    color: $scrollbar-color;
     background-color: $scrollbar-color;
 }
 
-// Basic text
-h1, h2, h3, h4, h5, h6, th, a{
- 	font-family: $header-font;
- 	color: $header-color;
-}
-
-h1{
-	font-size: 5.9rem;
-	font-weight: 300;
-	margin: .2em 0;
-}
-
-h2{
-	font-size: 4.1rem;
-	font-weight: 400;
-	margin: .2em 0;
-}
-
-h3{
-	font-size: 3.5rem;
-	font-weight: 400;
-	margin: .2em 0;
-}
-
-h4{
-	font-size: 2.9rem;
-	font-weight: 400;
-	margin: .2em 0;
-}
-
-h5{
-	font-size: 2.3rem;
-	font-weight: 500;
-	margin: 0.6em 0 0.5em 0;
-	color: $header-color;
-}
-
-h6{
-	font-size: 1rem;
-	margin: 0em 0 0.5em 0;
-	font-weight: 400;
-	color: $text-color;
-}
-
-p, li, ul, td, span{
-	font-family: $text-font;
-	color: $text-color;
-	font-weight: 400;
-}
-
-p{
-	font-size: 1.7rem;
-	line-height: 1.7;
-	margin-top: 0;
-	margin-bottom: 1.5em 0 0.5em 0;
-}
-
-a{
-	margin: 1rem 0;
-	text-decoration: none;
-	font-size: 0.8rem;
-	transition: $transition1;
-}
-
-strong, .strong{
-	font-weight: 600;
-	color: $header-color;
+body{
+	background: $background-color;
 }
 
 // img reset
@@ -110,50 +38,7 @@ img{
   border: 0;
 }
 
-// buttons
-button, .btn, input[type=submit]{
-	box-shadow: $shadow-sm;
-	background: $main-color;
-	padding: $padding-btn;
-	color: #fff;
-	border-radius: .1em;
-	font-size: 1.3rem;
-	border: none;
-	text-transform: uppercase;
-	transition: $transition1;
-
-	&:hover{
-		background: $main-color-dark;
-		color: #fff;
-		box-shadow: $shadow-md;
-	}
-}
-
-.btn2{
-	text-decoration: none;
-	padding: $padding-btn;
-	color: $main-color;
-	font-size: 1.4rem;
-	text-transform: uppercase;
-	transition: $transition1;
-	font-weight: 500;
-
-	&:hover{
-		color: $main-color-dark;
-	}
-}
-
-.text-link, .text-link a{
-	color: $main-color;
-	text-transform: uppercase;
-	font-weight: 600;
-
-	&:hover{
-		color: $main-color-dark;
-	}
-}
-
-// Basic hr
+// basic hr
 hr, .hr{
 	display: block;
 	height: .1rem;
@@ -161,41 +46,4 @@ hr, .hr{
 	margin: 1em 0;
 	padding: 0;
 	border-top: 1px solid $border-color;
-}
-
-// form
-form{
-  max-width: 350px;
-	width: 100%;
-}
-
-input, textarea{
-  outline: none;
-  display: block;
-  width: 100%;
-  border: 1px solid $border-color;
-  margin: 0 0 2em;
-  padding: 0.8em 1em;
-	font-weight: 400;
-  box-sizing: border-box;
-  transition: $transition1;
-	font-size: 1.3rem;
-}
-
-input:focus, textarea:focus{
-  border: 1px solid $main-color;
-  color: $text-color;
-}
-
-.form-label{
-    margin-bottom: 4px;
-}
-
-label{
-	font-size: 1.5rem;
-	color: $text-color;
-}
-
-.option{
-	display: flex;
 }

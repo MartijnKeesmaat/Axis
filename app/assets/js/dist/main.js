@@ -46,13 +46,13 @@ $('#menu-overlay').on('click', function() {
 	});
 
 // Menu item selected
-$('nav ul li a, #main-nav ul li a').click(function () {
+$('nav ul li a, .main-nav ul li a').click(function () {
 	$(this).addClass('active');
 	$(this).parent().siblings().children().removeClass('active');
 });
 
 
-// Modal 
+// Modal
 $('#modal-overlay').hide();
 
 // btn trigger

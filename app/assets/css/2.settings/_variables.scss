@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  #Variables
+\*------------------------------------*/
+
 $valencia                 : #da4445;
 $persian-green            : #009688;
 $oxford                   : #1C1E23;
@@ -15,7 +19,7 @@ $text-color          			: $bayoux;
 
 $background-color         : $athens-gray;
 
-$border-color					  : rgba(182, 182, 182, 0.3);
+$border-color					    : rgba(182, 182, 182, 0.3);
 
 $selection-color				  : $main-color;
 $scrollbar-color				  : $main-color;
@@ -32,9 +36,6 @@ $shadow-lg	        			: 15px 20px 30px rgba(0, 0, 0, 0.11), 1px 18px 46px rgba(0
 // shadows
 $text-shadow-small        : 2px 1px 4px rgba(#1d1d1d, 0.5);
 $text-shadow2             : 2px 1px 4px rgba(#1d1d1d, 0.7);
-
-// margins and paddings
-$padding-btn					    : .7em 2.6em;
 
 // Measurements
 $nav-height               : 60px;
