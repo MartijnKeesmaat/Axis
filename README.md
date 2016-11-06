@@ -7,5 +7,7 @@ Axis is a way to get quickly started with a well thought out structure for every
 3. step 3
 
 ## Docs
-explanation
-Link to docs 
+Explanation
+[Link to docs](https://github.com/MartijnKeesmaat/Project-Axis/wiki)
+
+
