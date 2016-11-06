@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD:package.json
   "name": "basicgulpfile",
   "version": "1.0.0",
   "description": "Concat/sass/browserSync",
+=======
+  "name": "starterkit",
+  "version": "1.1.0",
+  "description": "Concat/Uglify/sass",
+>>>>>>> master:starterkit/package.json
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
@@ -9,8 +15,12 @@
     "gulp-concat": "^2.6.0"
   },
   "devDependencies": {
+<<<<<<< HEAD:package.json
     "browser-sync": "^2.17.5",
     "gulp": "^3.9.1"
+=======
+    "browser-sync": "^2.17.0"
+>>>>>>> master:starterkit/package.json
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +29,23 @@
   "license": "ISC",
   "directories": {
     "doc": "docs"
+<<<<<<< HEAD:package.json
   }
+=======
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartijnKeesmaat/starterkit.git"
+  },
+  "keywords": [
+    "starterkit",
+    "gulp",
+    "sass",
+    "browser-sync"
+  ],
+  "bugs": {
+    "url": "https://github.com/MartijnKeesmaat/starterkit/issues"
+  },
+  "homepage": "https://github.com/MartijnKeesmaat/starterkit#readme"
+>>>>>>> master:starterkit/package.json
 }
