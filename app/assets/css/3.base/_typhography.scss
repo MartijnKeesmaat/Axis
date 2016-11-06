@@ -14,49 +14,44 @@ h1, h2, h3, h4, h5, h6, th{
 	font-weight: 400;
 }
 
-h6{
-	font-weight: 500;
-}
-
 p, li, ul, td, span{
 	font-family: $text-font;
 	color: $text-color;
 	font-weight: 400;
 }
 
-h1{
+h1, .font-style-h1{
 	font-size: 6.4rem;
 }
 
-h2{
+h2, .font-style-h2{
 	font-size: 4.8rem;
 }
 
-h3{
+h3, .font-style-h3{
 	font-size: 3.6rem;
 }
 
-h4{
+h4, .font-style-h4{
 	font-size: 2.4rem;
 }
 
-h5{
+h5, .font-style-h5{
 	font-size: 2rem;
 }
 
-h6, .font-style__h6 {
+h6, .font-style-h6 {
 	font-size: 1.8rem;
 	color: $text-color;
 }
 
-p, .font-style__p {
-	font-size: 1.8rem;
+p, .font-style-p {
+	font-size: 1.9rem;
 	margin: 0 0 1em 0;
 	line-height: 1.7;
 }
 
 strong, .strong, .lead {
-	font-size: 1.8rem;
 	font-weight: 600;
 	color: $header-color;
 }
