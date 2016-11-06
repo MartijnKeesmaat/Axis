@@ -47,7 +47,8 @@ The point of BEM is to tell other developers more about what a piece of markup i
 .btn--primary /* Modifier */
 ```
 
-```css.nav /* Block */
+```css
+.nav /* Block */
 .nav__item /* Modifier */
 ```
 The reason for double rather than single hyphens and underscores is so that your block itself can be hyphen delimited.
