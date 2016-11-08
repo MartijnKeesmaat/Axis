@@ -1,22 +1,22 @@
 /*------------------------------------*\
   #TYPOGHRAPY
 \*------------------------------------*/
- 
+
 // Load fonts
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
 
 
 // Basic text
 h1, h2, h3, h4, h5, h6, th{
-	font-family: $header-font;
-	color: $header-color;
+	font-family: $font-header;
+	color: $color-header ;
 	margin: 0 0 .4em 0;
 	font-weight: 400;
 }
 
 p, li, ul, td, span{
-	font-family: $text-font;
-	color: $text-color;
+	font-family: $font-body;
+	color: $color-text;
 	font-weight: 400;
 }
 
@@ -42,7 +42,7 @@ h5, .font-style-h5{
 
 h6, .font-style-h6 {
 	font-size: 1.8rem;
-	color: $text-color;
+	color: $color-text;
 }
 
 p, .font-style-p {
@@ -53,13 +53,12 @@ p, .font-style-p {
 
 strong, .strong, .lead {
 	font-weight: 600;
-	color: $header-color;
+	color: $color-header ;
 }
 
 a {
 	margin: 1rem 0;
 	text-decoration: none;
-	font-size: 0.8rem;
 	transition: $transition1;
 	text-decoration: none;
 }

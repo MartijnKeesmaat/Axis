@@ -11,7 +11,7 @@ input, textarea {
   outline: none;
   display: block;
   width: 100%;
-  border: 1px solid $border-color;
+  border: 1px solid $color-border;
   margin: 0 0 2em;
   padding: 0.8em 1em;
 	font-weight: 400;
@@ -21,8 +21,8 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  border: 1px solid $main-color;
-  color: $text-color;
+  border: 1px solid $color-main;
+  color: $color-text;
 }
 
 .form-label {
@@ -31,7 +31,7 @@ input:focus, textarea:focus {
 
 label {
 	font-size: 1.5rem;
-	color: $text-color;
+	color: $color-text;
 }
 
 .option {

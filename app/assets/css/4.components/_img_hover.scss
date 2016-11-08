@@ -89,7 +89,7 @@ figure {
     align-items: left;
     justify-content: center;
     padding: 0 20px;
-    background: transparentize($header-color, .1);
+    background: transparentize($color-header , .1);
     min-height: 80px;
     transform: translateY(100%);
   }

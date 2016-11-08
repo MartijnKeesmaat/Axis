@@ -1,52 +1,86 @@
 /*------------------------------------*\
-  #Variables
+  #COLORS
 \*------------------------------------*/
 
+// name-color
 $valencia                 : #da4445;
 $persian-green            : #009688;
 $oxford                   : #1C1E23;
 $bayoux                   : #38415F;
 $athens-gray              : #f9fafb;
 
-// Colors
-$main-color               : $valencia;
-$main-color-light					: lighten($main-color, 9%);
-$main-color-dark				  : darken($main-color, 9%);
-$accent-color					    : $persian-green;
 
-$header-color						  : $oxford;
-$text-color          			: $bayoux;
+// element-color
+$color-main               : $valencia;
+$color-main--light				: lighten($color-main, 9%);
+$color-main--dark				  : darken($color-main, 9%);
+$color-accent             : $persian-green;
+$color-accent--light		  : lighten($color-accent, 9%);
+$color-accent--dark				: darken($color-accent, 9%);
 
-$background-color         : $athens-gray;
 
-$border-color					    : rgba(182, 182, 182, 0.2);
+$color-header						  : $oxford;
+$color-text          			: $bayoux;
 
-$selection-color				  : $main-color;
-$scrollbar-color				  : $main-color;
+$color-background         : $athens-gray;
 
-// Fonts
-$header-font					    : 'Lato', sans-serif;
-$text-font						    : 'Lato', sans-serif;
+$color-border					    : rgba(182, 182, 182, 0.2);
 
-// Shadow
+$color-selection				  : $color-main;
+$scrollbar-color				  : $color-main;
+
+
+
+/*------------------------------------*\
+  #TYPOGRAHPY
+\*------------------------------------*/
+
+// fonts
+$font-header					    : 'Lato', sans-serif;
+$font-body						    : 'Lato', sans-serif;
+
+
+
+/*------------------------------------*\
+  #Shadows
+\*------------------------------------*/
+
+// box-shadows
 $shadow-sm  	        		: 1px 4px 9px rgba(0, 0, 0, 0.09), 0 4px 17px rgba(0, 0, 0, 0.1);
 $shadow-md	       			  : 5px 10px 20px rgba(0, 0, 0, 0.08), 1px 8px 46px rgba(0, 0, 0, 0.09);
 $shadow-lg	        			: 15px 20px 30px rgba(0, 0, 0, 0.11), 1px 18px 46px rgba(0, 0, 0, 0.11);
 
-// shadows
-$text-shadow-small        : 2px 1px 4px rgba(#1d1d1d, 0.5);
-$text-shadow2             : 2px 1px 4px rgba(#1d1d1d, 0.7);
-
-// Measurements
-$nav-height               : 60px;
+// text-shadows
+$text-shadow-sm           : 2px 1px 4px rgba(#1d1d1d, 0.5);
+$text-shadow-lg           : 2px 1px 4px rgba(#1d1d1d, 0.7);
 
 
-// transition
+
+/*------------------------------------*\
+  #ANIMATION
+\*------------------------------------*/
+
+// transtions
 $transition1					    : 0.28s all ease;
 $transition2					    : 0.38s all ease;
 $transition3					    : 0.55s all ease;
 
-// queries
+
+
+/*------------------------------------*\
+  #RESPONSIVE
+\*------------------------------------*/
+
+// device widths
 $mobile-width             : 468px;
 $tablet-width             : 768px;
 $desktop-width            : 1024px;
+
+
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+
+// Measurements
+$nav-height               : 60px;

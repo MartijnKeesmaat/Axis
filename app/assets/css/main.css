@@ -143,7 +143,17 @@ table {
 td, th {
   padding: 0; }
 
-/*------------------------------------*  #Variables
+/*------------------------------------*  #COLORS
+\*------------------------------------*/
+/*------------------------------------*  #TYPOGRAHPY
+\*------------------------------------*/
+/*------------------------------------*  #Shadows
+\*------------------------------------*/
+/*------------------------------------*  #ANIMATION
+\*------------------------------------*/
+/*------------------------------------*  #RESPONSIVE
+\*------------------------------------*/
+/*------------------------------------*  #COMPONENTS
 \*------------------------------------*/
 /*------------------------------------*  #MIXINS
 \*------------------------------------*/
@@ -151,7 +161,8 @@ td, th {
 \*------------------------------------*/
 * {
   box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
 html {
   font-size: 62.5%;
@@ -167,7 +178,7 @@ html {
   width: 4px; }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #da4445; }
+  color-background: #da4445; }
 
 body {
   background: #f9fafb; }
@@ -229,55 +240,48 @@ strong, .strong, .lead {
 a {
   margin: 1rem 0;
   text-decoration: none;
-  font-size: 0.8rem;
   transition: 0.28s all ease;
   text-decoration: none; }
 
 /*------------------------------------*  #Buttons
 \*------------------------------------*/
 .btn {
-  padding: .8em 2.7em;
-  color: #da4445;
   font-size: 1.4rem;
-  text-transform: uppercase;
-  transition: 0.28s all ease;
-  font-weight: 500; }
-  .btn--main {
-    box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.09), 0 4px 17px rgba(0, 0, 0, 0.1);
-    background: #da4445;
-    color: #fff; }
-    .btn--main:hover {
-      background: #c82829;
-      color: #fff;
-      box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.08), 1px 8px 46px rgba(0, 0, 0, 0.09); }
-  .btn--flat:hover {
-    color: #c82829; }
-
-.btn--circle {
-  display: inline-block;
+  padding: .9em 2.7em;
   color: #fff;
-  position: relative;
-  overflow: hidden;
-  width: 56px;
-  height: 56px;
-  line-height: 54px;
-  background-color: #da4445;
-  border-radius: 50%;
-  vertical-align: middle;
-  text-align: center; }
-  .btn--circle i {
-    font-size: 3.3rem;
-    font-style: normal;
-    line-height: 52px; }
-  .btn--circle:hover {
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.08), 1px 8px 46px rgba(0, 0, 0, 0.09);
-    background: #c82829; }
+  border-radius: 1px;
+  background: #da4445;
+  transition: 0.28s all ease;
+  box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.09), 0 4px 17px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  display: inline-block; }
+  .btn:hover {
+    background: #c82829;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.08), 1px 8px 46px rgba(0, 0, 0, 0.09); }
+  .btn--round {
+    border-radius: 4em; }
+  .btn--ghost {
+    color: #da4445;
+    border: 0.2em solid #da4445;
+    background: transparent;
+    box-shadow: none; }
+    .btn--ghost:hover {
+      color: #c82829;
+      border: 0.2em solid #c82829;
+      background: transparent;
+      box-shadow: none; }
+  .btn--green {
+    background: #009688; }
+    .btn--green:hover {
+      background: #00685e; }
 
-.text-link, .text-link a {
+.text-link,
+.text-link a {
   color: #da4445;
   text-decoration: none;
   font-weight: 600; }
-  .text-link:hover, .text-link a:hover {
+  .text-link:hover,
+  .text-link a:hover {
     color: #c82829; }
 
 /*------------------------------------*  #Form

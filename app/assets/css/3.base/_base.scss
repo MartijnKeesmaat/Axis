@@ -5,6 +5,7 @@
 *{
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 html{
@@ -14,8 +15,8 @@ html{
 }
 
 ::selection{
-	background: $selection-color;
-	text-shadow: $text-shadow-small;
+	background: $color-selection;
+	text-shadow: $text-shadow-sm;
 	color: #fff;
 }
 
@@ -24,11 +25,11 @@ html{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: $scrollbar-color;
+    color-background: $scrollbar-color;
 }
 
 body{
-	background: $background-color;
+	background: $color-background;
 }
 
 // img reset
@@ -45,5 +46,5 @@ hr, .hr{
 	border: 0;
 	margin: 1em 0;
 	padding: 0;
-	border-top: 1px solid $border-color;
+	border-top: 1px solid $color-border;
 }
