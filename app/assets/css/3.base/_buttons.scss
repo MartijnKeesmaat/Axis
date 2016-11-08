@@ -1,66 +1,56 @@
 /*------------------------------------*\
   #Buttons
 \*------------------------------------*/
-
 .btn{
-	padding: .8em 2.7em;
-	color: $main-color;
 	font-size: 1.4rem;
-	text-transform: uppercase;
+	padding: .9em 2.7em;
+	color: #fff;
+	border-radius: 1px;
+	background: $color-main;
 	transition: $transition1;
-	font-weight: 500;
-
-	&--main{
-		box-shadow: $shadow-sm;
-		background: $main-color;
-		color: #fff;
-
-		&:hover{
-			background: $main-color-dark;
-			color: #fff;
-			box-shadow: $shadow-md;
-		}
-	}
-
-	&--flat{
-
-		&:hover{
-			color: $main-color-dark;
-		}
-	}
-}
-
-.btn--circle{
+	box-shadow: $shadow-sm;
+	text-transform: uppercase;
 	display: inline-block;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  width: 56px;
-  height: 56px;
-  line-height: 54px;
-  background-color: $main-color;
-  border-radius: 50%;
-  vertical-align: middle;
-	text-align: center;
-
-	i{
-		font-size: 3.3rem;
-    font-style: normal;
-    line-height: 52px;
-	}
 
 	&:hover{
+		background: $color-main--dark;
 		box-shadow: $shadow-md;
-		background: $main-color-dark;
+	}
+
+	&--round{
+		border-radius: 4em;
+	}
+
+	&--ghost{
+		color: $color-main;
+		border: .2em solid $color-main;
+		background: transparent;
+		box-shadow: none;
+
+		&:hover{
+			color: $color-main--dark;
+			border: .2em solid $color-main--dark;
+			background: transparent;
+			box-shadow: none;
+		}
+	}
+
+	&--green{
+		background: $color-accent;
+
+		&:hover{
+			background: $color-accent--dark;
+		}
 	}
 }
 
-.text-link, .text-link a {
-	color: $main-color;
+.text-link,
+.text-link a {
+	color: $color-main;
 	text-decoration: none;
 	font-weight: 600;
 
 	&:hover{
-		color: $main-color-dark;
+		color: $color-main--dark;
 	}
 }
