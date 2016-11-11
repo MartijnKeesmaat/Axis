@@ -367,5 +367,5 @@ input[type=radio] ~ label {
   margin: 0 auto; }
   @media (max-width: 468px) {
     .wrapper {
-      padding: 30px;
+      padding: 40px;
       width: 100%; } }
