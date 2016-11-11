@@ -11,6 +11,11 @@
 	transition: $transition1;
 	box-shadow: $shadow-sm;
 	display: inline-block;
+	margin-right: 10px;
+
+	&:last-child{
+		margin-right: 0;
+	}
 
 	&:hover{
 		background: $color-main--dark;
