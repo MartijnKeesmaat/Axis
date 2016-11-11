@@ -7,6 +7,7 @@ Axis is a way to get quickly started with a well thought out **structure** for e
 
 ## Quick start
 Get your front-end environment up and running in 3 simple steps.
+<br>
 1. Download zip
 2. Extract files
 3. Run npm install in the root folder
