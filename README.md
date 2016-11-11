@@ -18,3 +18,7 @@ Get your front-end environment up and running in 3 simple steps.
 The docs is a great place to find out how to get the most out of Axis.
 <br>
 [Go to the Docs](https://github.com/MartijnKeesmaat/Project-Axis/wiki)
+
+
+<br>
+<br>
