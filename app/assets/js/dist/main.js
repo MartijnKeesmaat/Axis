@@ -46,9 +46,9 @@ $('#menu-overlay').on('click', function() {
 	});
 
 // Menu item selected
-$('nav ul li a, .main-nav ul li a').click(function () {
-	$(this).addClass('active');
-	$(this).parent().siblings().children().removeClass('active');
+$('.header-nav__item, .mobile-nav__item').click(function () {
+	$(this).addClass('is-active');
+	$(this).siblings().removeClass('is-active');
 });
 
 
