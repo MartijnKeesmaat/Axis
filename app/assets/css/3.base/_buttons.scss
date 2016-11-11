@@ -3,8 +3,8 @@
 \*------------------------------------*/
 
 .btn{
-	font-size: 1.4rem;
-	padding: 1em 2.7em;
+	font-size: 1.6rem;
+	padding: 0.8em 2.6em;
 	color: #fff;
 	border-radius: 1px;
 	background: $color-main;
@@ -12,6 +12,7 @@
 	box-shadow: $shadow-sm;
 	display: inline-block;
 	margin-right: 10px;
+	text-align: center;
 
 	&:last-child{
 		margin-right: 0;
