@@ -1,49 +1,112 @@
 /*------------------------------------*\
   #Buttons
 \*------------------------------------*/
+
 .btn{
 	font-size: 1.4rem;
-	padding: .9em 2.7em;
+	padding: 1em 2.7em;
 	color: #fff;
 	border-radius: 1px;
 	background: $color-main;
 	transition: $transition1;
 	box-shadow: $shadow-sm;
-	text-transform: uppercase;
 	display: inline-block;
 
 	&:hover{
 		background: $color-main--dark;
 		box-shadow: $shadow-md;
+		color: #fff;
 	}
 
-	&--round{
+
+
+	// rounded
+	&--rounded{
 		border-radius: 4em;
 	}
 
-	&--ghost{
-		color: $color-main;
-		border: .2em solid $color-main;
-		background: transparent;
-		box-shadow: none;
+
+
+	// colors
+	// color black
+	&--black{
+		background: $oxford;
 
 		&:hover{
-			color: $color-main--dark;
-			border: .2em solid $color-main--dark;
-			background: transparent;
-			box-shadow: none;
+			background: lighten($oxford, 9%);
 		}
 	}
 
-	&--green{
-		background: $color-accent;
+	&--black.btn--ghost{
+
+		color: $oxford;
+		box-shadow: inset 0px 0px 0px .15em $oxford;
 
 		&:hover{
-			background: $color-accent--dark;
+			background: $oxford;
+		}
+	}
+
+
+	// color green
+	&--green{
+		background: $persian-green;
+
+		&:hover{
+			background: darken($persian-green, 9%);
+		}
+	}
+
+	&--green.btn--ghost{
+
+		color: $persian-green;
+		box-shadow: inset 0px 0px 0px .15em $persian-green;
+
+		&:hover{
+			background: $persian-green;
+		}
+	}
+
+
+	// color white
+	&--white{
+		background: #fff;
+		color: $oxford;
+
+		&:hover{
+			background: darken(#fff, 9%);
+			color: $oxford;
+		}
+	}
+
+	&--white.btn--ghost{
+		color: #fff;
+		box-shadow: inset 0px 0px 0px .15em #fff;
+
+		&:hover{
+			background: #fff;
+			color: $oxford;
+		}
+	}
+
+
+
+	// ghost
+	&--ghost{
+		color: $color-main;
+		box-shadow: inset 0px 0px 0px .15em $color-main;
+		background: transparent;
+
+		&:hover{
+			color: #fff;
+			background: $color-main;
+			box-shadow: none;
 		}
 	}
 }
 
+
+// text links
 .text-link,
 .text-link a {
 	color: $color-main;

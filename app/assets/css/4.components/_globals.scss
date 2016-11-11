@@ -2,17 +2,11 @@
   #GLOBAL STYLES
 \*------------------------------------*/
 
-// Based on nav height
-#content {
-  margin-top: $nav-height;
-}
-
 // wrapper
 .wrapper{
-	padding: 40px 40px 45px 40px;
+	padding: 40px;
 	max-width: 1200px;
 	width: 80%;
-  height: 100%;
 	margin: 0 auto;
 
 	@include mobile {

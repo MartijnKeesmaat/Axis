@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 	<head>
 		<title>Axis</title>
 		<meta charset="utf-8">
@@ -11,93 +12,69 @@
 
 	<body>
 
-		<!-- Main nav -->
-		<header class="top-nav">
-			<div class="logo">
-				<a href="#content">
-					<img src="assets/img/logo.png" alt="logo">
-				</a>
+	<!-- Content -->
+	<main id="content">
+
+		<div class="section" id="">
+			<div class="wrapper">
+				<h1>Header 1</h1>
+				<h2>Header 2</h2>
+				<h3>Header 3</h3>
+				<h4>Header 4</h4>
+				<h5>Header 5</h5>
+				<h6>Header 6</h6>
 			</div>
+		</div>
 
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#content" class="active">item 1</a></li>
-					<li><a href="#">item 2</a></li>
-					<li><a href="#">item 3</a></li>
-				</ul>
-			</nav>
+		<hr>
 
-			<a class="hamburger-menu menu">
-				<div class="hamburger-icon">
-					<img src="assets/img/menu.svg" alt="hamburger icon">
-				</div>
-			</a>
-		</header>
-
-		<!-- Mobile nav -->
-		<aside class="mobile-nav">
-			<nav>
-				<ul>
-					<li><a href="#content" class="active">item 1</a></li>
-					<li><a href="#">item 2</a></li>
-					<li><a href="#">item 3</a></li>
-				</ul>
-			</nav>
-		</aside>
-
-
-		<!-- Content -->
-		<main id="content">
-
-			<div class="section" id="">
-				<div class="wrapper">
-					<h1>Header 1</h1>
-					<h2>Header 2</h2>
-					<h3>Header 3</h3>
-					<h4>Header 4</h4>
-					<h5>Header 5</h5>
-					<h6>Header 6</h6>
-				</div>
+		<div class="section">
+			<div class="wrapper">
+				<p class="strong">Lorem <a href="#" class="text-link">ipsum</a> dolor sit amet, consectetur adipisicing elit. Non soluta maxime quae repellat esse commodi quisquam at culpa. Esse molestias perferendis harum animi possimus numquam et veritatis error repellat iure.</p>
+				<p>Ludus verear eam ex, has cu reque euismod. Lorem singulis sit cu, paulo cetero erroribus duo an, cu vide <a href="#" class="text-link">cibo mundi</a> sea. Mei consulatu repudiandae ad. Modo suscipiantur vix ut, illud doctus audiam id vel, et dolor fastidii perpetua mel.</p>
 			</div>
+		</div>
 
-			<hr>
+		<hr>
 
-			<div class="section">
-				<div class="wrapper">
-					<p class="strong">Lorem <a href="#" class="text-link">ipsum</a> dolor sit amet, consectetur adipisicing elit. Non soluta maxime quae repellat esse commodi quisquam at culpa. Esse molestias perferendis harum animi possimus numquam et veritatis error repellat iure.</p>
-					<p>Ludus verear eam ex, has cu reque euismod. Lorem singulis sit cu, paulo cetero erroribus duo an, cu vide <a href="#" class="text-link">cibo mundi</a> sea. Mei consulatu repudiandae ad. Modo suscipiantur vix ut, illud doctus audiam id vel, et dolor fastidii perpetua mel.</p>
-				</div>
+		<div class="section">
+			<div class="wrapper">
+				<a href="#" class="btn">Button</a>
+				<a href="#" class="btn btn--rounded">Rounded</a>
+				<a href="#" class="btn btn--ghost">Ghost</a>
+				<a href="#" class="btn btn--rounded btn--ghost">Rounded Ghost</a>
+				<br>
+				<a href="#" class="btn btn--black">Black</a>
+				<a href="#" class="btn btn--rounded btn--black">Black Rounded</a>
+				<a href="#" class="btn btn--ghost btn--black">Black Ghost</a>
+				<a href="#" class="btn btn--ghost btn--black btn--rounded">Black Rounded Ghost</a>
+				<br>
+				<a href="#" class="btn btn--green">Green</a>
+				<a href="#" class="btn btn--rounded btn--green">Green Rounded</a>
+				<a href="#" class="btn btn--ghost btn--green">Green Ghost</a>
+				<a href="#" class="btn btn--ghost btn--green btn--rounded">Green Rounded Ghost</a>
 			</div>
+		</div>
 
-			<hr>
+		<hr>
 
-			<div class="section">
-				<div class="wrapper">
-					<a href="#" class="btn">Button</a>
-					<a href="#" class="btn btn--round">Button round</a>
-					<br>
-					<a href="#" class="btn btn--ghost">Button ghost</a>
-					<a href="#" class="btn btn--round btn--ghost">Button round ghost</a>
-					<br>
-					<a href="#" class="btn btn--green">Button green</a>
-				</div>
+		<div class="section" id="">
+			<div class="wrapper">
+				<form>
+				  <label for="first-name">First name</label>
+				  <input type="text" name="first-name" placeholder="John">
+				  <label for="first-name">Last name</label>
+					<input type="text" name="first-name" placeholder="Doe">
+					<input type="radio" name="gender" value="male" checked>
+					<label for="gender">Male</label>
+				  <input type="radio" name="gender" value="female">
+					<label for="gender">Female</label>
+				  <input type="submit" value="Submit">
+				</form>
 			</div>
+		</div>
 
-			<hr>
-
-			<div class="section" id="">
-				<div class="wrapper">
-					<form>
-					  <label for="first-name">First name</label>
-					  <input type="text" name="first-name" placeholder="John">
-					  <label for="first-name">Last name</label>
-						<input type="text" name="first-name" placeholder="Doe">
-					  <input type="submit" value="Submit">
-					</form>
-				</div>
-			</div>
-
-		</main> <!-- End content -->
+	</main> <!-- End content -->
 
 
 		<script src="assets/js/dist/main.js"></script>

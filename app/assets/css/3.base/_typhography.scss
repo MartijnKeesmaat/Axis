@@ -49,6 +49,10 @@ p, .font-style-p {
 	font-size: 1.9rem;
 	margin: 0 0 1em 0;
 	line-height: 1.7;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
 }
 
 strong, .strong, .lead {

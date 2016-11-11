@@ -4,6 +4,7 @@
 
 // name-color
 $valencia                 : #da4445;
+$ocean-blue               : #269ed9;
 $persian-green            : #009688;
 $oxford                   : #1C1E23;
 $bayoux                   : #38415F;
@@ -11,7 +12,7 @@ $athens-gray              : #f9fafb;
 
 
 // element-color
-$color-main               : $valencia;
+$color-main               : $ocean-blue;
 $color-main--light				: lighten($color-main, 9%);
 $color-main--dark				  : darken($color-main, 9%);
 $color-accent             : $persian-green;
@@ -24,7 +25,7 @@ $color-text          			: $bayoux;
 
 $color-background         : $athens-gray;
 
-$color-border					    : rgba(182, 182, 182, 0.2);
+$color-border					    : rgba(182, 182, 182, 0.4);
 
 $color-selection				  : $color-main;
 $scrollbar-color				  : $color-main;

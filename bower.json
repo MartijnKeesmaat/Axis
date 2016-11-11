@@ -1,0 +1,25 @@
+{
+  "name": "project-axis",
+  "description": "Axis - makes sure your team is on the same line.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Martijn Keesmaat (http://martijnkeesmaat.nl/)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Starterkit",
+    "smacss",
+    "bem",
+    "sass",
+    "boilerplate",
+    "gulp"
+  ],
+  "homepage": "https://github.com/MartijnKeesmaat/starterkit",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
