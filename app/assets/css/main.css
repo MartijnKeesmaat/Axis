@@ -168,6 +168,9 @@ html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+  @media (max-width: 468px) {
+    html {
+      font-size: 65%; } }
 
 ::selection {
   background: #269ed9;
@@ -492,6 +495,7 @@ a.hamburger-menu.menu {
   .fixed-image h1 {
     color: #fff;
     text-shadow: 2px 1px 4px rgba(29, 29, 29, 0.5);
+    text-align: center;
     font-weight: 300;
     margin: 0; }
   @media (max-width: 768px) {
