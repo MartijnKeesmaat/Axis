@@ -196,6 +196,12 @@ hr, .hr {
   padding: 0;
   border-top: 1px solid rgba(182, 182, 182, 0.4); }
 
+li {
+  list-style: none; }
+
+ul {
+  padding: 0; }
+
 /*------------------------------------*  #TYPOGHRAPY
 \*------------------------------------*/
 h1, h2, h3, h4, h5, h6, th {
@@ -361,5 +367,5 @@ input[type=radio] ~ label {
   margin: 0 auto; }
   @media (max-width: 468px) {
     .wrapper {
-      padding: 20px 20px 23px 20px;
+      padding: 30px;
       width: 100%; } }
