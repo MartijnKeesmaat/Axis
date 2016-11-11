@@ -12,36 +12,36 @@
 
 	<body>
 
-		<!-- Main nav -->
+		<!-- Top nav -->
 		<header class="top-nav">
-			<div class="logo">
-				<a href="#content">
+			<a href="#content">
+				<div class="logo">
 					<img src="assets/img/logo.png" alt="logo">
-				</a>
-			</div>
+				</div>
+			</a>
 
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#content" class="active">item 1</a></li>
-					<li><a href="#">item 2</a></li>
-					<li><a href="#">item 3</a></li>
-				</ul>
+			<!-- header nav -->
+			<nav class="header-nav">
+				<a class="nav__item header-nav__item is-active" href="#content" class="active">Home</a>
+				<a class="nav__item header-nav__item" href="#">About</a>
+				<a class="nav__item header-nav__item" href="#">Contact</a>
 			</nav>
 
-			<a class="hamburger-menu menu">
-				<div class="hamburger-icon">
-					<img src="assets/img/menu.svg" alt="hamburger icon">
-				</div>
+			<!-- hambuger menu -->
+			<a class="hamburger-menu">
+				<div class="hamburger-menu__stripe hamburger-menu__stripe__top"></div>
+				<div class="hamburger-menu__stripe hamburger-menu__stripe__middle"></div>
+				<div class="hamburger-menu__stripe hamburger-menu__stripe__top"></div>
 			</a>
 		</header>
 
-		<!-- Mobile nav -->
+		<!-- mobile nav -->
 		<aside class="mobile-nav">
 			<nav>
 				<ul>
-					<li><a href="#content" class="active">item 1</a></li>
-					<li><a href="#">item 2</a></li>
-					<li><a href="#">item 3</a></li>
+					<a class="nav__item mobile-nav__item is-active" href="#content" class="active">Home</a>
+					<a class="nav__item mobile-nav__item" href="#">About</a>
+					<a class="nav__item mobile-nav__item" href="#">Contact</a>
 				</ul>
 			</nav>
 		</aside>
