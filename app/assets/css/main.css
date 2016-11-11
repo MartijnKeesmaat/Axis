@@ -168,6 +168,9 @@ html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+  @media (max-width: 468px) {
+    html {
+      font-size: 56%; } }
 
 ::selection {
   background: #269ed9;
