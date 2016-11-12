@@ -2,10 +2,6 @@
   #TYPOGHRAPY
 \*------------------------------------*/
 
-// Load fonts
-@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
-
-
 // Basic text
 h1, h2, h3, h4, h5, h6, th{
 	font-family: $font-header;
@@ -14,10 +10,10 @@ h1, h2, h3, h4, h5, h6, th{
 	font-weight: 400;
 }
 
-p, li, ul, td, span{
+p, li, ul, td, span, a{
 	font-family: $font-body;
 	color: $color-text;
-	font-weight: 400; 
+	font-weight: 400;
 }
 
 h1, .font-style-h1{
