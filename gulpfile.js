@@ -3,6 +3,7 @@ browserSync = require('browser-sync').create();
 sass = require("gulp-sass");
 concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
+var csso = require('gulp-csso');
 
 function errorLog(error){
   console.error.bind(error);
@@ -36,6 +37,12 @@ gulp.task('prefix', () =>
     .pipe(gulp.dest('app/styles'))
 );
 
+gulp.task('minify', function () {
+  return gulp.src('app/styles/main.css')
+    .pipe(csso())
+    .pipe(gulp.dest('app/styles'));
+});
+
 // Concat
 gulp.task('concat', function(){
   return gulp.src('app/scripts/*.js')
@@ -45,4 +52,4 @@ gulp.task('concat', function(){
 
 
 // gulp.task("default", ['watch', 'concat', 'serve']);
-gulp.task("deploy", ['prefix']);
+gulp.task("deploy", ['prefix', 'minify']);
