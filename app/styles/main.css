@@ -69,7 +69,6 @@ figure {
   margin: 1em 40px; }
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -114,8 +113,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 input[type=search] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
@@ -172,16 +169,21 @@ html {
     html {
       font-size: 56%; } }
 
+::-moz-selection {
+  background: #269ed9;
+  text-shadow: 2px 1px 4px rgba(29, 29, 29, 0.5);
+  color: #fff; }
+
 ::selection {
   background: #269ed9;
   text-shadow: 2px 1px 4px rgba(29, 29, 29, 0.5);
   color: #fff; }
 
 ::-webkit-scrollbar {
-  width: 4px; }
+  width: 5px; }
 
 ::-webkit-scrollbar-thumb {
-  color-background: #269ed9; }
+  background-color: #269ed9; }
 
 body {
   background: #f6f6f6; }
@@ -203,7 +205,15 @@ li {
   list-style: none; }
 
 ul {
-  padding: 0; }
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 /*------------------------------------*  #TYPOGHRAPY
 \*------------------------------------*/

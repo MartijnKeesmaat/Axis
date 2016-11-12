@@ -14,7 +14,7 @@ html{
 	-moz-osx-font-smoothing: grayscale;
 
 	@include mobile {
-		font-size: 56%; 
+		font-size: 56%;
 	}
 }
 
@@ -24,12 +24,12 @@ html{
 	color: #fff;
 }
 
-::-webkit-scrollbar{
-    width: 4px;
+::-webkit-scrollbar {
+    width: 5px;
 }
 
-::-webkit-scrollbar-thumb{
-    color-background: $scrollbar-color;
+::-webkit-scrollbar-thumb {
+  background-color: $scrollbar-color;
 }
 
 body{
@@ -59,4 +59,8 @@ li{
 
 ul{
 	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap; 
 }
