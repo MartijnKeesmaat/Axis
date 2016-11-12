@@ -14,7 +14,7 @@ html{
 	-moz-osx-font-smoothing: grayscale;
 
 	@include mobile {
-		font-size: 56%;
+		font-size: 56%; 
 	}
 }
 
@@ -23,7 +23,7 @@ html{
 	text-shadow: $text-shadow-sm;
 	color: #fff;
 }
-   
+
 ::-webkit-scrollbar{
     width: 4px;
 }

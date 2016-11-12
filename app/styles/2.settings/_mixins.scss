@@ -13,7 +13,7 @@
     @content;
   }
 }
-
+ 
 @mixin tablet {
   @media (max-width: #{$tablet-width}){
     @content;

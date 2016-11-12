@@ -14,27 +14,27 @@ gulp.task('serve', ['sass'], function() {
       server: "./app"
   });
 
-  gulp.watch("app/assets/css/**/*.scss", ['sass']);
+  gulp.watch("app/styles/**/*.scss", ['sass']);
   gulp.watch("app/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
-  return gulp.src("app/assets/css/**/*.scss")
+  return gulp.src("app/styles/**/*.scss")
     .pipe(sass())
-    .pipe(gulp.dest("app/assets/css"))
+    .pipe(gulp.dest("app/styles"))
     .pipe(browserSync.stream());
 });
 
 // Watch tasks
 gulp.task("watch", function(){
-  gulp.watch('app/assets/js/*.js', ["concat"]);
+  gulp.watch('app/scripts/*.js', ["concat"]);
 });
 
 // Concat
 gulp.task('concat', function(){
-  return gulp.src('app/assets/js/*.js')
+  return gulp.src('app/scripts/*.js')
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('app/assets/js/dist'));
+    .pipe(gulp.dest('app/scripts/dist'));
 });
 
 

@@ -1,0 +1,17 @@
+/*------------------------------------*\
+  #GLOBAL STYLES
+\*------------------------------------*/
+
+// wrapper
+.wrapper{
+	padding: 40px;
+	max-width: 1200px;
+	width: 80%;
+	margin: 0 auto;
+
+	@include mobile {
+		padding: 40px;
+    width: 100%;
+	}
+}
+ 
