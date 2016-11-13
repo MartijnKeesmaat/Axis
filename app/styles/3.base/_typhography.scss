@@ -5,12 +5,12 @@
 // Basic text
 h1, h2, h3, h4, h5, h6, th{
 	font-family: $font-header;
-	color: $color-header ;
+	color: $color-header;
 	margin: 0 0 .4em 0;
 	font-weight: 400;
 }
 
-p, li, ul, td, span, a{
+p, li, ul, td, span, a, label{
 	font-family: $font-body;
 	color: $color-text;
 	font-weight: 400;

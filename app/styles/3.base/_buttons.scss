@@ -3,8 +3,8 @@
 \*------------------------------------*/
 
 .btn{
-	font-size: 1.4rem;
-	padding: 1em 2.7em;
+	font-size: 1.6rem;
+	padding: 0.9em 2.5em;
 	color: #fff;
 	border-radius: 1px;
 	background: $color-main;
@@ -17,19 +17,17 @@
 		margin-right: 0;
 	}
 
-	&:hover{ 
+	&:hover{
 		background: $color-main--dark;
 		box-shadow: $shadow-md;
 		color: #fff;
 	}
 
 
-
 	// rounded
 	&--rounded{
 		border-radius: 4em;
 	}
-
 
 
 	// colors
@@ -93,7 +91,6 @@
 			color: $oxford;
 		}
 	}
-
 
 
 	// ghost
