@@ -10,19 +10,33 @@ var strip = require('gulp-strip-comments');
 
 
 
-// Error message
-function errorLog(error){
-  console.error.bind(error);
-  this.emit('end');
-}
 
 
-// Strip comments
-gulp.task('default', function () {
-  return gulp.src('template.js')
-    .pipe(strip())
-    .pipe(gulp.dest('dist'));
+/*------------------------------------*\
+  #COMBINED COMMANDS
+\*------------------------------------*/
+
+// Serve
+gulp.task('serve', ['sass'], function() {
+
+  browserSync.init({
+      server: "./app"
+  });
+
+  gulp.watch("app/styles/**/*.scss", ['sass']);
+  gulp.watch("app/scripts/*.js", ['concat']).on('change', browserSync.reload);
+  gulp.watch("app/*.html").on('change', browserSync.reload);
 });
+
+
+
+
+/*------------------------------------*\
+  #INDIVIDUAL COMMANDS
+\*------------------------------------*/
+
+// Prepares the code for deployment
+gulp.task("deploy", ['prefix', 'minify']);
 
 
 // Sass
@@ -62,18 +76,16 @@ gulp.task('concat', function(){
 });
 
 
-// Serve
-gulp.task('serve', ['sass'], function() {
-
-  browserSync.init({
-      server: "./app"
-  });
-
-  gulp.watch("app/styles/**/*.scss", ['sass']);
-  gulp.watch("app/scripts/*.js", ['concat']).on('change', browserSync.reload);
-  gulp.watch("app/*.html").on('change', browserSync.reload);
+// Strip comments
+gulp.task('default', function () {
+  return gulp.src('template.js')
+    .pipe(strip())
+    .pipe(gulp.dest('dist'));
 });
 
 
-// gulp.task("default", ['watch', 'concat', 'serve']);
-gulp.task("deploy", ['prefix', 'minify']);
+// Error message
+function errorLog(error){
+  console.error.bind(error);
+  this.emit('end');
+}

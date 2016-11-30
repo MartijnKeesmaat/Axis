@@ -364,6 +364,22 @@ label {
 input[type=radio] ~ label {
   display: initial; }
 
+.no-padding {
+  padding: 0 !important; }
+
+.no-margin {
+  margin: 0 !important; }
+
+.center-container {
+  margin: 0 auto; }
+
+.center-image {
+  margin: 0 auto;
+  display: block; }
+
+.center-text {
+  text-align: center; }
+
 /*------------------------------------*  #GLOBAL STYLES
 \*------------------------------------*/
 .wrapper {
