@@ -20,4 +20,32 @@
   &-text{
     text-align: center;
   }
+
+  &-content-hor{
+    display: flex;
+    justify-content: center;
+  }
+
+  &-content-vert{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.bg-dark{
+  background: $oxford;
+  color: $color-body--light;
+
+  h1, h2, h3, h4, h5, h6, th, .font-medium, .font-bold{
+    color: #fff;
+  }
+}
+
+.bg-light{
+  background: $athens-gray;
+  color: $color-body;
+
+  h1, h2, h3, h4, h5, h6, th, .font-medium, .font-bold{
+    color: $color-header;
+  }
 }

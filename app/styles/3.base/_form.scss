@@ -24,7 +24,7 @@ input[type=text] {
 textarea:focus,
 input[type=text]:focus {
   border: 1px solid $color-main;
-  color: $color-text;
+  color: $color-body;
 }
 
 input[type=submit] {
@@ -36,7 +36,7 @@ input[type=submit] {
 
 label {
   font-size: 1.5rem;
-  color: $color-text;
+  color: $color-body;
   margin-bottom: 8px;
   display: block;
 }

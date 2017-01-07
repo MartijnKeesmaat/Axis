@@ -5,12 +5,11 @@
 // wrapper
 .wrapper{
 	padding: 40px;
-	max-width: 1200px;
-	width: 80%;
+	max-width: 1000px;
 	margin: 0 auto;
 
 	@include mobile {
 		padding: 40px;
-    width: 100%; 
+    width: 100%;
 	}
 }

@@ -40,17 +40,16 @@ body{
 img{
 	max-width: 100%;
   height: auto;
-  border: 0;
 }
 
 // basic hr
 hr, .hr{
 	display: block;
 	height: .1rem;
-	border: 0;  
+	border: 0;
 	margin: 0;
 	padding: 0;
-	border-top: 1px solid $color-border;
+	background: $color-border;
 }
 
 li{
@@ -59,8 +58,4 @@ li{
 
 ul{
 	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
 }

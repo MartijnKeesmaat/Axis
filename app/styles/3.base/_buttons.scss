@@ -1,12 +1,13 @@
 /*------------------------------------*\
-  #Buttons
+  #STANDARD BUTTON
 \*------------------------------------*/
 
 .btn{
-	font-size: 1.6rem;
-	padding: 0.9em 2.5em;
+	font-size: 1.9rem;
+	padding: 0.6em 1.8em 0.5em 1.8em;
 	color: #fff;
 	border-radius: 1px;
+	font-family: $font-body--medium;
 	background: $color-main;
 	transition: $transition1;
 	box-shadow: $shadow-sm;
@@ -22,90 +23,117 @@
 		box-shadow: $shadow-md;
 		color: #fff;
 	}
+}
 
 
-	// rounded
-	&--rounded{
-		border-radius: 4em;
-	}
 
 
-	// colors
-	// color black
-	&--black{
-		background: $oxford;
 
-		&:hover{
-			background: lighten($oxford, 9%);
-		}
-	}
+/*------------------------------------*\
+  #COLOR VARIATION
+\*------------------------------------*/
 
-	&--black.btn--ghost{
+// colors
+// color black
+.btn--black{
+	background: $oxford;
 
-		color: $oxford;
-		box-shadow: inset 0px 0px 0px .15em $oxford;
-
-		&:hover{
-			background: $oxford;
-		}
-	}
-
-
-	// color green
-	&--green{
-		background: $persian-green;
-
-		&:hover{
-			background: darken($persian-green, 9%);
-		}
-	}
-
-	&--green.btn--ghost{
-
-		color: $persian-green;
-		box-shadow: inset 0px 0px 0px .15em $persian-green;
-
-		&:hover{
-			background: $persian-green;
-		}
-	}
-
-
-	// color white
-	&--white{
-		background: #fff;
-		color: $oxford;
-
-		&:hover{
-			background: darken(#fff, 9%);
-			color: $oxford;
-		}
-	}
-
-	&--white.btn--ghost{
-		color: #fff;
-		box-shadow: inset 0px 0px 0px .15em #fff;
-
-		&:hover{
-			background: #fff;
-			color: $oxford;
-		}
-	}
-
-
-	// ghost
-	&--ghost{
-		color: $color-main;
-		box-shadow: inset 0px 0px 0px .15em $color-main;
-		background: transparent;
-
-		&:hover{
-			color: #fff;
-			background: $color-main;
-			box-shadow: none;
-		}
+	&:hover{
+		background: lighten($oxford, 10%);
 	}
 }
+
+.btn--black.btn--ghost{
+
+	color: $oxford;
+	box-shadow: inset 0px 0px 0px .15em $oxford;
+
+	&:hover{
+		background: lighten($oxford, 10%);
+	}
+}
+
+
+// color green
+.btn--blue{
+	background: $ocean-blue;
+
+	&:hover{
+		background: darken($ocean-blue, 10%);
+	}
+}
+
+.btn--blue.btn--ghost{
+	color: $ocean-blue;
+	box-shadow: inset 0px 0px 0px .15em $ocean-blue;
+
+	&:hover{
+		background: darken($ocean-blue, 10%);
+	}
+}
+
+
+// color white
+.btn--white{
+	background: #fff;
+	color: $oxford;
+
+	&:hover{
+		background: darken(#fff, 10%);
+		color: $oxford;
+	}
+}
+
+.btn--white.btn--ghost{
+	color: #fff;
+	box-shadow: inset 0px 0px 0px .15em #fff;
+
+	&:hover{
+		background: darken(#fff, 10%);
+		color: $oxford;
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
+  #ROUNDED BUTTON
+\*------------------------------------*/
+.btn--rounded{
+	border-radius: 4em;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #GHOST BUTTON
+\*------------------------------------*/
+.btn--ghost{
+	color: $color-main;
+	box-shadow: inset 0px 0px 0px .15em $color-main;
+	background: transparent;
+
+	&:hover{
+		color: #fff;
+		background: $color-main;
+		box-shadow: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 // text links
