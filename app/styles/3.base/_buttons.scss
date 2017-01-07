@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .btn{
-	font-size: 1.9rem;
+	font-size: 1.7rem;
 	padding: 0.6em 1.8em 0.5em 1.8em;
 	color: #fff;
 	border-radius: 1px;
@@ -33,7 +33,6 @@
   #COLOR VARIATION
 \*------------------------------------*/
 
-// colors
 // color black
 .btn--black{
 	background: $oxford;
@@ -44,31 +43,11 @@
 }
 
 .btn--black.btn--ghost{
-
 	color: $oxford;
 	box-shadow: inset 0px 0px 0px .15em $oxford;
 
 	&:hover{
 		background: lighten($oxford, 10%);
-	}
-}
-
-
-// color green
-.btn--blue{
-	background: $ocean-blue;
-
-	&:hover{
-		background: darken($ocean-blue, 10%);
-	}
-}
-
-.btn--blue.btn--ghost{
-	color: $ocean-blue;
-	box-shadow: inset 0px 0px 0px .15em $ocean-blue;
-
-	&:hover{
-		background: darken($ocean-blue, 10%);
 	}
 }
 
@@ -101,6 +80,7 @@
 /*------------------------------------*\
   #ROUNDED BUTTON
 \*------------------------------------*/
+
 .btn--rounded{
 	border-radius: 4em;
 }
@@ -110,8 +90,19 @@
 
 
 /*------------------------------------*\
+  #BIG
+\*------------------------------------*/
+
+.btn--big{
+	font-size: 1.9rem;
+}
+
+
+
+/*------------------------------------*\
   #GHOST BUTTON
 \*------------------------------------*/
+
 .btn--ghost{
 	color: $color-main;
 	box-shadow: inset 0px 0px 0px .15em $color-main;
@@ -128,22 +119,47 @@
 
 
 
+/*------------------------------------*\
+  #DISABLED
+\*------------------------------------*/
+
+.btn--disabled{
+	background: $nobel;
+	cursor: not-allowed;
+	box-shadow: none;
+	color: #fff;
+
+	&:hover{
+		background: $nobel;
+		box-shadow: none;
+	}
+}
 
 
 
 
-
-
-
+/*------------------------------------*\
+  #TEXT LINK
+\*------------------------------------*/
 
 // text links
 .text-link,
 .text-link a {
 	color: $color-main;
-	text-decoration: none;
-	font-weight: 600;
+	font-family: $font-body--bold;
 
 	&:hover{
 		color: $color-main--dark;
+	}
+}
+
+.btn-text {
+  color: $color-main;
+  border-bottom: 1px solid $nobel;
+  padding-bottom: 1px;
+
+	&:hover{
+		color: $color-main--dark;
+		border-color: $color-main--dark;
 	}
 }

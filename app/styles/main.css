@@ -163,9 +163,11 @@ td, th {
 
 /*------------------------------------*  #COLORS
 \*------------------------------------*/
+/*------------------------------------*  #GRADIENTS
+\*------------------------------------*/
 /*------------------------------------*  #TYPOGRAHPY
 \*------------------------------------*/
-/*------------------------------------*  #Shadows
+/*------------------------------------*  #SHADOWS
 \*------------------------------------*/
 /*------------------------------------*  #ANIMATION
 \*------------------------------------*/
@@ -175,7 +177,7 @@ td, th {
 \*------------------------------------*/
 /*------------------------------------*  #MIXINS
 \*------------------------------------*/
-/*------------------------------------*  #Base styles
+/*------------------------------------*  #GLOBAL STYLES
 \*------------------------------------*/
 * {
   box-sizing: border-box;
@@ -208,7 +210,8 @@ img {
   max-width: 100%;
   height: auto; }
 
-hr, .hr {
+hr,
+.hr {
   display: block;
   height: .1rem;
   border: 0;
@@ -216,11 +219,14 @@ hr, .hr {
   padding: 0;
   background: rgba(182, 182, 182, 0.4); }
 
-li {
-  list-style: none; }
-
-ul {
-  padding: 0; }
+.wrapper {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto; }
+  @media (max-width: 468px) {
+    .wrapper {
+      padding: 40px;
+      width: 100%; } }
 
 /*------------------------------------*  #TYPOGHRAPY
 \*------------------------------------*/
@@ -248,7 +254,7 @@ h3, .h3 {
   font-size: 3.6rem; }
 
 h4, .h4 {
-  font-size: 2.6rem; }
+  font-size: 2.7rem; }
 
 h5, .h5 {
   font-size: 2.2rem; }
@@ -263,10 +269,6 @@ p, .p {
   p:last-child, .p:last-child {
     margin-bottom: 0; }
 
-strong,
-.strong,
-.lead,
-.font-strong,
 .font-bold {
   color: #1C1E23;
   font-family: "brandon_grotesquebold"; }
@@ -277,12 +279,19 @@ strong,
 
 a {
   transition: 0.28s all ease;
-  text-decoration: none; }
+  text-decoration: none;
+  color: initial; }
+
+li {
+  list-style: none; }
+
+ul {
+  padding: 0; }
 
 /*------------------------------------*  #STANDARD BUTTON
 \*------------------------------------*/
 .btn, input[type=submit] {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   padding: 0.6em 1.8em 0.5em 1.8em;
   color: #fff;
   border-radius: 1px;
@@ -312,17 +321,6 @@ a {
   .btn--black.btn--ghost:hover {
     background: #33363f; }
 
-.btn--blue {
-  background: #157cee; }
-  .btn--blue:hover {
-    background: #0e63c2; }
-
-.btn--blue.btn--ghost {
-  color: #157cee;
-  box-shadow: inset 0px 0px 0px 0.15em #157cee; }
-  .btn--blue.btn--ghost:hover {
-    background: #0e63c2; }
-
 .btn--white {
   background: #fff;
   color: #1C1E23; }
@@ -342,6 +340,11 @@ a {
 .btn--rounded {
   border-radius: 4em; }
 
+/*------------------------------------*  #BIG
+\*------------------------------------*/
+.btn--big {
+  font-size: 1.9rem; }
+
 /*------------------------------------*  #GHOST BUTTON
 \*------------------------------------*/
 .btn--ghost {
@@ -353,14 +356,34 @@ a {
     background: #EE154A;
     box-shadow: none; }
 
+/*------------------------------------*  #DISABLED
+\*------------------------------------*/
+.btn--disabled {
+  background: #B6B6B6;
+  cursor: not-allowed;
+  box-shadow: none;
+  color: #fff; }
+  .btn--disabled:hover {
+    background: #B6B6B6;
+    box-shadow: none; }
+
+/*------------------------------------*  #TEXT LINK
+\*------------------------------------*/
 .text-link,
 .text-link a {
   color: #EE154A;
-  text-decoration: none;
-  font-weight: 600; }
+  font-family: "brandon_grotesquebold"; }
   .text-link:hover,
   .text-link a:hover {
     color: #c20e3a; }
+
+.btn-text {
+  color: #EE154A;
+  border-bottom: 1px solid #B6B6B6;
+  padding-bottom: 1px; }
+  .btn-text:hover {
+    color: #c20e3a;
+    border-color: #c20e3a; }
 
 /*------------------------------------*  #Form
 \*------------------------------------*/
@@ -384,8 +407,7 @@ input[type=text] {
 
 textarea:focus,
 input[type=text]:focus {
-  border: 1px solid #EE154A;
-  color: #38415F; }
+  border: 1px solid #EE154A; }
 
 input[type=submit] {
   border: none;
@@ -393,8 +415,7 @@ input[type=submit] {
   width: 100%; }
 
 label {
-  font-size: 1.5rem;
-  color: #38415F;
+  font-size: 1.7rem;
   margin-bottom: 8px;
   display: block; }
 
@@ -419,11 +440,15 @@ input[type=radio] ~ label {
 
 .center-content-hor {
   display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  align-items: center; }
+  .center-content-hor p {
+    text-align: center;
+    max-width: 540px; }
 
 .center-content-vert {
   display: flex;
-  justify-content: center; }
+  align-items: center; }
 
 .bg-dark {
   background: #1C1E23;
@@ -436,14 +461,3 @@ input[type=radio] ~ label {
   color: #38415F; }
   .bg-light h1, .bg-light h2, .bg-light h3, .bg-light h4, .bg-light h5, .bg-light h6, .bg-light th, .bg-light .font-medium, .bg-light .font-bold {
     color: #1C1E23; }
-
-/*------------------------------------*  #GLOBAL STYLES
-\*------------------------------------*/
-.wrapper {
-  padding: 40px;
-  max-width: 1000px;
-  margin: 0 auto; }
-  @media (max-width: 468px) {
-    .wrapper {
-      padding: 40px;
-      width: 100%; } }

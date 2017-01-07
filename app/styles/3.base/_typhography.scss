@@ -10,7 +10,6 @@ body{
 	font-size: 1.9rem;
 }
 
-// Basic text
 h1, h2, h3, h4, h5, h6, th{
 	font-family: $font-header;
 	color: $color-header;
@@ -32,7 +31,7 @@ h3, .h3{
 }
 
 h4, .h4{
-	font-size: 2.6rem;
+	font-size: 2.7rem;
 }
 
 h5, .h5{
@@ -53,10 +52,6 @@ p, .p {
 	}
 }
 
-strong,
-.strong,
-.lead,
-.font-strong,
 .font-bold {
 	color: $color-header;
 	font-family: $font-body--bold;
@@ -70,4 +65,13 @@ strong,
 a {
 	transition: $transition1;
 	text-decoration: none;
+	color: initial;
+}
+
+li{
+	list-style: none;
+}
+
+ul{
+	padding: 0;
 }

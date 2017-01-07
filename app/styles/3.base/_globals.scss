@@ -1,5 +1,5 @@
 /*------------------------------------*\
-  #Base styles
+  #GLOBAL STYLES
 \*------------------------------------*/
 
 *{
@@ -43,7 +43,8 @@ img{
 }
 
 // basic hr
-hr, .hr{
+hr,
+.hr{
 	display: block;
 	height: .1rem;
 	border: 0;
@@ -52,10 +53,14 @@ hr, .hr{
 	background: $color-border;
 }
 
-li{
-	list-style: none;
-}
+// wrapper
+.wrapper{
+	padding: 40px;
+	max-width: 1000px;
+	margin: 0 auto;
 
-ul{
-	padding: 0;
+	@include mobile {
+		padding: 40px;
+    width: 100%;
+	}
 }
