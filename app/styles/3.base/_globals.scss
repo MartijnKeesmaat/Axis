@@ -1,5 +1,5 @@
 /*------------------------------------*\
-  #Base styles
+  #GLOBAL STYLES
 \*------------------------------------*/
 
 *{
@@ -40,27 +40,27 @@ body{
 img{
 	max-width: 100%;
   height: auto;
-  border: 0;
 }
 
 // basic hr
-hr, .hr{
+hr,
+.hr{
 	display: block;
 	height: .1rem;
-	border: 0;  
+	border: 0;
 	margin: 0;
 	padding: 0;
-	border-top: 1px solid $color-border;
+	background: $color-border;
 }
 
-li{
-	list-style: none;
-}
+// wrapper
+.wrapper{
+	padding: 40px;
+	max-width: 1000px;
+	margin: 0 auto;
 
-ul{
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	@include mobile {
+		padding: 40px;
+    width: 100%;
+	}
 }

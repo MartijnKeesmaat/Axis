@@ -19,12 +19,11 @@ input[type=text] {
   box-sizing: border-box;
   transition: $transition1;
   font-size: 1.3rem;
-} 
+}
 
 textarea:focus,
 input[type=text]:focus {
   border: 1px solid $color-main;
-  color: $color-text;
 }
 
 input[type=submit] {
@@ -35,8 +34,7 @@ input[type=submit] {
 }
 
 label {
-  font-size: 1.5rem;
-  color: $color-text;
+  font-size: 1.7rem;
   margin-bottom: 8px;
   display: block;
 }

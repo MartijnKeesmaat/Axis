@@ -2,63 +2,76 @@
   #TYPOGHRAPY
 \*------------------------------------*/
 
-// Basic text
+body{
+	font-family: $font-body;
+	color: $color-body;
+	font-weight: 400;
+	line-height: 1.6;
+	font-size: 1.9rem;
+}
+
 h1, h2, h3, h4, h5, h6, th{
 	font-family: $font-header;
 	color: $color-header;
-	margin: 0 0 .4em 0;
+	margin: 0 0 0.6em 0;
 	font-weight: 400;
+	line-height: 1;
 }
 
-p, li, ul, td, span, a, label{
-	font-family: $font-body;
-	color: $color-text;
-	font-weight: 400;
-}
-
-h1, .font-style-h1{
+h1, .h1{
 	font-size: 6.4rem;
 }
 
-h2, .font-style-h2{
+h2, .h2{
 	font-size: 4.8rem;
 }
 
-h3, .font-style-h3{
+h3, .h3{
 	font-size: 3.6rem;
 }
 
-h4, .font-style-h4{
-	font-size: 2.4rem;
+h4, .h4{
+	font-size: 2.7rem;
 }
 
-h5, .font-style-h5{
+h5, .h5{
+	font-size: 2.2rem;
+}
+
+h6, .h6 {
 	font-size: 2rem;
+	color: $color-body;
 }
 
-h6, .font-style-h6 {
-	font-size: 1.8rem;
-	color: $color-text;
-}
-
-p, .font-style-p {
-	font-size: 1.9rem;
+p, .p {
 	margin: 0 0 1em 0;
-	line-height: 1.7;
+	max-width: 750px;
 
 	&:last-child{
 		margin-bottom: 0;
 	}
 }
 
-strong, .strong, .lead {
-	font-weight: 600;
-	color: $color-header ;
+.font-bold {
+	color: $color-header;
+	font-family: $font-body--bold;
+}
+
+.font-medium{
+	color: $color-header;
+	font-family: $font-body--medium;
 }
 
 a {
-	margin: 1rem 0;
-	text-decoration: none;
 	transition: $transition1;
 	text-decoration: none;
+	color: initial;
+}
+
+li{
+	list-style: none;
+}
+
+ul{
+	padding: 0;
 }

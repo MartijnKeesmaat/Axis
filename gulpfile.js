@@ -29,6 +29,13 @@ gulp.task('serve', ['sass'], function() {
 });
 
 
+// Watch
+gulp.task('watch', ['sass'], function() {
+  gulp.watch("app/styles/**/*.scss", ['sass']);
+  gulp.watch("app/scripts/*.js", ['concat']).on('change', browserSync.reload);
+  gulp.watch("app/*.html").on('change', browserSync.reload);
+});
+
 
 
 /*------------------------------------*\
