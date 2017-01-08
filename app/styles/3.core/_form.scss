@@ -1,0 +1,60 @@
+/*------------------------------------*\
+  #Form
+\*------------------------------------*/
+
+textarea,
+select,
+input {
+  outline: none;
+  display: block;
+  width: 100%;
+  border: 1px solid $color-border;
+  transition: $transition1;
+  margin-bottom: 1.3em;
+  padding: 0.45em .9em;
+  background: none;
+  font-weight: 400;
+  max-width: 300px;
+  box-sizing: border-box;
+
+  &:focus{
+    border: 1px solid $color-main;
+  }
+}
+
+input[type=submit],
+input[type=radio],
+input[type=checkbox]{
+  width: initial;
+}
+
+input[type=submit] {
+  @extend .btn;
+  @extend .btn--rounded;
+  @extend .btn--big;
+  border: none;
+  margin-top: 15px;
+}
+
+label {
+  font-size: 1.7rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input[type=radio]~label {
+  display: initial;
+}
+
+.checkbox,
+.radio{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+
+  input[type="checkbox"],
+  input[type="radio"]{
+    margin: 0 10px 0 0;
+  }
+}

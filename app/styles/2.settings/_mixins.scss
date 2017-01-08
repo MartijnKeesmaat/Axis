@@ -2,38 +2,70 @@
   #MIXINS
 \*------------------------------------*/
 
-@mixin mobile {
+@mixin mq-mobile {
   @media (max-width: #{$mobile-width}) {
     @content;
   }
 }
 
-@mixin mobile-up {
+@mixin mq-mobile-up {
   @media (min-width: #{$mobile-width}) {
     @content;
   }
 }
- 
-@mixin tablet {
+
+@mixin mq-tablet {
   @media (max-width: #{$tablet-width}){
     @content;
   }
 }
 
-@mixin tablet-up {
+@mixin mq-tablet-up {
   @media (min-width: #{$tablet-width}){
     @content;
   }
 }
 
-@mixin desktop {
+@mixin mq-desktop {
   @media (max-width: #{$desktop-width}) {
     @content;
   }
 }
 
-@mixin desktop-up {
+@mixin mq-desktop-up {
   @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+
+// Boostrap/Foundation
+@mixin mq-xl {
+  @media (min-width: #{$xl}) {
+    @content;
+  }
+}
+
+@mixin mq-lg {
+  @media (min-width: #{$lg}) {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media (min-width: #{$md}) {
+    @content;
+  }
+}
+
+@mixin mq-sm {
+  @media (min-width: #{$sm}) {
+    @content;
+  }
+}
+
+@mixin mq-xs {
+  @media (min-width: #{$xs}) {
     @content;
   }
 }

@@ -3,16 +3,16 @@
 \*------------------------------------*/
 
 .btn{
-	font-size: 1.7rem;
-	padding: 0.6em 1.8em 0.5em 1.8em;
-	color: #fff;
-	border-radius: 1px;
 	font-family: $font-body--medium;
 	background: $color-main;
 	transition: $transition1;
 	box-shadow: $shadow-sm;
+	padding: 0.6em 1.8em 0.55em 1.8em;
 	display: inline-block;
-	margin-right: 10px;
+	font-size: 1.8rem;
+	border-radius: 1px;
+	margin-right: 18px;
+	color: #fff;
 
 	&:last-child{
 		margin-right: 0;
@@ -47,7 +47,7 @@
 	box-shadow: inset 0px 0px 0px .15em $oxford;
 
 	&:hover{
-		background: lighten($oxford, 10%);
+		background: $color-black--light;
 	}
 }
 
@@ -68,7 +68,7 @@
 	box-shadow: inset 0px 0px 0px .15em #fff;
 
 	&:hover{
-		background: darken(#fff, 10%);
+		background: $color-white--dark;
 		color: $oxford;
 	}
 }
