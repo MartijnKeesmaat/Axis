@@ -1,4 +1,4 @@
-![](https://i.gyazo.com/52004f847a41f81253f96eeb5ddd73e0.png)
+#Axis
 ***
 
 Axis is a way to get quickly started with a well thought out **structure** for every front-end project. It strives to create projects with beautifully organized code, this is achieved by adapting the **BEM** methodology and using a **SMACSS** inspired structure. With this approach Axis is ready to face small, large and long lasting projects.
