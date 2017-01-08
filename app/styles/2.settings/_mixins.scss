@@ -13,7 +13,7 @@
     @content;
   }
 }
- 
+
 @mixin tablet {
   @media (max-width: #{$tablet-width}){
     @content;
@@ -34,6 +34,38 @@
 
 @mixin desktop-up {
   @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+
+// Boostrap/Foundation
+@mixin xl {
+  @media (min-width: #{$xl}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$lg}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$md}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: #{$sm}) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (min-width: #{$xs}) {
     @content;
   }
 }

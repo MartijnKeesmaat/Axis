@@ -45,8 +45,8 @@ $scrollbar-color				   : $color-main;
 \*------------------------------------*/
 
 // Overlay
-$overlay-vertical            : linear-gradient(to bottom,  $overlay, #1C1E23 0%);
-$overlay-horizantal            : linear-gradient(to right,  $overlay, #1C1E23 0%);
+$overlay-vertical          : linear-gradient(to bottom,  $overlay, #1C1E23 0%);
+$overlay-horizantal        : linear-gradient(to right,  $overlay, #1C1E23 0%);
 
 
 
@@ -105,6 +105,12 @@ $mobile-width             : 468px;
 $tablet-width             : 768px;
 $desktop-width            : 1024px;
 
+// Boostrap/Foundation 
+$xl                       : 1200px;
+$lg                       : 979px;
+$md                       : 767px;
+$sm                       : 480px;
+$xs                       :320px;
 
 
 
