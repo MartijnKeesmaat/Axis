@@ -1,3 +1,14 @@
+.clearfix {
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
 .no-padding{
   padding: 0 !important;
 }

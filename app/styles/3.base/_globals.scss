@@ -13,7 +13,7 @@ html{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	@include mobile {
+	@include mq-mobile {
 		font-size: 56%;
 	}
 }
@@ -55,8 +55,9 @@ hr,
 	max-width: 1000px;
 	margin: 0 auto;
 
-	@include mobile {
+	@include mq-mobile {
 		padding: 40px;
     width: 100%;
 	}
 }
+ 

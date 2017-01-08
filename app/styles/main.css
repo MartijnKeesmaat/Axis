@@ -432,6 +432,13 @@ input[type=radio] ~ label {
   .radio input[type="radio"] {
     margin: 0 10px 0 0; }
 
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
 .no-padding {
   padding: 0 !important; }
 
