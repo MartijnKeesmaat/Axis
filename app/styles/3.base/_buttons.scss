@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .btn{
-	font-size: 1.7rem;
+	font-size: 1.8rem;
 	padding: 0.6em 1.8em 0.5em 1.8em;
 	color: #fff;
 	border-radius: 1px;
@@ -12,7 +12,7 @@
 	transition: $transition1;
 	box-shadow: $shadow-sm;
 	display: inline-block;
-	margin-right: 10px;
+	margin-right: 18px;
 
 	&:last-child{
 		margin-right: 0;
@@ -47,7 +47,7 @@
 	box-shadow: inset 0px 0px 0px .15em $oxford;
 
 	&:hover{
-		background: lighten($oxford, 10%);
+		background: $color-black--light;
 	}
 }
 
@@ -68,7 +68,7 @@
 	box-shadow: inset 0px 0px 0px .15em #fff;
 
 	&:hover{
-		background: darken(#fff, 10%);
+		background: $color-white--dark;
 		color: $oxford;
 	}
 }

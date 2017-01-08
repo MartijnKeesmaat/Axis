@@ -1,36 +1,39 @@
 /*------------------------------------*\
   #Form
 \*------------------------------------*/
-form {
-  max-width: 350px;
-  width: 100%;
-  margin: 0 auto;
-}
 
 textarea,
-input[type=text] {
+select,
+input {
   outline: none;
   display: block;
   width: 100%;
   border: 1px solid $color-border;
-  margin: 0 0 2em;
-  padding: 0.9em 1.3em;
-  font-weight: 400;
-  box-sizing: border-box;
   transition: $transition1;
-  font-size: 1.3rem;
+  margin-bottom: 1.3em;
+  padding: 0.45em .9em;
+  background: none;
+  font-weight: 400;
+  max-width: 300px;
+  box-sizing: border-box;
+
+  &:focus{
+    border: 1px solid $color-main;
+  }
 }
 
-textarea:focus,
-input[type=text]:focus {
-  border: 1px solid $color-main;
+input[type=submit],
+input[type=radio],
+input[type=checkbox]{
+  width: initial;
 }
 
 input[type=submit] {
   @extend .btn;
+  @extend .btn--rounded;
+  @extend .btn--big;
   border: none;
-  display: block;
-  width: 100%;
+  margin-top: 15px;
 }
 
 label {
@@ -41,4 +44,17 @@ label {
 
 input[type=radio]~label {
   display: initial;
+}
+
+.checkbox,
+.radio{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+
+  input[type="checkbox"],
+  input[type="radio"]{
+    margin: 0 10px 0 0;
+  }
 }
