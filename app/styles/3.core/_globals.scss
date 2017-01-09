@@ -1,5 +1,5 @@
 /*------------------------------------*\
-  #Base styles
+  #GLOBAL STYLES
 \*------------------------------------*/
 
 *{
@@ -13,7 +13,7 @@ html{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	@include mobile {
+	@include mq-mobile {
 		font-size: 56%;
 	}
 }
@@ -24,39 +24,40 @@ html{
 	color: #fff;
 }
 
-::-webkit-scrollbar{
-    width: 4px;
+::-webkit-scrollbar {
+    width: 5px;
 }
 
-::-webkit-scrollbar-thumb{
-    color-background: $scrollbar-color;
-}
-
-body{
-	background: $color-background;
+::-webkit-scrollbar-thumb {
+  background-color: $scrollbar-color;
 }
 
 // img reset
 img{
 	max-width: 100%;
   height: auto;
-  border: 0;
 }
 
 // basic hr
-hr, .hr{
+hr,
+.hr{
 	display: block;
 	height: .1rem;
 	border: 0;
 	margin: 0;
 	padding: 0;
-	border-top: 1px solid $color-border;
+	background: $color-border;
 }
 
-li{
-	list-style: none;
-}
+// wrapper
+.wrapper{
+	padding: 40px;
+	max-width: 1000px;
+	margin: 0 auto;
 
-ul{
-	padding: 0;
+	@include mq-mobile {
+		padding: 40px;
+    width: 100%;
+	}
 }
+ 

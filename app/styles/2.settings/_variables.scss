@@ -1,0 +1,123 @@
+/*------------------------------------*\
+  #COLORS
+\*------------------------------------*/
+
+// Colors names
+$valencia                  : #EE154A;
+$oxford                    : #1C1E23;
+$charade                   : #282C37;
+$bayoux                    : #38415F;
+$nobel                     : #B6B6B6;
+$ebb                       : #EEE8E8;
+$athens-gray               : #f6f6f6;
+$overlay                   : rgba(28, 30, 50, .4);
+
+
+// Element-colors
+$color-main                : $valencia;
+$color-main--light				 : lighten($color-main, 10%);
+$color-main--dark				   : darken($color-main, 10%);
+
+$color-white               : #fff;
+$color-white--dark		 		 : darken(#fff, 10%);
+
+$color-black               : $oxford;
+$color-black--light		 		 : lighten($oxford, 10%);
+
+$color-header						   : $oxford;
+$color-body          			 : $bayoux;
+$color-body--light   			 : #EEE8E8;
+
+$color-background          : $athens-gray;
+$color-background--light   : $charade;
+
+$color-border					     : rgba(182, 182, 182, 0.4);
+
+$color-selection				   : $color-main;
+$scrollbar-color				   : $color-main;
+
+
+
+
+
+/*------------------------------------*\
+  #GRADIENTS
+\*------------------------------------*/
+
+// Overlay
+$overlay-vertical          : linear-gradient(to bottom,  $overlay, #1C1E23 0%);
+$overlay-horizantal        : linear-gradient(to right,  $overlay, #1C1E23 0%);
+
+
+
+
+
+/*------------------------------------*\
+  #TYPOGRAHPY
+\*------------------------------------*/
+
+// Fonts
+$font-header					     : 'Montserrat', sans-serif;
+$font-body						     : 'brandon_grotesque_regularRg';
+$font-body--medium			   : 'brandon_grotesquemedium';
+$font-body--bold					 : 'brandon_grotesquebold';
+
+
+
+
+
+/*------------------------------------*\
+  #SHADOWS
+\*------------------------------------*/
+
+// Box-shadows
+$shadow-sm  	        		 : 1px 4px 9px rgba(0, 0, 0, 0.09), 0 4px 17px rgba(0, 0, 0, 0.1);
+$shadow-md	       			   : 5px 10px 20px rgba(0, 0, 0, 0.08), 1px 8px 46px rgba(0, 0, 0, 0.09);
+$shadow-lg	        			 : 15px 20px 30px rgba(0, 0, 0, 0.11), 1px 18px 46px rgba(0, 0, 0, 0.11);
+
+// Text-shadows
+$text-shadow-sm            : 2px 1px 4px rgba(#1d1d1d, 0.5);
+$text-shadow-lg            : 2px 1px 4px rgba(#1d1d1d, 0.7);
+
+
+
+
+
+/*------------------------------------*\
+  #ANIMATION
+\*------------------------------------*/
+
+// Transtions
+$transition1					    : 0.28s all ease;
+$transition2					    : 0.38s all ease;
+$transition3					    : 0.55s all ease;
+
+
+
+
+
+/*------------------------------------*\
+  #RESPONSIVE
+\*------------------------------------*/
+
+// Device widths
+$mobile-width             : 468px;
+$tablet-width             : 768px;
+$desktop-width            : 1024px;
+
+// Boostrap/Foundation 
+$xl                       : 1200px;
+$lg                       : 979px;
+$md                       : 767px;
+$sm                       : 480px;
+$xs                       :320px;
+
+
+
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+
+// Measurements
+$nav-height               : 60px;
