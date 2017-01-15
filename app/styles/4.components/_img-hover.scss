@@ -1,0 +1,123 @@
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+$img-hover-distance: 30px;
+
+
+
+
+/*------------------------------------*\
+  #IMAGE HOVER
+\*------------------------------------*/
+
+// Default
+.img-item--4-3{
+  @include aspect-ratio(4, 3);
+  width: 350px;
+  max-width: 100%;
+  margin: 5px;
+}
+
+.img-hover{
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+
+  &__overlay{
+    background: $overlay-vertical;
+    transition: $transition1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  &__img{
+    position: absolute;
+    transition: $transition1;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+  }
+
+  &__caption{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+
+    p,
+    h3{
+      color: #fff;
+      text-align: left;
+    }
+
+    h3{
+      margin-bottom: 0.2em;
+      font-size: 3rem;
+    }
+
+    p{
+      font-size: 1.7rem;
+      font-family: $font-body--medium;
+    }
+  }
+
+  &:hover{
+    .img-hover__img{
+      transform: scale(1.2);
+    }
+
+    .img-hover__overlay{
+      background: linear-gradient(rgba($overlay, .4), rgba($overlay, .4));;
+    }
+  }
+}
+
+
+// Zoom out
+.img-hover--zoom-out{
+  .img-hover__img{
+    transform: scale(1.2);
+  }
+
+  &:hover{
+    .img-hover__img{
+      transform: scale(1);
+    }
+  }
+}
+
+
+// Slide up
+.img-hover--slide-up{
+  .img-hover__img{
+    transform: scale(1.03) translateY(0px);
+    min-width: calc(100% + #{$img-hover-distance});
+    min-height: calc(100% + #{$img-hover-distance});
+  }
+
+  &:hover{
+    .img-hover__img{
+      transform: scale(1) translateY(-$img-hover-distance);
+    }
+  }
+}
+
+
+// Slide right
+.img-hover--slide-right{
+  .img-hover__img{
+    transform: scale(1.03) translateX(0px);
+    min-width: calc(100% + #{$img-hover-distance});
+    min-height: calc(100% + #{$img-hover-distance});
+    left: -$img-hover-distance;
+  }
+
+  &:hover{
+    .img-hover__img{
+      transform: scale(1) translateX($img-hover-distance);
+    }
+  }
+}

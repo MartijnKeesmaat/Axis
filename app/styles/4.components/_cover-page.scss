@@ -1,0 +1,89 @@
+/*------------------------------------*\
+  #COVER PAGE
+\*------------------------------------*/
+
+$cover-page-height: 90vh;
+
+.cover-page{
+  position: relative;
+  height: $cover-page-height;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    height: calc(100% - #{$st-header-height} - 20px);
+  }
+
+  h1{
+    max-width: 800px;
+    margin-bottom: .4em;
+  }
+
+  h1, h2, h3, h4, h5, h6, th,
+  .font-medium,
+  .font-bold{
+    color: #fff;
+  }
+
+  .st-header{
+    padding: 25px 60px;
+    height: calc(#{$st-header-height} + 20px);
+  }
+
+  .st-nav-item{
+    color: $color-white;
+  }
+
+  .st-nav-dropdown__content .st-nav-item{
+    color: $color-body;
+
+    &:hover{
+      color: $color-main;
+    }
+  }
+}
+
+.cover-page__overlay,
+.cover-page__image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cover-page__overlay{
+  background: rgba($overlay, .4);
+  z-index: -1;
+}
+
+.cover-page__image{
+  z-index: -2;
+
+  img{
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+.cover-page__sub-title{
+  font-family: $font-body--medium;
+  margin-bottom: 1.6em;
+}
+
+
+
+.cover-page .st-header-scroll{
+  padding: 25px 60px;
+  height: calc(#{$st-header-height} + 20px);
+}
+
+.scrolled .cover-page .st-header-scroll{
+  padding: 15px 50px;
+  height: $st-header-height;
+}

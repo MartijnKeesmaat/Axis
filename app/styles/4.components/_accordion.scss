@@ -1,0 +1,106 @@
+/*------------------------------------*\
+  #ACCORDION
+\*------------------------------------*/
+
+.accordion{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.acc-btn{
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px;
+  transition: $transition1;
+  background: $color-white--alt;
+  color: #fff;
+  font-family: $font-body--medium;
+  border-bottom: $color-border 1px solid;
+
+  &:hover{
+    background: $color-white;
+  }
+}
+
+.acc-item:last-child .acc-btn{
+  border-bottom: none;
+}
+
+.acc-subtitle{
+  font-family: $font-body;
+  color: $color-body;
+}
+
+.acc-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: $color-header;
+}
+
+.acc-panel{
+  padding: 25px 30px;
+  display: none;
+  background: $color-white;
+}
+
+.acc-icon{
+  z-index: 999;
+  margin-bottom: 10px;
+
+  div{
+    border-radius: 3px;
+    background: $color-black;
+    transform: rotate(0deg);
+    transition: $transition1;
+    height: 12px;
+    width: 3px;
+    position: absolute;
+  }
+
+  div.plus-active{
+    transform: rotate(90deg);
+  }
+
+  .minus{
+    transform: rotate(90deg);
+  }
+}
+
+
+
+/*------------------------------------*\
+  #ACCORDION DARK
+\*------------------------------------*/
+
+.accordion--dark{
+  .acc-btn{
+    background: $color-black;
+
+    &:hover{
+      background: $color-black--alt;
+      color: #fff;
+    }
+  }
+
+  .acc-panel{
+    background: $color-black--alt;
+    color: #fff;
+  }
+
+  .acc-icon div{
+    background: #fff;
+  }
+
+  .acc-subtitle{
+    color: $color-white--alt;
+  }
+
+  .acc-title {
+    color: $color-white;
+  }
+}

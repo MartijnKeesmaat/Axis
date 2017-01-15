@@ -47,7 +47,7 @@
 	box-shadow: inset 0px 0px 0px .15em $oxford;
 
 	&:hover{
-		background: $color-black--light;
+		background: $color-black--alt;
 	}
 }
 
@@ -96,6 +96,13 @@
 .btn--big{
 	font-size: 1.9rem;
 }
+
+.btn--small{
+  padding: 0.4em 1.4em 0.37em 1.4em;
+	font-size: 1.9rem;
+}
+
+
 
 
 
@@ -157,6 +164,11 @@
   color: $color-main;
   border-bottom: 1px solid $nobel;
   padding-bottom: 1px;
+	margin-right: 18px;
+
+	&:last-child{
+		margin-right:  0;
+	}
 
 	&:hover{
 		color: $color-main--dark;

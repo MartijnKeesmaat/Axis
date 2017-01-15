@@ -19,10 +19,11 @@ $color-main--light				 : lighten($color-main, 10%);
 $color-main--dark				   : darken($color-main, 10%);
 
 $color-white               : #fff;
+$color-white--alt          : $athens-gray;
 $color-white--dark		 		 : darken(#fff, 10%);
 
 $color-black               : $oxford;
-$color-black--light		 		 : lighten($oxford, 10%);
+$color-black--alt		 		   : $charade;
 
 $color-header						   : $oxford;
 $color-body          			 : $bayoux;
@@ -45,8 +46,8 @@ $scrollbar-color				   : $color-main;
 \*------------------------------------*/
 
 // Overlay
-$overlay-vertical          : linear-gradient(to bottom,  $overlay, #1C1E23 0%);
-$overlay-horizantal        : linear-gradient(to right,  $overlay, #1C1E23 0%);
+$overlay-vertical          : linear-gradient(rgba($overlay, 0), rgba($overlay, .4));
+$overlay-horizantal        : linear-gradient(to right, rgba($overlay, 0.4), rgba($overlay, 0) 0);
 
 
 
@@ -105,19 +106,9 @@ $mobile-width             : 468px;
 $tablet-width             : 768px;
 $desktop-width            : 1024px;
 
-// Boostrap/Foundation 
+// Boostrap/Foundation
 $xl                       : 1200px;
 $lg                       : 979px;
 $md                       : 767px;
 $sm                       : 480px;
-$xs                       :320px;
-
-
-
-
-/*------------------------------------*\
-  #COMPONENTS
-\*------------------------------------*/
-
-// Measurements
-$nav-height               : 60px;
+$xs                       : 320px;

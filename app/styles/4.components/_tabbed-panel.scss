@@ -1,0 +1,63 @@
+// /*------------------------------------*\
+//   #TABBED PANEL
+// \*------------------------------------*/
+
+.tab-list{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+
+  ul{
+    margin: 0;
+  }
+}
+
+.tab-panel{
+  display: none;
+  background: $color-white;
+  padding: 25px 30px;
+  box-shadow: $shadow-sm;
+}
+
+.tab-control{
+  font-family: $font-body--medium;
+  background: $color-white--alt;
+  text-decoration: none;
+  padding: 5px 30px;
+  display: inline-block;
+}
+
+.tab-panel.active{
+  display: block;
+}
+
+.tab-control.active,
+.tab-control:hover{
+  background: $color-white;
+}
+
+
+
+
+
+// /*------------------------------------*\
+//   #TABBED PANEL DARK
+// \*------------------------------------*/
+
+
+.tab-list--dark{
+  .tab-panel{
+    background: $color-black--alt;
+    color: $color-body--light;
+  }
+
+  .tab-control{
+    background: $color-black;
+    color: $color-white;
+  }
+
+  .tab-control.active,
+  .tab-control:hover{
+    background: $color-black--alt;
+  }
+}

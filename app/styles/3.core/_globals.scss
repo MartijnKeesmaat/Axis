@@ -18,6 +18,11 @@ html{
 	}
 }
 
+body{
+	margin-bottom: 1000px;
+	background: $color-white--alt;
+}
+
 ::selection{
 	background: $color-selection;
 	text-shadow: $text-shadow-sm;
@@ -25,7 +30,8 @@ html{
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
+	background: $color-white--alt;	
 }
 
 ::-webkit-scrollbar-thumb {
@@ -56,8 +62,10 @@ hr,
 	margin: 0 auto;
 
 	@include mq-mobile {
-		padding: 40px;
-    width: 100%;
+		padding: 20px;
 	}
 }
- 
+
+figure{
+	margin: 0;
+}

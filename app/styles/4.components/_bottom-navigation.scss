@@ -1,0 +1,21 @@
+.bottom-navigation {
+  background: #fff;
+  min-height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid $color-border;
+}
+
+.bt__icon-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  height: 100%;
+  padding: 14px;
+
+  &--active{
+    color: $color-main;
+  }
+}

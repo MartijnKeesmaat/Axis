@@ -34,8 +34,8 @@
 
   &-content-hor{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
     p{
       text-align: center;
@@ -60,11 +60,11 @@
   textarea,
   select,
   input{
-    background: $color-black--light;
-    border: $color-black--light 1px solid;
+    background: $color-black--alt;
+    border: $color-black--alt 1px solid;
 
     &:focus{
-      border: 1px solid $color-main;
+      border: 1px solid $oxford;
     }
   }
 
@@ -78,7 +78,7 @@
 }
 
 .bg-light{
-  background: $athens-gray;
+  background: $color-white--alt;
   color: $color-body;
 
   h1, h2, h3, h4, h5, h6, th, .font-medium, .font-bold{

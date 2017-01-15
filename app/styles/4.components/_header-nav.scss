@@ -1,0 +1,347 @@
+/**
+ * This file contains the standard header.
+ * With various variations, these are prefixed with "st-header--":
+ *
+ * 1) Dark
+ * 2) Fixed
+ * 2) No background
+ * 2) Scroll
+ * 2) Fixed
+ *
+ * This file also contains the content of the header:
+ *
+ * 1) Nav item
+ * 2) Logo
+ * 3) Dropdown
+ * 4) Sub header
+ * 5) Big nav
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+// Measurements
+$st-header-height         : 70px;
+$st-sub-header-height     : 40px;
+
+
+
+
+
+
+/*------------------------------------*\
+  #STANDARD HEADER
+\*------------------------------------*/
+
+.st-header{
+  height: $st-header-height;
+  width: 100%;
+  background: #fff;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @include mq-mobile {
+    display: none;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #VARIATIONS
+\*------------------------------------*/
+
+// Header dark
+.st-header--dark{
+  background: $color-header;
+
+  .st-nav-item{
+    color: #fff;
+
+    &:hover{
+      color: $color-main;
+    }
+  }
+
+  .st-nav-dropdown__content{
+    background: $oxford;
+  }
+}
+
+
+// header fixed
+.st-header--fixed{
+  position: fixed;
+  top: 0;
+}
+
+
+// No background
+.st-header--no-bg{
+  background: none;
+}
+
+
+// Scroll
+.st-header--scroll {
+  background: none;
+  padding: 25px 60px;
+  height: calc(#{$st-header-height} + 20px);
+  transition: $transition1;
+  position: fixed;
+  z-index: 9;
+
+  .st-nav-item{
+    color: $color-white;
+  }
+
+  .st-nav-dropdown__content .st-nav-item{
+    color: $color-body;
+
+    &:hover{
+      color: $color-main;
+    }
+  }
+
+  .st-nav-dropdown:hover .st-nav-dropdown__content .st-nav-dropdown__link{
+    color: $color-main;
+  }
+}
+
+.scrolled .cover-page .st-header--scroll{
+  background: #fff;
+  padding: 15px 50px;
+  height: $st-header-height;
+
+  .st-nav-item{
+    color: $color-body;
+  }
+
+  .st-nav-dropdown__content .st-nav-item{
+    color: $color-body;
+
+    &:hover{
+      color: $color-main;
+    }
+  }
+}
+
+.scrolled .st-header--scroll.st-header--dark{
+  background: $color-black;
+
+  .st-nav-item{
+    color: $color-white--alt;
+  }
+
+  .st-nav-dropdown__content .st-nav-item{
+    color: $color-body--light;
+
+    &:hover{
+      color: $color-main;
+    }
+  }
+}
+
+
+
+/*------------------------------------*\
+  #CONTENT
+\*------------------------------------*/
+
+// Logo
+.st-header__logo{
+  height: 100%;
+
+  img{
+    height: 100%;
+  }
+}
+
+
+// Navigation
+.st-header__nav{
+  display: flex;
+  align-items: center;
+  max-height: 100%;
+
+  .st-nav-item{
+    margin-right: 30px;
+    user-select: none;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  a.st-nav-item.btn:hover{
+    color: #fff;
+  }
+
+  .st-nav-dropdown {
+    height: $st-header-height;
+  }
+}
+
+a.st-nav-item{
+  font-family: $font-body--medium;
+
+  &:hover{
+    color: $color-main;
+  }
+}
+
+
+// Dropdown
+.st-nav-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:hover{
+    .st-nav-dropdown__content{
+      display: block;
+    }
+
+    .st-nav-dropdown__link{
+      color: $color-main;
+    }
+  }
+}
+
+.st-nav-dropdown__link{
+  cursor: default;
+  font-family: $font-body--medium;
+
+  &:after{
+    content: '▾';
+    margin-left: 10px;
+  }
+
+  &:hover{
+    color: $color-body;
+  }
+}
+
+.st-nav-dropdown__content{
+  box-shadow: $shadow-sm;
+  top: $st-header-height;
+  position: absolute;
+  background: #fff;
+  display: none;
+  padding: 25px 30px;
+  left: -20px;
+  z-index: 999;
+  min-width: 170px;
+
+  .st-nav-item{
+    font-family: $font-body;
+    margin: 0 0 10px 0;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    &:hover{
+      color: $color-main;
+    }
+  }
+
+  a{
+    display: block;
+  }
+}
+
+
+// Sub header
+.st-sub-header{
+  padding: 5px 50px;
+  background: #fff;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid $color-border;
+
+  .st-nav-item{
+    font-size: 1.7rem;
+  }
+}
+
+.st-sub-header.st-header--dark{
+  background: $oxford;
+}
+
+
+// Big nav
+.st-header-big__item {
+  display: flex;
+  align-items: center;
+  min-height: $st-header-height;
+
+  &:hover{
+
+    .st-header-big__link{
+      color: $color-main;
+    }
+
+    .st-header-big__content{
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+.st-header-big__link{
+  cursor: default;
+  font-family: $font-body--medium;
+
+  &:hover{
+    color: $color-body;
+  }
+}
+
+.st-header-big__content{
+  top: $st-header-height;
+  border-top: $color-border 1px solid;
+  position: absolute;
+  display: none;
+  background: #fff;
+  padding: 30px 30px 25px 30px;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+
+  .st-header__nav__title{
+    font-family: $font-body--medium;
+    color: $oxford;
+    display: inline-block;
+    margin-bottom: 0.5em;
+  }
+
+  a.st-nav-item{
+    font-family: $font-body;
+    margin-bottom: 0.3em;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    &:hover{
+      color: $color-main;
+    }
+  }
+
+  a{
+    display: block;
+  }
+}

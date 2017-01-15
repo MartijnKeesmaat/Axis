@@ -1,5 +1,5 @@
 /*------------------------------------*\
-  #MIXINS
+  #MEDIA QUERRIES
 \*------------------------------------*/
 
 @mixin mq-mobile {
@@ -68,4 +68,23 @@
   @media (min-width: #{$xs}) {
     @content;
   }
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #ASPECT RATIO (default 4:3)
+\*------------------------------------*/
+
+@mixin aspect-ratio($width: 4, $height: 3) {
+ position: relative;
+ &:before {
+   display: block;
+   content: "";
+   width: 100%;
+   padding-top: ($height / $width) * 100%;
+ }
 }
