@@ -14,42 +14,36 @@ Get your front-end environment up and running in 3 simple steps.
 <br>
 <br>
 
-## Core
-Lorem ipsum dolor sit amet, per nibh aperiri ad, te iriure eleifend vim. Iudico disputationi sed no, fugit insolens persequeris te ius. Te vim ornatus definiebas. Te his zril putant integre. Vix utinam iuvaret no, te iuvaret detracto lucilius has. Pro at sensibus definiebas omittantur, no his soleat commodo. Te quo oratio theophrastus.
+## Core 
+When downloaded you start out with the "core". <br>
+This exist out of the styling of the basic elements, like typhography, buttons, forms and more.
 
 <br>
-[core](https://martijnkeesmaat.github.io/core.html)
+[See the core elements](https://martijnkeesmaat.github.io/core.html)
 
 <br>
 <br>
 
 
 ## Components
-Lorem ipsum dolor sit amet, per nibh aperiri ad, te iriure eleifend vim. Iudico disputationi sed no, fugit insolens persequeris te ius. Te vim ornatus definiebas. Te his zril putant integre. Vix utinam iuvaret no, te iuvaret detracto lucilius has. Pro at sensibus definiebas omittantur, no his soleat commodo. Te quo oratio theophrastus.
+Axis has a various amount of pre-build components to develop at a faster rate. <br>
+You choose which elements you want, so that you only get the elements you actually use.
 
 <br>
-[components](https://martijnkeesmaat.github.io/core.html)
-
-<br>
-<br>
-
-
-
-## Project structure
-Lorem ipsum dolor sit amet, per nibh aperiri ad, te iriure eleifend vim. Iudico disputationi sed no, fugit insolens persequeris te ius. Te vim ornatus definiebas. Te his zril putant integre. Vix utinam iuvaret no, te iuvaret detracto lucilius has. Pro at sensibus definiebas omittantur, no his soleat commodo. Te quo oratio theophrastus.
-
-<br>
-[core](https://github.com/MartijnKeesmaat/Axis/wiki/Project-structure)
+[See all components](https://martijnkeesmaat.github.io/core.html)
 
 <br>
 <br>
 
 
-## Codeguide
-Tips 'n tricks 
+
+## Guide
+
 
 <br>
-[core](https://github.com/MartijnKeesmaat/Axis/wiki/Codeguide)
+[Go to the project structure](https://github.com/MartijnKeesmaat/Axis/wiki/Project-structure)
+<br>
+[Go to the codeguide](https://github.com/MartijnKeesmaat/Axis/wiki/Codeguide)
 
 
 
