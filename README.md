@@ -39,8 +39,6 @@ You choose which elements you want, so that you only get the elements you actual
 
 ## Guide
 
-
-<br>
 [Go to the project structure](https://github.com/MartijnKeesmaat/Axis/wiki/Project-structure)
 <br>
 [Go to the codeguide](https://github.com/MartijnKeesmaat/Axis/wiki/Codeguide)
