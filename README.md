@@ -30,7 +30,7 @@ Axis has a various amount of pre-build components to develop at a faster rate. <
 You choose which elements you want, so that you only get the elements you actually use.
 
 <br>
-[See all components](https://martijnkeesmaat.github.io/core.html)
+[See all components](https://martijnkeesmaat.github.io/components.html)
 
 <br>
 <br>
