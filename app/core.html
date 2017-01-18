@@ -8,14 +8,24 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<meta name="author" content="Martijn Keesmaat">
 		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/prism.css">
 	</head>
 
 	<body>
 
+
 	<!-- Content -->
 	<main id="content">
 
-		<div class="section" id="">
+		<div class="wrapper">
+			<a href="navigation.html" target="_blank" class="btn-text">Navigation</a>
+			<a href="img-hover.html" target="_blank" class="btn-text">Image hover</a>
+			<a href="accordion.html" target="_blank" class="btn-text">Accordion</a>
+			<a href="tabbed-panel.html" target="_blank" class="btn-text">Tabbed panel</a>
+			<a href="cover-page.html" target="_blank" class="btn-text">Cover page</a>
+		</div>
+
+		<div class="section" id="headers">
 			<div class="wrapper">
 				<h1>Header 1</h1>
 				<h2>Header 2</h2>
@@ -24,11 +34,10 @@
 				<h5>Header 5</h5>
 				<h6>Header 6</h6>
 			</div>
-		</div>
 
 		<hr>
 
-		<div class="section">
+		<div class="section" id="body-text">
 			<div class="wrapper">
 				<p class="font-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non soluta maxime quae repellat esse commodi quisquam at culpa. Esse molestias perferendis harum animi possimus numquam et veritatis error repellat iure.</p>
 				<p class="font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non soluta maxime quae repellat esse commodi quisquam at culpa. Esse molestias perferendis harum animi possimus numquam et veritatis error repellat iure.</p>
@@ -38,7 +47,7 @@
 
 		<hr>
 
-		<div class="section">
+		<div class="section" id="buttons">
 			<div class="wrapper">
 				<a href="#" class="btn">Learn more</a>
 				<a href="#" class="btn btn--rounded">Learn more</a>
@@ -58,8 +67,6 @@
 				<br>
 				<a href="#" class="btn btn--disabled">Learn more</a>
 				<a href="#" class="btn btn--disabled btn--rounded">Learn more</a>
-				<a href="#" class="btn btn--disabled btn--rounded btn--ghost">Learn more</a>
-
 				<br>
 				<br>
 				<a href="#" class="btn-text">Learn more</a>
@@ -73,21 +80,39 @@
 		<div class="section">
 			<div class="wrapper">
 				<form>
-				  <label for="first-name">First name</label>
-				  <input type="text" name="first-name" placeholder="John">
-				  <label for="first-name">Password</label>
-					<input type="password" name="password" placeholder="Password">
+
+					<label for="first-name">First name</label>
+
+					<input class="st-form" type="text" name="first-name" placeholder="John">
+
+					<label for="first-name">Password</label>
+
+					<input class="st-form"  type="password" name="password" placeholder="Password">
+
 					<label>Type something</label>
-					<textarea name="name" rows="4" placeholder="Something interesting"></textarea>
-					<select>
-					  <option value="option1">Option 1</option>
-					  <option value="option2">Option 2</option>
-					  <option value="option3">Option 3</option>
+
+					<textarea class="st-form"  name="name" rows="4" placeholder="Something interesting"></textarea>
+
+					<select class="st-form" >
+						<option value="option1">Option 1</option>
+						<option value="option2">Option 2</option>
+						<option value="option3">Option 3</option>
 					</select>
-					<label class="checkbox"><input type="checkbox" name="checkbox">Checkbox</label>
-					<label class="radio"><input type="radio" name="radio">Radio</label>
-					<label class="radio"><input type="radio" name="radio">Input</label>
-				  <input type="submit" value="Send form" class="btn--rounded">
+
+					<label class="checkbox">
+						<input type="checkbox" name="checkbox">Checkbox
+					</label>
+
+					<label class="radio">
+						<input type="radio" name="radio">Radio
+					</label>
+
+					<label class="radio">
+						<input type="radio" name="radio">Input
+					</label>
+
+					<input type="submit" value="Send form" class="btn--rounded">
+
 				</form>
 			</div>
 		</div>
@@ -96,245 +121,144 @@
 
 		<div class="section">
 			<div class="wrapper">
-				<h1>Lorem ipsum</h1>
-				<p class="font-bold">Lorem ipsum dolor sit amet</p>
-				<a href="#" class="btn btn--rounded">Learn more</a>
-			</div>
+				<form>
 
-			<div class="wrapper">
-				<h2>Lorem ipsum</h2>
-				<p class="font-bold">Lorem ipsum dolor sit amet</p>
-				<a href="#" class="btn btn--rounded">Learn more</a>
-			</div>
+					<label for="first-name">Input dark</label>
 
-			<div class="wrapper">
-				<h3>Lorem ipsum</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-				<a href="#" class="btn btn--rounded">Learn more</a>
-			</div>
+					<input class="st-form  st-form--dark" type="text" name="first-name" placeholder="John">
 
+					<label for="first-name">Password dark</label>
 
-			<div class="wrapper">
-				<h4>Lorem ipsum</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-				<a href="#" class="btn btn--rounded">Learn more</a>
-			</div>
+					<input class="st-form  st-form--dark"  type="password" name="password" placeholder="Password">
 
-			<div class="wrapper">
-				<h5>Lorem ipsum</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-				<a href="#" class="btn btn--rounded">Learn more</a>
-			</div>
+					<label>Textarea dark</label>
 
-			<div class="wrapper">
-				<h6>Lorem ipsum</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-				<a href="#" class="btn btn--rounded">Learn more</a>
+					<textarea class="st-form  st-form--dark"  name="name" rows="4" placeholder="Something interesting"></textarea>
+
+					<label>Standard select dark</label>
+
+					<select class="st-form  st-form--dark">
+						<option value="option1">Option 1</option>
+						<option value="option2">Option 2</option>
+						<option value="option3">Option 3</option>
+					</select>
+
+					<label class="checkbox">
+						<input type="checkbox" name="checkbox">Checkbox
+					</label>
+
+					<label class="radio">
+						<input type="radio" name="radio">Radio
+					</label>
+
+					<label class="radio">
+						<input type="radio" name="radio">Input
+					</label>
+
+					<input type="submit" value="Send form" class="btn--rounded">
+
+				</form>
 			</div>
 		</div>
 
+
 		<hr>
 
-		<div class="section">
-			<div class="wrapper center-content-hor">
-				<h1>Lorem ipsum</h1>
-				<p class="font-bold">Lorem ipsum dolor sit amet</p>
-				<a href="#" class="btn btn--rounded btn--big">Learn more</a>
+		<div class="bg-dark">
+			<div class="section" id="">
+				<div class="wrapper">
+					<h1>Header 1</h1>
+					<h2>Header 2</h2>
+					<h3>Header 3</h3>
+					<h4>Header 4</h4>
+					<h5>Header 5</h5>
+					<h6>Header 6</h6>
+				</div>
 			</div>
-
-			<div class="wrapper center-content-hor">
-				<h2>Lorem ipsum</h2>
-				<p class="font-bold">Lorem ipsum dolor sit amet</p>
-				<a href="#" class="btn btn--rounded btn--big">Learn more</a>
-			</div>
-
-			<div class="wrapper center-content-hor">
-				<h3>Lorem ipsum</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-				<a href="#" class="btn btn--rounded">Learn more</a>
-			</div>
-
-
-			<div class="wrapper center-content-hor">
-				<h4>Lorem ipsum</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-				<a href="#" class="btn btn--rounded">Learn more</a>
-			</div>
-
-			<div class="wrapper center-content-hor">
-				<h5>Lorem ipsum</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-				<a href="#" class="btn btn--rounded">Learn more</a>
-			</div>
-
-			<div class="wrapper center-content-hor">
-				<h6>Lorem ipsum</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-				<a href="#" class="btn btn--rounded">Learn more</a>
-			</div>
-
-
-
-
 
 			<hr>
 
-			<div class="bg-dark">
-				<div class="section" id="">
-					<div class="wrapper">
-						<h1>Header 1</h1>
-						<h2>Header 2</h2>
-						<h3>Header 3</h3>
-						<h4>Header 4</h4>
-						<h5>Header 5</h5>
-						<h6>Header 6</h6>
-					</div>
+			<div class="section">
+				<div class="wrapper">
+					<p class="font-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non soluta maxime quae repellat esse commodi quisquam at culpa. Esse molestias perferendis harum animi possimus numquam et veritatis error repellat iure.</p>
+					<p class="font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non soluta maxime quae repellat esse commodi quisquam at culpa. Esse molestias perferendis harum animi possimus numquam et veritatis error repellat iure.</p>
+					<p>Ludus verear eam ex, has cu reque euismod. Lorem singulis sit cu, paulo cetero erroribus duo an, cu vide cibo mundi sea. Mei consulatu repudiandae ad. Modo suscipiantur vix ut, illud doctus audiam id vel, et dolor fastidii perpetua mel.</p>
 				</div>
+			</div>
 
-				<hr>
+			<hr>
 
-				<div class="section">
-					<div class="wrapper">
-						<p class="font-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non soluta maxime quae repellat esse commodi quisquam at culpa. Esse molestias perferendis harum animi possimus numquam et veritatis error repellat iure.</p>
-						<p class="font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non soluta maxime quae repellat esse commodi quisquam at culpa. Esse molestias perferendis harum animi possimus numquam et veritatis error repellat iure.</p>
-						<p>Ludus verear eam ex, has cu reque euismod. Lorem singulis sit cu, paulo cetero erroribus duo an, cu vide cibo mundi sea. Mei consulatu repudiandae ad. Modo suscipiantur vix ut, illud doctus audiam id vel, et dolor fastidii perpetua mel.</p>
-					</div>
+			<div class="section">
+				<div class="wrapper">
+					<a href="#" class="btn">Learn more</a>
+					<a href="#" class="btn btn--rounded">Learn more</a>
+					<br>
+					<br>
+					<a href="#" class="btn btn--white">Learn more</a>
+					<a href="#" class="btn btn--rounded btn--white">Learn more</a>
+					<br>
+					<br>
+					<a href="#" class="btn btn--ghost">Learn more</a>
+					<a href="#" class="btn btn--rounded btn--ghost">Learn more</a>
+					<br>
+					<br>
+					<a href="#" class="btn btn--ghost btn--white">Learn more</a>
+					<a href="#" class="btn btn--ghost btn--white btn--rounded">Learn more</a>
+					<br>
+					<br>
+					<a href="#" class="btn-text">Learn more</a>
 				</div>
+			</div>
 
-				<hr>
+			<hr>
 
-				<div class="section">
-					<div class="wrapper">
-						<a href="#" class="btn">Learn more</a>
-						<a href="#" class="btn btn--rounded">Learn more</a>
-						<br>
-						<br>
-						<a href="#" class="btn btn--white">Learn more</a>
-						<a href="#" class="btn btn--rounded btn--white">Learn more</a>
-						<br>
-						<br>
-						<a href="#" class="btn btn--ghost">Learn more</a>
-						<a href="#" class="btn btn--rounded btn--ghost">Learn more</a>
-						<br>
-						<br>
-						<a href="#" class="btn btn--ghost btn--white">Learn more</a>
-						<a href="#" class="btn btn--ghost btn--white btn--rounded">Learn more</a>
-						<br>
-						<br>
-						<a href="#" class="btn-text">Learn more</a>
-					</div>
+			<div class="section">
+				<div class="wrapper">
+					<form>
+
+						<label for="first-name">First name</label>
+
+						<input class="st-form" type="text" name="first-name" placeholder="John">
+
+						<label for="first-name">Password</label>
+
+						<input class="st-form"  type="password" name="password" placeholder="Password">
+
+						<label>Type something</label>
+
+						<textarea class="st-form"  name="name" rows="4" placeholder="Something interesting"></textarea>
+
+						<select class="st-form" >
+						  <option value="option1">Option 1</option>
+						  <option value="option2">Option 2</option>
+						  <option value="option3">Option 3</option>
+						</select>
+
+						<label class="checkbox">
+							<input type="checkbox" name="checkbox">Checkbox
+						</label>
+
+						<label class="radio">
+							<input type="radio" name="radio">Radio
+						</label>
+
+						<label class="radio">
+							<input type="radio" name="radio">Input
+						</label>
+
+					  <input type="submit" value="Send form" class="btn--rounded">
+
+					</form>
 				</div>
+			</div>
 
-				<hr>
-
-				<div class="section">
-					<div class="wrapper">
-						<form>
-						  <label for="first-name">First name</label>
-						  <input type="text" name="first-name" placeholder="John">
-						  <label for="first-name">Password</label>
-							<input type="password" name="password" placeholder="Password">
-							<label>Type something</label>
-							<textarea name="name" rows="4" placeholder="Something interesting"></textarea>
-							<select>
-							  <option value="option1">Option 1</option>
-							  <option value="option2">Option 2</option>
-							  <option value="option3">Option 3</option>
-							</select>
-							<label class="checkbox"><input type="checkbox" name="checkbox">Checkbox</label>
-							<label class="radio"><input type="radio" name="radio">Radio</label>
-							<label class="radio"><input type="radio" name="radio">Input</label>
-						  <input type="submit" value="Send form" class="btn--rounded">
-						</form>
-					</div>
-				</div>
-
-				<hr>
-
-				<div class="section">
-					<div class="wrapper">
-						<h1>Lorem ipsum</h1>
-						<p class="font-bold">Lorem ipsum dolor sit amet</p>
-						<a href="#" class="btn btn--rounded">Learn more</a>
-					</div>
-
-					<div class="wrapper">
-						<h2>Lorem ipsum</h2>
-						<p class="font-bold">Lorem ipsum dolor sit amet</p>
-						<a href="#" class="btn btn--rounded">Learn more</a>
-					</div>
-
-					<div class="wrapper">
-						<h3>Lorem ipsum</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-						<a href="#" class="btn btn--rounded">Learn more</a>
-					</div>
-
-
-					<div class="wrapper">
-						<h4>Lorem ipsum</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-						<a href="#" class="btn btn--rounded">Learn more</a>
-					</div>
-
-					<div class="wrapper">
-						<h5>Lorem ipsum</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-						<a href="#" class="btn btn--rounded">Learn more</a>
-					</div>
-
-					<div class="wrapper">
-						<h6>Lorem ipsum</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-						<a href="#" class="btn btn--rounded">Learn more</a>
-					</div>
-				</div>
-
-				<hr>
-
-				<div class="section">
-					<div class="wrapper center-content-hor">
-						<h1>Lorem ipsum</h1>
-						<p class="font-bold">Lorem ipsum dolor sit amet</p>
-						<a href="#" class="btn btn--rounded btn--big">Learn more</a>
-					</div>
-
-					<div class="wrapper center-content-hor">
-						<h2>Lorem ipsum</h2>
-						<p class="font-bold">Lorem ipsum dolor sit amet</p>
-						<a href="#" class="btn btn--rounded btn--big">Learn more</a>
-					</div>
-
-					<div class="wrapper center-content-hor">
-						<h3>Lorem ipsum</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-						<a href="#" class="btn btn--rounded">Learn more</a>
-					</div>
-
-
-					<div class="wrapper center-content-hor">
-						<h4>Lorem ipsum</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-						<a href="#" class="btn btn--rounded">Learn more</a>
-					</div>
-
-					<div class="wrapper center-content-hor">
-						<h5>Lorem ipsum</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-						<a href="#" class="btn btn--rounded">Learn more</a>
-					</div>
-
-					<div class="wrapper center-content-hor">
-						<h6>Lorem ipsum</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure, ullam aliquam voluptatibus. Quisquam modi reiciendis rerum, corrupti, molestiae vitae asperiores deserunt earum quo debitis, omnis in qui. Officia, molestias.</p>
-						<a href="#" class="btn btn--rounded">Learn more</a>
-					</div>
-				</div>
+		</div>
 
 	</main> <!-- End content -->
 
 
-		<script src="scripts/dist/main.js"></script>
+	<script src="scripts/dist/main.js"></script>
+
 
 	</body>
 </html>
