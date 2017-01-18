@@ -19,7 +19,6 @@ html{
 }
 
 body{
-	margin-bottom: 1000px;
 	background: $color-white--alt;
 }
 
@@ -31,7 +30,7 @@ body{
 
 ::-webkit-scrollbar {
   width: 5px;
-	background: $color-white--alt;	
+	background: $color-white--alt;
 }
 
 ::-webkit-scrollbar-thumb {

@@ -194,7 +194,6 @@ html {
       font-size: 56%; } }
 
 body {
-  margin-bottom: 1000px;
   background: #f6f6f6; }
 
 ::selection {
@@ -941,7 +940,6 @@ footer.st-footer {
 \*------------------------------------*/
 .accordion {
   width: 100%;
-  max-width: 500px;
   margin: 0 auto; }
 
 .acc-btn {
