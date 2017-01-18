@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<meta name="author" content="Martijn Keesmaat">
 		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/prism.css">
 	</head>
 
 	<body>
@@ -15,8 +16,16 @@
 		<!-- Content -->
 		<main id="content">
 
+			<div class="wrapper">
+				<a target="_blank" href="https://github.com/MartijnKeesmaat/Axis/blob/components/app/styles/4.components/_tabbed-panel.scss" class="btn btn--rounded">Get SCSS code</a>
+				<a target="_blank" href="https://github.com/MartijnKeesmaat/Axis/blob/components/app/scripts/tabbed-panel.js" class="btn btn--rounded btn--ghost">Get JS code</a>
+			</div>
+
 			<div class="section">
 				<div class="wrapper">
+
+					<h3>Tabbed panel light</h3>
+					<br>
 
 					<div class="tab-list">
 						<div class="tab-controls">
@@ -38,11 +47,55 @@
 						</div>
 					</div>
 
-				</div>
 
+					<br>
+					<br>
+					<div class="accordion">
+
+						<div class="acc-item">
+							<button class="acc-btn">
+								<div class="acc-title">See HTML code
+								</div>
+								<div class="acc-icon">
+									<div class="plus"></div><div class="minus"></div>
+								</div>
+							</button>
+
+							<div class="acc-panel">
+<pre><code class="language-markup">
+&lt;div class="tab-list">
+	&lt;div class="tab-controls">
+		&lt;a href="tab1" class="tab-control active">Tab 1&lt;/a>
+		&lt;a href="tab2" class="tab-control">Tab 2&lt;/a>
+		&lt;a href="tab3" class="tab-control">Tab 3&lt;/a>
+	&lt;/div>
+
+	&lt;div class="tab-panel active" id="tab1">
+		&lt;p>Tabbed panel content&lt;/p>
+	&lt;/div>
+
+	&lt;div class="tab-panel" id="tab2">
+		&lt;p>Tabbed panel content&lt;/p>
+	&lt;/div>
+
+	&lt;div class="tab-panel" id="tab3">
+		&lt;p>Tabbed panel content&lt;/p>
+	&lt;/div>
+
+	&lt;/div>
+&lt;/div>
+</code></pre>
+
+						</div>
+					</div>
+				</div>
+			</div>
 
 
 				<div class="wrapper">
+
+					<h3>Tabbed panel dark</h3>
+					<br>
 
 					<div class="tab-list tab-list--dark">
 						<div class="tab-controls">
@@ -64,10 +117,55 @@
 						</div>
 					</div>
 
+
+					<br>
+					<br>
+					<div class="accordion">
+
+						<div class="acc-item">
+							<button class="acc-btn">
+								<div class="acc-title">See HTML code
+								</div>
+								<div class="acc-icon">
+									<div class="plus"></div><div class="minus"></div>
+								</div>
+							</button>
+
+							<div class="acc-panel">
+<pre><code class="language-markup">
+&lt;div class="tab-list tab-list--dark">
+	&lt;div class="tab-controls">
+		&lt;a href="tab1" class="tab-control active">Tab 1&lt;/a>
+		&lt;a href="tab2" class="tab-control">Tab 2&lt;/a>
+		&lt;a href="tab3" class="tab-control">Tab 3&lt;/a>
+	&lt;/div>
+
+	&lt;div class="tab-panel active" id="tab1">
+		&lt;p>Tabbed panel content&lt;/p>
+	&lt;/div>
+
+	&lt;div class="tab-panel" id="tab2">
+		&lt;p>Tabbed panel content&lt;/p>
+	&lt;/div>
+
+	&lt;div class="tab-panel" id="tab3">
+		&lt;p>Tabbed panel content&lt;/p>
+	&lt;/div>
+
+	&lt;/div>
+&lt;/div>
+</code></pre>
+
+						</div>
+					</div>
 				</div>
 
 
 			</div>
+
+			<div class="wrapper">
+		    <a href="components.html" class="btn-text">← See all components</a>
+		  </div>
 
 		</main> <!-- End content -->
 
