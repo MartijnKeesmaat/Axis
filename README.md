@@ -37,12 +37,13 @@ You choose which elements you want, so that you only get the elements you actual
 
 
 
-## Guide
+## Docs
 
-[Go to the project structure](https://github.com/MartijnKeesmaat/Axis/wiki/Project-structure)
+[Project structure](https://github.com/MartijnKeesmaat/Axis/wiki/Project-structure)
 <br>
-[Go to the codeguide](https://github.com/MartijnKeesmaat/Axis/wiki/Codeguide)
-
+[Codeguide](https://github.com/MartijnKeesmaat/Axis/wiki/Codeguide)
+<br>
+[Gulp](https://github.com/MartijnKeesmaat/Axis/wiki/Gulp)
 
 
 
