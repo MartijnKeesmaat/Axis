@@ -16,7 +16,8 @@ Get your front-end environment up and running in 3 simple steps.
 
 ## Core 
 When downloaded you start out with the "core". <br>
-This exist out of the styling of the basic elements, like typhography, buttons, forms and more.
+This exist out of the styling of the [basic elements](https://martijnkeesmaat.github.io/components.html), like typhography, buttons, forms and more.
+A thought out [file structure](https://github.com/MartijnKeesmaat/Axis/wiki/Project-structure), and some usefull [Gulp commands](https://github.com/MartijnKeesmaat/Axis/wiki/Gulp).
 
 <br>
 [See the core elements](https://martijnkeesmaat.github.io/core.html)
@@ -44,6 +45,10 @@ You choose which elements you want, so that you only get the elements you actual
 [Codeguide](https://github.com/MartijnKeesmaat/Axis/wiki/Codeguide)
 <br>
 [Gulp](https://github.com/MartijnKeesmaat/Axis/wiki/Gulp)
+<br>
+[Mixins](https://github.com/MartijnKeesmaat/Axis/wiki/Mixins)
+<br>
+[Variables](https://github.com/MartijnKeesmaat/Axis/wiki/Variables)
 
 
 
