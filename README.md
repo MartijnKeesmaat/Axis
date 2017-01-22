@@ -42,6 +42,8 @@ You choose which elements you want, so that you only get the elements you actual
 
 [Project structure](https://github.com/MartijnKeesmaat/Axis/wiki/Project-structure)
 <br>
+[Organizing code with comments](https://github.com/MartijnKeesmaat/Axis/wiki/Organizing-code-with-comments)
+<br>
 [Codeguide](https://github.com/MartijnKeesmaat/Axis/wiki/Codeguide)
 <br>
 [Gulp](https://github.com/MartijnKeesmaat/Axis/wiki/Gulp)
