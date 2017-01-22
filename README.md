@@ -2,7 +2,9 @@
 
 Axis is a well thought out front-end **structure** that gets you quickly started with every web project. It strives to create projects with beautifully organized code, this is achieved by adapting the **BEM** methodology and using a **SMACSS** inspired structure. With this approach Axis is ready to face small, large and long lasting projects.
 
+
 <br>
+
 
 ## Quick start
 Get your front-end environment up and running in 3 simple steps.
@@ -11,8 +13,9 @@ Get your front-end environment up and running in 3 simple steps.
 2. Run npm install in the root folder
 3. Run gulp serve
 
+
 <br>
-<br>
+
 
 ## Core 
 When downloaded you start out with the "core". <br>
@@ -23,7 +26,7 @@ A thought out [file structure](https://github.com/MartijnKeesmaat/Axis/wiki/Proj
 <br>
 [See the core elements](https://martijnkeesmaat.github.io/core.html)
 
-<br>
+
 <br>
 
 
@@ -34,9 +37,8 @@ You choose which elements you want, so that you only get the elements you actual
 <br>
 [See all components](https://martijnkeesmaat.github.io/components.html)
 
-<br>
-<br>
 
+<br>
 
 
 ## Docs
@@ -48,6 +50,5 @@ You choose which elements you want, so that you only get the elements you actual
 - [Variables](https://github.com/MartijnKeesmaat/Axis/wiki/Variables)
 
 
+<br>
 
-<br>
-<br>
