@@ -41,15 +41,11 @@ You choose which elements you want, so that you only get the elements you actual
 
 ## Docs
 
-[Project structure](https://github.com/MartijnKeesmaat/Axis/wiki/Project-structure)
-<br>
-[Organizing code with comments](https://github.com/MartijnKeesmaat/Axis/wiki/Organizing-code-with-comments)
-<br>
-[Gulp commands](https://github.com/MartijnKeesmaat/Axis/wiki/Gulp)
-<br>
-[Mixins](https://github.com/MartijnKeesmaat/Axis/wiki/Mixins)
-<br>
-[Variables](https://github.com/MartijnKeesmaat/Axis/wiki/Variables)
+- [Project structure](https://github.com/MartijnKeesmaat/Axis/wiki/Project-structure)
+- [Organizing code with comments](https://github.com/MartijnKeesmaat/Axis/wiki/Organizing-code-with-comments)
+- [Gulp commands](https://github.com/MartijnKeesmaat/Axis/wiki/Gulp)
+- [Mixins](https://github.com/MartijnKeesmaat/Axis/wiki/Mixins)
+- [Variables](https://github.com/MartijnKeesmaat/Axis/wiki/Variables)
 
 
 
