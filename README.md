@@ -47,7 +47,6 @@ You choose which elements you want, so that you only get the elements you actual
 - [Organizing code with comments](https://github.com/MartijnKeesmaat/Axis/wiki/Organizing-code-with-comments)
 - [Gulp commands](https://github.com/MartijnKeesmaat/Axis/wiki/Gulp)
 - [Mixins](https://github.com/MartijnKeesmaat/Axis/wiki/Mixins)
-- [Variables](https://github.com/MartijnKeesmaat/Axis/wiki/Variables)
 
 
 <br>
