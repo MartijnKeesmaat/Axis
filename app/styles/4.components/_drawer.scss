@@ -1,0 +1,100 @@
+// /*------------------------------------*\
+//   #DRAWER NAVIGATION
+// \*------------------------------------*/
+
+aside.drawer-nav {
+  transition: $transition1;
+  max-width: 300px;
+  padding: 40px 0;
+  background: #fff;
+  position: fixed;
+  height: 100vh;
+  transform: translateX(-100%);
+  overflow: scroll;
+  z-index: 80;
+	width: 100%;
+	top: 0;
+  left: 0;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.drawer-nav__item{
+  display: block;
+  padding: 15px 40px;
+  font-size: 2.1rem;
+
+  &:hover{
+    background: $color-background;
+  }
+}
+
+
+
+// Hamburger icon
+.hamburger-menu{
+  position: absolute;
+  right: 0px;
+}
+
+.hamburger-icon {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+	&__stripe{
+    position: absolute;
+		width: 100%;
+    height: 3px;
+    background: $color-black;
+    transition: $transition1;
+
+    &-top{
+      transform: translateY(10px);
+    }
+
+    &-bottom{
+      transform: translateY(-10px);
+    }
+	}
+}
+
+
+
+// Overlay
+.overlay-body{
+  display: none;
+  width: 100vw;
+  height: 120vh;
+  background: $color-overlay;
+  position: fixed;
+  z-index: 70;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.drawer-active{
+  .overlay-body{
+    display: block;
+  }
+
+  .drawer-nav {
+		transform: translateX(0);
+	}
+
+  .hamburger-icon__stripe-top,
+  .hamburger-icon__stripe-middle{
+    transform: rotate(45deg);
+  }
+
+  .hamburger-icon__stripe-bottom{
+    transform: rotate(-45deg);
+  }
+}
