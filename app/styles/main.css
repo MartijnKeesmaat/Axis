@@ -193,9 +193,6 @@ html {
     html {
       font-size: 56%; } }
 
-body {
-  background: #f6f6f6; }
-
 ::selection {
   background: #EE154A;
   text-shadow: 2px 1px 4px rgba(29, 29, 29, 0.5);
@@ -404,17 +401,17 @@ input {
   outline: none;
   display: block;
   width: 100%;
-  border: 1px solid rgba(182, 182, 182, 0.4);
+  border: 1px solid #f6f6f6;
   transition: 0.28s all ease;
   padding: 0.45em .9em;
-  background: none;
+  background: #f6f6f6;
   font-weight: 400;
   max-width: 300px;
   box-sizing: border-box; }
   textarea:focus,
   select:focus,
   input:focus {
-    border: 1px solid #1C1E23; }
+    border-bottom: 1px solid rgba(182, 182, 182, 0.4); }
 
 input[type=submit],
 input[type=radio],
@@ -749,24 +746,34 @@ a.st-nav-item {
     width: 100%;
     padding-top: 75%; }
 
+.img-hover > div {
+  background: none 50%;
+  background-size: cover;
+  background-color: #1C1E23;
+  z-index: -2; }
+
 .img-hover {
   overflow: hidden;
   position: relative;
   display: inline-block; }
   .img-hover__overlay {
-    background: linear-gradient(rgba(28, 30, 50, 0), rgba(28, 30, 50, 0.4));
+    background: linear-gradient(to bottom, rgba(28, 30, 50, 0.6), transparent);
     transition: 0.28s all ease;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0; }
   .img-hover__img {
-    position: absolute;
     transition: 0.28s all ease;
-    z-index: -1;
-    min-width: 100%;
-    min-height: 100%;
-    top: 0; }
+    background: none 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .img-hover__caption {
     position: absolute;
     bottom: 0;
@@ -783,8 +790,6 @@ a.st-nav-item {
       font-family: "brandon_grotesquemedium"; }
   .img-hover:hover .img-hover__img {
     transform: scale(1.2); }
-  .img-hover:hover .img-hover__overlay {
-    background: linear-gradient(rgba(28, 30, 50, 0.4), rgba(28, 30, 50, 0.4)); }
 
 .img-hover--zoom-out .img-hover__img {
   transform: scale(1.2); }
@@ -879,8 +884,6 @@ aside.drawer-nav {
 .drawer-active .hamburger-icon__stripe-bottom {
   transform: rotate(-45deg); }
 
-/*------------------------------------*  #GENERAL
-\*------------------------------------*/
 .bottom-navigation {
   background: #fff;
   min-height: 60px;
@@ -973,7 +976,7 @@ footer.st-footer {
 .acc-panel {
   padding: 25px 30px;
   display: none;
-  background: #fff; }
+  background: #f6f6f6; }
 
 .acc-icon {
   z-index: 999;
@@ -1050,11 +1053,30 @@ footer.st-footer {
 .tab-list--dark .tab-control:hover {
   background: #282C37; }
 
+/**
+ * This file contains the cover-page.
+ * With various variations
+ *
+ * 1) Left
+ * 2) Small
+ *
+ * This file also contains the content of the header:
+ *
+ * 1) Image
+ * 2) Overlay
+ * 3) Image
+ * 4) Sub-title
+ * 5) h1, h2
+ * 6) p
+ *
+ */
+/*------------------------------------*   #VARIABLES
+ \*------------------------------------*/
 /*------------------------------------*  #COVER PAGE
 \*------------------------------------*/
 .cover-page {
   position: relative;
-  height: 90vh; }
+  min-height: 100vh; }
   .cover-page .wrapper {
     display: flex;
     flex-direction: column;
@@ -1062,14 +1084,17 @@ footer.st-footer {
     justify-content: center;
     text-align: center;
     color: #fff;
-    height: calc(100% - 70px - 20px); }
-  .cover-page h1 {
+    height: calc(100vh - 70px - 20px); }
+  .cover-page h1, .cover-page h2 {
     max-width: 800px;
     margin-bottom: .4em; }
   .cover-page h1, .cover-page h2, .cover-page h3, .cover-page h4, .cover-page h5, .cover-page h6, .cover-page th,
   .cover-page .font-medium,
   .cover-page .font-bold {
     color: #fff; }
+  .cover-page p {
+    max-width: 380px;
+    margin-bottom: 1.8em; }
   .cover-page .st-header {
     padding: 25px 60px;
     height: calc(70px + 20px); }
@@ -1080,14 +1105,22 @@ footer.st-footer {
     .cover-page .st-nav-dropdown__content .st-nav-item:hover {
       color: #EE154A; }
 
+.cover-page__sub-title {
+  font-family: "brandon_grotesquemedium"; }
+
 .cover-page__overlay,
-.cover-page__image {
+.cover-page__image,
+.cover-page__image > div {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
+
+.cover-page__image > div {
+  background: none 50%;
+  background-size: cover;
+  z-index: -2; }
 
 .cover-page__overlay {
   background: rgba(28, 30, 50, 0.4);
@@ -1095,18 +1128,70 @@ footer.st-footer {
 
 .cover-page__image {
   z-index: -2; }
-  .cover-page__image img {
-    min-width: 100%;
-    min-height: 100%; }
 
-.cover-page__sub-title {
-  font-family: "brandon_grotesquemedium";
+/*------------------------------------*  #LEFT
+\*------------------------------------*/
+.cover-page--left .wrapper {
+  align-items: flex-start;
+  text-align: left; }
+
+.cover-page--left .cover-page__overlay {
+  background-image: linear-gradient(to right, rgba(28, 30, 50, 0.6), transparent);
+  background-color: transparent; }
+
+.cover-page--left p {
   margin-bottom: 1.6em; }
 
-.cover-page .st-header-scroll {
-  padding: 25px 60px;
-  height: calc(70px + 20px); }
+/*------------------------------------*  #SMALL
+\*------------------------------------*/
+.cover-page--small {
+  min-height: 60vh; }
+  .cover-page--small .wrapper {
+    height: 60vh; }
 
-.scrolled .cover-page .st-header-scroll {
-  padding: 15px 50px;
-  height: 70px; }
+/*------------------------------------*  #FLEX GRID
+\*------------------------------------*/
+.flex-grid {
+  clear: both; }
+  .flex-grid .wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+  .flex-grid figure {
+    margin: 5px;
+    height: 100%; }
+
+.flex-grid__item--1-1 {
+  width: calc(25% - 10px);
+  position: relative; }
+  .flex-grid__item--1-1:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%; }
+
+.flex-grid__item--1-2 {
+  width: calc(25% - 10px);
+  position: relative; }
+  .flex-grid__item--1-2:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 200%; }
+
+.flex-grid__item--2-1 {
+  width: calc(50% - 10px);
+  position: relative; }
+  .flex-grid__item--2-1:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 50%; }
+
+.flex-grid__item--2-2 {
+  width: calc(50% - 10px);
+  position: relative; }
+  .flex-grid__item--2-2:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%; }

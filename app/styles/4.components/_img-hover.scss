@@ -19,6 +19,13 @@ $img-hover-distance: 30px;
   margin: 5px;
 }
 
+.img-hover > div{
+  background: none 50%;
+  background-size: cover;
+  background-color: $color-black;
+  z-index: -2;
+}
+
 .img-hover{
   overflow: hidden;
   position: relative;
@@ -34,12 +41,16 @@ $img-hover-distance: 30px;
   }
 
   &__img{
-    position: absolute;
     transition: $transition1;
-    z-index: -1;
-    min-width: 100%;
-    min-height: 100%;
+    background: none 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
   &__caption{
@@ -67,10 +78,6 @@ $img-hover-distance: 30px;
   &:hover{
     .img-hover__img{
       transform: scale(1.2);
-    }
-
-    .img-hover__overlay{
-      background: linear-gradient(rgba($overlay, .4), rgba($overlay, .4));;
     }
   }
 }

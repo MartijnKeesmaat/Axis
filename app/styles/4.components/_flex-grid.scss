@@ -1,0 +1,37 @@
+/*------------------------------------*\
+  #FLEX GRID
+\*------------------------------------*/
+
+.flex-grid{
+  clear: both;
+
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure{
+    margin: 5px;
+    height: 100%;
+  }
+}
+
+.flex-grid__item--1-1{
+  width: calc(25% - 10px);
+  @include aspect-ratio(1, 1);
+}
+
+.flex-grid__item--1-2{
+  width: calc(25% - 10px);
+  @include aspect-ratio(1, 2);
+}
+
+.flex-grid__item--2-1{
+  width: calc(50% - 10px);
+  @include aspect-ratio(2, 1);
+}
+
+.flex-grid__item--2-2{
+  width: calc(50% - 10px);
+  @include aspect-ratio(1, 1);
+}

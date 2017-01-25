@@ -1,12 +1,42 @@
+/**
+ * This file contains the cover-page.
+ * With various variations
+ *
+ * 1) Left
+ * 2) Small
+ *
+ * This file also contains the content of the header:
+ *
+ * 1) Image
+ * 2) Overlay
+ * 3) Image
+ * 4) Sub-title
+ * 5) h1, h2
+ * 6) p
+ *
+ */
+
+
+
+
+
+ /*------------------------------------*\
+   #VARIABLES
+ \*------------------------------------*/
+ $cover-page-height: 100vh;
+ $cover-page-height--small: 60vh;
+
+
+
+
+
 /*------------------------------------*\
   #COVER PAGE
 \*------------------------------------*/
 
-$cover-page-height: 90vh;
-
 .cover-page{
   position: relative;
-  height: $cover-page-height;
+  min-height: $cover-page-height;
 
   .wrapper {
     display: flex;
@@ -15,10 +45,10 @@ $cover-page-height: 90vh;
     justify-content: center;
     text-align: center;
     color: #fff;
-    height: calc(100% - #{$st-header-height} - 20px);
+    height: calc(#{$cover-page-height} - #{$st-header-height} - 20px);
   }
 
-  h1{
+  h1, h2{
     max-width: 800px;
     margin-bottom: .4em;
   }
@@ -27,6 +57,11 @@ $cover-page-height: 90vh;
   .font-medium,
   .font-bold{
     color: #fff;
+  }
+
+  p{
+    max-width: 380px;
+    margin-bottom: 1.8em;
   }
 
   .st-header{
@@ -47,43 +82,75 @@ $cover-page-height: 90vh;
   }
 }
 
+
+.cover-page__sub-title{
+  font-family: $font-body--medium;
+}
+
+
+// Overlay, Image
 .cover-page__overlay,
-.cover-page__image{
+.cover-page__image,
+.cover-page__image > div{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+}
+
+.cover-page__image > div{
+  background: none 50%;
+  background-size: cover;
+  z-index: -2;
 }
 
 .cover-page__overlay{
-  background: rgba($overlay, .4);
+  background: $color-overlay;
   z-index: -1;
 }
 
 .cover-page__image{
   z-index: -2;
+}
 
-  img{
-    min-width: 100%;
-    min-height: 100%;
+
+
+
+
+/*------------------------------------*\
+  #LEFT
+\*------------------------------------*/
+
+.cover-page--left {
+
+  .wrapper {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .cover-page__overlay{
+    background-image: $overlay-horizantal;
+    background-color: transparent;
+  }
+
+  p{
+    margin-bottom: 1.6em;
   }
 }
 
-.cover-page__sub-title{
-  font-family: $font-body--medium;
-  margin-bottom: 1.6em;
-}
 
 
 
-.cover-page .st-header-scroll{
-  padding: 25px 60px;
-  height: calc(#{$st-header-height} + 20px);
-}
 
-.scrolled .cover-page .st-header-scroll{
-  padding: 15px 50px;
-  height: $st-header-height;
+/*------------------------------------*\
+  #SMALL
+\*------------------------------------*/
+
+.cover-page--small{
+  min-height: $cover-page-height--small;
+
+  .wrapper{
+    height: $cover-page-height--small;
+  }
 }
