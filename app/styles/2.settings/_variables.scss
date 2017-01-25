@@ -3,40 +3,40 @@
 \*------------------------------------*/
 
 // Colors names
-$valencia                  : #EE154A;
-$oxford                    : #1C1E23;
-$charade                   : #282C37;
-$bayoux                    : #38415F;
-$nobel                     : #B6B6B6;
-$ebb                       : #EEE8E8;
-$athens-gray               : #f6f6f6;
-$color-overlay             : #1c1e32;
+$valencia                    : #EE154A;
+$oxford                      : #1C1E23;
+$charade                     : #282C37;
+$bayoux                      : #38415F;
+$nobel                       : #B6B6B6;
+$ebb                         : #EEE8E8;
+$athens-gray                 : #f6f6f6;
+$color-overlay               : #1c1e32;
 
 
 // Element-colors
-$color-main                : $valencia;
-$color-main--light				 : lighten($color-main, 10%);
-$color-main--dark				   : darken($color-main, 10%);
+$color-main                  : $valencia;
+$color-main--light				   : lighten($color-main, 10%);
+$color-main--dark				     : darken($color-main, 10%);
 
-$color-white               : #fff;
-$color-white--alt          : $athens-gray;
-$color-white--dark		 		 : darken(#fff, 10%);
+$color-white                 : #fff;
+$color-white--alt            : $athens-gray;
+$color-white--dark		 		   : darken(#fff, 10%);
 
-$color-black               : $oxford;
-$color-black--alt		 		   : $charade;
+$color-black                 : $oxford;
+$color-black--alt		 		     : $charade;
 
-$color-header						   : $oxford;
-$color-body          			 : $bayoux;
-$color-body--light   			 : #EEE8E8;
+$color-header						     : $oxford;
+$color-body          			   : $bayoux;
+$color-body--light   			   : #EEE8E8;
 
-$color-background          : $athens-gray;
-$color-background--light   : $charade;
+$color-background            : $athens-gray;
+$color-background-dark       : $oxford;
+$color-background-dark--alt  : $charade;
 
-$color-overlay             : rgba($color-overlay, .4);
-$color-border					     : rgba(182, 182, 182, 0.4);
+$color-border					       : rgba(182, 182, 182, 0.4);
 
-$color-selection				   : $color-main;
-$scrollbar-color				   : $color-main;
+$color-selection				     : $color-main;
+$scrollbar-color				     : $color-main;
 
 
 
@@ -47,8 +47,9 @@ $scrollbar-color				   : $color-main;
 \*------------------------------------*/
 
 // Overlay
+$overlay                   : rgba(#1c1e32, .4);
 $overlay-vertical          : linear-gradient(to bottom, rgba($color-overlay, 0.6), rgba(0, 0, 0, 0));
-$overlay-horizantal        : linear-gradient(to right, rgba($color-overlay, 0.6), rgba(0, 0, 0, 0));
+$overlay-horizontal        : linear-gradient(to right, rgba($color-overlay, 0.6), rgba(0, 0, 0, 0));
 
 
 
