@@ -10,7 +10,7 @@ $bayoux                    : #38415F;
 $nobel                     : #B6B6B6;
 $ebb                       : #EEE8E8;
 $athens-gray               : #f6f6f6;
-$overlay                   : rgba(28, 30, 50, .4);
+$color-overlay             : #1c1e32;
 
 
 // Element-colors
@@ -32,6 +32,7 @@ $color-body--light   			 : #EEE8E8;
 $color-background          : $athens-gray;
 $color-background--light   : $charade;
 
+$color-overlay             : rgba($color-overlay, .4);
 $color-border					     : rgba(182, 182, 182, 0.4);
 
 $color-selection				   : $color-main;
@@ -46,8 +47,8 @@ $scrollbar-color				   : $color-main;
 \*------------------------------------*/
 
 // Overlay
-$overlay-vertical          : linear-gradient(rgba($overlay, 0), rgba($overlay, .4));
-$overlay-horizantal        : linear-gradient(to right, rgba($overlay, 0.4), rgba($overlay, 0) 0);
+$overlay-vertical          : linear-gradient(to bottom, rgba($color-overlay, 0.6), rgba(0, 0, 0, 0));
+$overlay-horizantal        : linear-gradient(to right, rgba($color-overlay, 0.6), rgba(0, 0, 0, 0));
 
 
 
@@ -75,6 +76,7 @@ $font-body--bold					 : 'brandon_grotesquebold';
 $shadow-sm  	        		 : 1px 4px 9px rgba(0, 0, 0, 0.09), 0 4px 17px rgba(0, 0, 0, 0.1);
 $shadow-md	       			   : 5px 10px 20px rgba(0, 0, 0, 0.08), 1px 8px 46px rgba(0, 0, 0, 0.09);
 $shadow-lg	        			 : 15px 20px 30px rgba(0, 0, 0, 0.11), 1px 18px 46px rgba(0, 0, 0, 0.11);
+
 
 // Text-shadows
 $text-shadow-sm            : 2px 1px 4px rgba(#1d1d1d, 0.5);
@@ -105,6 +107,7 @@ $transition3					    : 0.55s all ease;
 $mobile-width             : 468px;
 $tablet-width             : 768px;
 $desktop-width            : 1024px;
+
 
 // Boostrap/Foundation
 $xl                       : 1200px;

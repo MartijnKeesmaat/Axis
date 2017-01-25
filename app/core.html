@@ -17,14 +17,6 @@
 	<!-- Content -->
 	<main id="content">
 
-		<div class="wrapper">
-			<a href="navigation.html" target="_blank" class="btn-text">Navigation</a>
-			<a href="img-hover.html" target="_blank" class="btn-text">Image hover</a>
-			<a href="accordion.html" target="_blank" class="btn-text">Accordion</a>
-			<a href="tabbed-panel.html" target="_blank" class="btn-text">Tabbed panel</a>
-			<a href="cover-page.html" target="_blank" class="btn-text">Cover page</a>
-		</div>
-
 		<div class="section" id="headers">
 			<div class="wrapper">
 				<h1>Header 1</h1>
@@ -33,6 +25,33 @@
 				<h4>Header 4</h4>
 				<h5>Header 5</h5>
 				<h6>Header 6</h6>
+
+
+				<br>
+				<div class="accordion">
+
+					<div class="acc-item">
+						<button class="acc-btn">
+							<div class="acc-title">See HTML code
+							</div>
+							<div class="acc-icon">
+								<div class="plus"></div><div class="minus"></div>
+							</div>
+						</button>
+
+						<div class="acc-panel">
+<pre><code class="language-markup">
+&lt;h1>Header 1&lt;/h1>
+&lt;h2>Header 2&lt;/h2>
+&lt;h3>Header 3&lt;/h3>
+&lt;h4>Header 4&lt;/h4>
+&lt;h5>Header 5&lt;/h5>
+&lt;h6>Header 6&lt;/h6>
+</div>
+</code></pre>
+
+					</div>
+				</div>
 			</div>
 
 		<hr>
@@ -42,6 +61,31 @@
 				<p class="font-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non soluta maxime quae repellat esse commodi quisquam at culpa. Esse molestias perferendis harum animi possimus numquam et veritatis error repellat iure.</p>
 				<p class="font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non soluta maxime quae repellat esse commodi quisquam at culpa. Esse molestias perferendis harum animi possimus numquam et veritatis error repellat iure.</p>
 				<p>Ludus verear eam ex, has cu reque euismod. Lorem singulis sit cu, paulo cetero erroribus duo an, cu vide cibo mundi sea. Mei consulatu repudiandae ad. Modo suscipiantur vix ut, illud doctus audiam id vel, et dolor fastidii perpetua mel.</p>
+
+
+
+				<br>
+				<div class="accordion">
+
+					<div class="acc-item">
+						<button class="acc-btn">
+							<div class="acc-title">See HTML code
+							</div>
+							<div class="acc-icon">
+								<div class="plus"></div><div class="minus"></div>
+							</div>
+						</button>
+
+						<div class="acc-panel">
+<pre><code class="language-markup">
+&lt;p class="font-bold">Bold paragraph&lt;/p>
+&lt;p class="font-medium">Medium paragraph&lt;/p>
+&lt;p>Standard paragraph&lt;/p>
+</div>
+</code></pre>
+
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -71,7 +115,37 @@
 				<br>
 				<a href="#" class="btn-text">Learn more</a>
 
+				<br>
+				<br>
+				<div class="accordion">
 
+					<div class="acc-item">
+						<button class="acc-btn">
+							<div class="acc-title">See HTML code
+							</div>
+							<div class="acc-icon">
+								<div class="plus"></div><div class="minus"></div>
+							</div>
+						</button>
+
+						<div class="acc-panel">
+<pre><code class="language-markup">
+&lt;a href="#" class="btn">Learn more&lt;/a>
+&lt;a href="#" class="btn btn--rounded">Learn more&lt;/a>
+&lt;a href="#" class="btn btn--black">Learn more&lt;/a>
+&lt;a href="#" class="btn btn--rounded btn--black">Learn more&lt;/a>
+&lt;a href="#" class="btn btn--ghost">Learn more&lt;/a>
+&lt;a href="#" class="btn btn--rounded btn--ghost">Learn more&lt;/a>
+&lt;a href="#" class="btn btn--ghost btn--black">Learn more&lt;/a>
+&lt;a href="#" class="btn btn--ghost btn--black btn--rounded">Learn more&lt;/a>
+&lt;a href="#" class="btn btn--disabled">Learn more&lt;/a>
+&lt;a href="#" class="btn btn--disabled btn--rounded">Learn more&lt;/a>
+&lt;a href="#" class="btn-text">Learn more&lt;/a>
+</div>
+</code></pre>
+
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -114,6 +188,64 @@
 					<input type="submit" value="Send form" class="btn--rounded">
 
 				</form>
+
+
+				<br>
+				<br>
+				<div class="accordion">
+
+					<div class="acc-item">
+						<button class="acc-btn">
+							<div class="acc-title">See HTML code
+							</div>
+							<div class="acc-icon">
+								<div class="plus"></div><div class="minus"></div>
+							</div>
+						</button>
+
+						<div class="acc-panel">
+<pre><code class="language-markup">
+&lt;form>
+
+	&lt;label for="first-name">First name&lt;/label>
+
+	&lt;input class="st-form" type="text" name="first-name" placeholder="John">
+
+	&lt;label for="first-name">Password&lt;/label>
+
+	&lt;input class="st-form"  type="password" name="password" placeholder="Password">
+
+	&lt;label>Type something&lt;/label>
+
+	&lt;textarea class="st-form"  name="name" rows="4" placeholder="Something interesting">&lt;/textarea>
+
+	&lt;select class="st-form" >
+		&lt;option value="option1">Option 1&lt;/option>
+		&lt;option value="option2">Option 2&lt;/option>
+		&lt;option value="option3">Option 3&lt;/option>
+	&lt;/select>
+
+	&lt;label class="checkbox">
+		&lt;input type="checkbox" name="checkbox">Checkbox
+	&lt;/label>
+
+	&lt;label class="radio">
+		&lt;input type="radio" name="radio">Radio
+	&lt;/label>
+
+	&lt;label class="radio">
+		&lt;input type="radio" name="radio">Input
+	&lt;/label>
+
+	&lt;input type="submit" value="Send form" class="btn--rounded">
+
+&lt;/form>
+
+</div>
+</code></pre>
+
+					</div>
+				</div>
 			</div>
 		</div>
 
