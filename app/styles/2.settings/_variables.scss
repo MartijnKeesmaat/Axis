@@ -60,10 +60,10 @@ $overlay-horizontal        : linear-gradient(to right, rgba($color-overlay, 0.6)
 \*------------------------------------*/
 
 // Fonts
-$font-header					     : 'Montserrat', sans-serif;
-$font-body						     : 'brandon_grotesque_regularRg';
-$font-body--medium			   : 'brandon_grotesquemedium';
-$font-body--bold					 : 'brandon_grotesquebold';
+$font-header					     : Montserrat, Helvetica, Arial, Sans-Serif;
+$font-body						     : brandon_grotesque_regularRg, Helvetica, Arial, Sans-Serif;
+$font-body--medium			   : brandon_grotesquemedium, Helvetica, Arial, Sans-Serif;
+$font-body--bold					 : brandon_grotesquebold, Helvetica, Arial, Sans-Serif;
 
 
 

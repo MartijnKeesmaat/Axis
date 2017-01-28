@@ -5,19 +5,20 @@
 textarea,
 select,
 input {
+  background: $color-white--alt;
+  border: 2px solid $color-white--alt;
+  transition: $transition1;
   outline: none;
   display: block;
   width: 100%;
-  border: 1px solid $color-white--alt;
-  transition: $transition1;
   padding: 0.45em .9em;
-  background: $color-white--alt;
+
   font-weight: 400;
   max-width: 300px;
   box-sizing: border-box;
 
   &:focus{
-    border-bottom: 1px solid $color-border;
+    border-bottom: 2px solid $color-border;
   }
 }
 
