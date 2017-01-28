@@ -520,3 +520,27 @@ input[type=radio] ~ label {
   color: #38415F; }
   .bg-light h1, .bg-light h2, .bg-light h3, .bg-light h4, .bg-light h5, .bg-light h6, .bg-light th, .bg-light .font-medium, .bg-light .font-bold {
     color: #1C1E23; }
+
+/*------------------------------------*  #Form
+\*------------------------------------*/
+table {
+  width: 100%; }
+
+thead {
+  border-bottom: 2px solid rgba(182, 182, 182, 0.3); }
+
+th {
+  text-align: left;
+  font-size: 1.7rem; }
+
+tr {
+  border-bottom: 1px solid rgba(182, 182, 182, 0.2); }
+  tr:last-child {
+    border-bottom: none; }
+
+tr:after {
+  margin-bottom: 30px;
+  content: '';
+  display: inline-block; }
+  tr:after:last-child {
+    display: none; }
