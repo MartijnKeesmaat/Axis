@@ -2,12 +2,15 @@
   #STANDARD BUTTON
 \*------------------------------------*/
 
-.btn{
+.btn,
+button{
 	font-family: $font-body--medium;
 	background: $color-main;
 	transition: $transition1;
 	box-shadow: $shadow-sm;
-	padding: 0.6em 1.8em 0.55em 1.8em;
+	border: none;
+	white-space: normal;
+	padding: 0.55em 1.7em 0.5em;
 	display: inline-block;
 	font-size: 1.8rem;
 	border-radius: 1px;
