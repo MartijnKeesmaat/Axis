@@ -24,7 +24,7 @@ This exist out of the styling of the [basic elements](https://martijnkeesmaat.gi
 A thought out [file structure](https://github.com/MartijnKeesmaat/Axis/wiki/Project-structure), and some usefull [Gulp commands](https://github.com/MartijnKeesmaat/Axis/wiki/Gulp).
 
 <br>
-[See the core elements](https://martijnkeesmaat.github.io/core.html)
+[See the core elements](https://martijnkeesmaat.github.io/axis/core.html)
 
 
 <br>
@@ -35,7 +35,7 @@ Axis has a various amount of pre-build components to develop at a faster rate. <
 You choose which elements you want, so that you only get the elements you actually use.
 
 <br>
-[See all components](https://martijnkeesmaat.github.io/components.html)
+[See all components](https://martijnkeesmaat.github.io/axis/components.html)
 
 
 <br>
