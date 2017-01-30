@@ -16,7 +16,6 @@ Get your front-end environment up and running in 3 simple steps.
 
 <br>
 
-![](https://drive.google.com/uc?id=0B0s7OorG7axJS2JyR1M0blVtVlk)
 ## Core elements 
 When downloaded you start out with the "core". <br>
 This exist out of the styling of the [basic elements](https://martijnkeesmaat.github.io/components.html), like typhography, buttons, forms and more.
