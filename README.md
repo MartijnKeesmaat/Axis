@@ -16,12 +16,10 @@ Get your front-end environment up and running in 3 simple steps.
 
 <br>
 
-
-## Core 
+![](https://drive.google.com/uc?id=0B0s7OorG7axJS2JyR1M0blVtVlk)
+## Core elements 
 When downloaded you start out with the "core". <br>
 This exist out of the styling of the [basic elements](https://martijnkeesmaat.github.io/components.html), like typhography, buttons, forms and more.
-<br>
-A thought out [file structure](https://github.com/MartijnKeesmaat/Axis/wiki/Project-structure), and some usefull [Gulp commands](https://github.com/MartijnKeesmaat/Axis/wiki/Gulp).
 
 <br>
 [See the core elements](https://martijnkeesmaat.github.io/axis/core.html)
