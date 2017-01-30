@@ -1,4 +1,4 @@
-#Axis
+<img src="https://drive.google.com/uc?id=0B0s7OorG7axJOWNmRGg5bTUwaUE" height="150" style="max-width:100%;">
 
 Axis is a well thought out front-end **structure** that gets you quickly started with every web project. It strives to create projects with beautifully organized code, this is achieved by adapting the **BEM** methodology and using a **SMACSS** inspired structure. With this approach Axis is ready to face small, large and long lasting projects.
 
