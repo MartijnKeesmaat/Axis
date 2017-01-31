@@ -9,20 +9,23 @@
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.17.5",
-    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-csso": "^2.0.0",
-    "gulp-plumber": "^1.1.0",
+    "gulp-cache": "^0.2.8",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
-    "gulp-strip-comments": "^2.4.3"
+    "gulp-uglify": "^1.2.0",
+    "gulp": "^3.8.11"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MartijnKeesmaat/Project-Axis.git"
+    "url": "git+https://github.com/MartijnKeesmaat/Axis.git"
   },
   "keywords": [
     "Starterkit",
@@ -35,7 +38,7 @@
   "author": "Martijn Keesmaat (http://martijnkeesmaat.nl/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MartijnKeesmaat/Project-Axis/issues"
+    "url": "https://github.com/MartijnKeesmaat/Axis/issues"
   },
-  "homepage": "https://github.com/MartijnKeesmaat/Project-Axis#readme"
+  "homepage": "https://github.com/MartijnKeesmaat/Axis#readme"
 }
