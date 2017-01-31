@@ -10,9 +10,9 @@ Axis is a well thought out front-end **structure** that gets you quickly started
 ## Quick start
 Get your front-end environment up and running in 3 simple steps.
 
-1. Download zip 
+1. Clone or download this repo
 2. Run ```npm install``` in the root folder
-3. Run ```gulp serve```
+3. Run ```gulp```
 
 
 <br>
