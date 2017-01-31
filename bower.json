@@ -14,7 +14,7 @@
     "boilerplate",
     "gulp"
   ],
-  "homepage": "https://github.com/MartijnKeesmaat/starterkit",
+  "homepage": "https://github.com/MartijnKeesmaat/Axis",
   "ignore": [
     "**/.*",
     "node_modules",
