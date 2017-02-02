@@ -59,11 +59,11 @@ input[type=radio]~label {
 }
 
 
-.st-form{
+.input{
   margin-bottom: 2.5rem;
 }
 
-.st-form--dark{
+.input--dark{
   background: $oxford;
   border: $oxford 1px solid;
   color: #fff;
@@ -86,5 +86,16 @@ input[type=radio]~label {
 
   &:focus{
     border: 1px solid $oxford;
+  }
+}
+
+
+// Btn group
+.btn-group {
+  display: flex;
+
+  .input {
+    margin: 0;
+    display: inline;
   }
 }
