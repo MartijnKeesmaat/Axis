@@ -210,8 +210,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-hr,
-.hr {
+hr, .hr {
   display: block;
   height: .1rem;
   border: 0;
@@ -220,7 +219,7 @@ hr,
   background: rgba(182, 182, 182, 0.4); }
 
 .wrapper {
-  padding: 40px;
+  padding: 30px;
   max-width: 1000px;
   margin: 0 auto; }
   @media (max-width: 468px) {
@@ -446,27 +445,34 @@ input[type=radio] ~ label {
   .radio input[type="radio"] {
     margin: 0 10px 0 0; }
 
-.st-form {
+.input {
   margin-bottom: 2.5rem; }
 
-.st-form--dark {
+.input--dark {
   background: #1C1E23;
   border: #1C1E23 1px solid;
   color: #fff; }
-  .st-form--dark::-webkit-input-placeholder {
+  .input--dark::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #fff; }
-  .st-form--dark::-moz-placeholder {
+  .input--dark::-moz-placeholder {
     /* Firefox 19+ */
     color: #fff; }
-  .st-form--dark:-ms-input-placeholder {
+  .input--dark:-ms-input-placeholder {
     /* IE 10+ */
     color: #fff; }
-  .st-form--dark:-moz-placeholder {
+  .input--dark:-moz-placeholder {
     /* Firefox 18- */
     color: #fff; }
-  .st-form--dark:focus {
+  .input--dark:focus {
     border: 1px solid #1C1E23; }
+
+.btn-group {
+  display: -ms-flexbox;
+  display: flex; }
+  .btn-group .input {
+    margin: 0;
+    display: inline; }
 
 .clearfix:before, .clearfix:after {
   content: " ";

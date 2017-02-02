@@ -40,8 +40,7 @@ img{
 }
 
 // basic hr
-hr,
-.hr{
+hr, .hr{
 	display: block;
 	height: .1rem;
 	border: 0;
@@ -52,7 +51,7 @@ hr,
 
 // wrapper
 .wrapper{
-	padding: 40px;
+	padding: 30px;
 	max-width: 1000px;
 	margin: 0 auto;
 
