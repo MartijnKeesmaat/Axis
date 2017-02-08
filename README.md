@@ -1,6 +1,6 @@
 #Axis
 
-Axis is a component driven boilerplate which can be extended to a modular framework. It strives to create projects with beautifully organized code, this is achieved by adapting the **BEM** methodology and using a **SMACSS** inspired structure. With this approach Axis is ready to face small, large and long lasting projects.
+Axis is a **component driven boilerplate** which can be extended to a modular **framework**. It strives to create projects with beautifully organized code, this is achieved by adapting the **BEM** methodology and using a SMACSS inspired structure. With this approach Axis is ready to face small, large and long lasting projects.
 
 <br>
 
