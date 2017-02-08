@@ -448,25 +448,6 @@ input[type=radio] ~ label {
 .input {
   margin-bottom: 2.5rem; }
 
-.input--dark {
-  background: #1C1E23;
-  border: #1C1E23 1px solid;
-  color: #fff; }
-  .input--dark::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #fff; }
-  .input--dark::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #fff; }
-  .input--dark:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #fff; }
-  .input--dark:-moz-placeholder {
-    /* Firefox 18- */
-    color: #fff; }
-  .input--dark:focus {
-    border: 1px solid #1C1E23; }
-
 .btn-group {
   display: -ms-flexbox;
   display: flex; }
