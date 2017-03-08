@@ -285,8 +285,7 @@ a {
 
 /*------------------------------------*  #STANDARD BUTTON
 \*------------------------------------*/
-.btn, input[type=submit],
-button {
+.btn, input[type=submit] {
   font-family: brandon_grotesquemedium, Helvetica, Arial, Sans-Serif;
   background: #EE154A;
   transition: 0.28s all ease;
@@ -299,11 +298,9 @@ button {
   border-radius: 1px;
   margin-right: 18px;
   color: #fff; }
-  .btn:last-child, input[type=submit]:last-child,
-  button:last-child {
+  .btn:last-child, input[type=submit]:last-child {
     margin-right: 0; }
-  .btn:hover, input[type=submit]:hover,
-  button:hover {
+  .btn:hover, input[type=submit]:hover {
     background: #c20e3a;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.08), 1px 8px 46px rgba(0, 0, 0, 0.09);
     color: #fff; }

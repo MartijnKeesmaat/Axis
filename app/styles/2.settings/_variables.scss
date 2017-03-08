@@ -48,8 +48,8 @@ $scrollbar-color				     : $color-main;
 
 // Overlay
 $overlay                   : rgba(#1c1e32, .4);
-$overlay-vertical          : linear-gradient(to bottom, rgba($color-overlay, 0.6), rgba(0, 0, 0, 0));
-$overlay-horizontal        : linear-gradient(to right, rgba($color-overlay, 0.6), rgba(0, 0, 0, 0));
+$overlay-vertical          : linear-gradient(to bottom, rgba($color-overlay, .6), rgba(0, 0, 0, 0));
+$overlay-horizontal        : linear-gradient(to right, rgba($color-overlay, .6), rgba(0, 0, 0, 0));
 
 
 
