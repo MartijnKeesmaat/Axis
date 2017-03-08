@@ -1,98 +1,72 @@
-// Require dependencies
-var gulp = require("gulp"),
-browserSync = require('browser-sync').create();
-sass = require("gulp-sass");
-concat = require('gulp-concat');
-const autoprefixer = require('gulp-autoprefixer');
-var csso = require('gulp-csso');
-var plumber = require('gulp-plumber');
-var strip = require('gulp-strip-comments');
+var gulp = require('gulp'),
+    plumber = require('gulp-plumber'),
+    rename = require('gulp-rename');
+var autoprefixer = require('gulp-autoprefixer');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var imagemin = require('gulp-imagemin'),
+    cache = require('gulp-cache');
+var minifycss = require('gulp-minify-css');
+var sass = require('gulp-sass');
+var browserSync = require('browser-sync');
 
-
-
-
-
-/*------------------------------------*\
-  #COMBINED COMMANDS
-\*------------------------------------*/
-
-// Serve
-gulp.task('serve', ['sass'], function() {
-
-  browserSync.init({
-      server: "./app"
+gulp.task('browser-sync', function() {
+  browserSync({
+    server: {
+       baseDir: "./app"
+    }
   });
-
-  gulp.watch("app/styles/**/*.scss", ['sass']);
-  gulp.watch("app/scripts/*.js", ['concat']).on('change', browserSync.reload);
-  gulp.watch("app/*.html").on('change', browserSync.reload);
 });
 
-
-// Watch
-gulp.task('watch', ['sass'], function() {
-  gulp.watch("app/styles/**/*.scss", ['sass']);
-  gulp.watch("app/scripts/*.js", ['concat']).on('change', browserSync.reload);
-  gulp.watch("app/*.html").on('change', browserSync.reload);
+gulp.task('bs-reload', function () {
+  browserSync.reload();
 });
 
+gulp.task('images', function(){
+  gulp.src('app/assets/images/*')
+    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(gulp.dest('app/assets/images/'));
+});
 
-
-/*------------------------------------*\
-  #INDIVIDUAL COMMANDS
-\*------------------------------------*/
-
-// Prepares the code for deployment
-gulp.task("deploy", ['prefix', 'minify']);
-
-
-// Sass
-gulp.task('sass', function() {
-  return gulp.src("app/styles/**/*.scss")
-    .pipe(plumber())
+gulp.task('styles', function(){
+  gulp.src(['app/styles/**/*.scss'])
+    .pipe(plumber({
+      errorHandler: function (error) {
+        console.log(error.message);
+        this.emit('end');
+    }}))
     .pipe(sass())
-    .pipe(gulp.dest("app/styles"))
-    .pipe(browserSync.stream());
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(gulp.dest('app/styles/'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(minifycss())
+    .pipe(gulp.dest('app/styles/'))
+    .pipe(browserSync.reload({stream:true}))
 });
 
-
-// Css prefix
-gulp.task('prefix', () =>
-  gulp.src('app/styles/main.css')
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
-    .pipe(gulp.dest('app/styles'))
-);
-
-
-// Css minify
-gulp.task('minify', function () {
-  return gulp.src('app/styles/main.css')
-    .pipe(csso())
-    .pipe(gulp.dest('app/styles'));
-});
-
-
-// Concat
-gulp.task('concat', function(){
+gulp.task('scripts', function(){
   return gulp.src('app/scripts/*.js')
+    .pipe(plumber({
+      errorHandler: function (error) {
+        console.log(error.message);
+        this.emit('end');
+    }}))
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('app/scripts/dist'));
+    .pipe(gulp.dest('app/scripts/dist/'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/scripts/dist/'))
+    .pipe(browserSync.reload({stream:true}))
 });
 
-
-// Strip comments
-gulp.task('default', function () {
-  return gulp.src('template.js')
-    .pipe(strip())
-    .pipe(gulp.dest('dist'));
+gulp.task('default', ['browser-sync'], function(){
+  gulp.watch("app/styles/**/*.scss", ['styles','bs-reload']);
+  gulp.watch("app/scripts/*.js", ['scripts', 'bs-reload']);
+  gulp.watch("app/*.html", ['bs-reload']);
 });
 
-
-// Error message
-function errorLog(error){
-  console.error.bind(error);
-  this.emit('end');
-}
+gulp.task('watch', function(){
+  gulp.watch("app/styles/**/*.scss", ['styles']);
+  gulp.watch("app/scripts/*.js", ['scripts']);
+  gulp.watch("app/*.html");
+});

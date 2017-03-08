@@ -58,33 +58,16 @@ input[type=radio]~label {
   }
 }
 
-
-.st-form{
+.input{
   margin-bottom: 2.5rem;
 }
 
-.st-form--dark{
-  background: $oxford;
-  border: $oxford 1px solid;
-  color: #fff;
+// Btn group
+.btn-group {
+  display: flex;
 
-  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #fff;
-  }
-
-  &::-moz-placeholder { /* Firefox 19+ */
-    color: #fff;
-  }
-
-  &:-ms-input-placeholder { /* IE 10+ */
-    color: #fff;
-  }
-
-  &:-moz-placeholder { /* Firefox 18- */
-    color: #fff;
-  }
-
-  &:focus{
-    border: 1px solid $oxford;
+  .input {
+    margin: 0;
+    display: inline;
   }
 }
