@@ -24,7 +24,7 @@ This exist out of the styling of the [basic elements](https://martijnkeesmaat.gi
 <br>
 <a href="https://martijnkeesmaat.github.io/axis/core.html" target="_blank">See the core elements</a>
 
-
+<br>
 <br>
 
 
