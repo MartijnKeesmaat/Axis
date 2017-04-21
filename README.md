@@ -1,7 +1,7 @@
 <img src="https://drive.google.com/uc?id=0B0s7OorG7axJTVQtWVVwek9NNm8" height="140" style="max-width:100%; margin-bottom: 0;">
 -
 <br>
-Axis is a component-driven boilerplate, which can be extended to a framework. It strives to create projects with beautifully organized code, this is achieved by adapting the **BEM** methodology and using a **SMACSS** inspired structure. With this approach Axis is ready to face small, large and long lasting projects.
+Axis is a component-driven boilerplate, which can be extended to a framework. It strives to create projects with beautifully organized code, this is achieved by adapting the BEM methodology and using a SMACSS inspired structure. With this approach you can create modular and scaleable front-end environment. 
 
 
 <br>
@@ -22,7 +22,7 @@ When downloaded you start out with the "core". <br>
 This exist out of the styling of the [basic elements](https://martijnkeesmaat.github.io/components.html), like typhography, buttons, forms and more.
 
 <br>
-[See the core elements](https://martijnkeesmaat.github.io/axis/core.html)
+<a href="https://martijnkeesmaat.github.io/axis/core.html" target="_blank">See the core elements</a>
 
 
 <br>
@@ -33,7 +33,8 @@ Axis has a various amount of pre-build components to develop at a faster rate. <
 You choose which elements you want, so that you only get the elements you actually use.
 
 <br>
-[See all components](https://martijnkeesmaat.github.io/axis/components.html)
+
+<a href="https://martijnkeesmaat.github.io/axis/components.html" target="_blank">See the components</a>
 
 
 <br>
