@@ -1,0 +1,157 @@
+.project-slide{
+  $dots-width: 100px;
+  height: 100vh;
+  position: relative;
+
+  .wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: $dots-width;
+  }
+
+  &__link{
+    margin: 0 auto;
+  }
+
+  &__wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__backdrop{
+    position: absolute;
+    background: #000;
+    width: 45%;
+    height: 100%;
+    left: 0;
+    padding: 200px 0;
+    transform: skew(14deg,0deg);
+    margin-left: -90px;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  &__backdrop__number{
+    transform: skew(-14deg,0deg);
+    font-family: $font-accent;
+    margin: 0;
+    font-size: 27rem;
+    color: rgba(255,255,255, .12);
+
+    &__container{
+      position: absolute;
+      bottom: -90px;
+      left: -50px;
+    }
+  }
+
+  &__dots{
+    display: flex;
+    flex-direction: column;
+    transition: $transition1;
+
+    &__container{
+      height: 100%;
+     position: absolute;
+     display: flex;
+     align-items: center;
+     width: $dots-width;
+     justify-content: center;
+    }
+
+    &:hover{
+      transform: scale(1.4);
+    }
+  }
+
+  &__dot{
+    width: 12px;
+    height: 12px;
+    background: rgba(#fff, .2);
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: $transition1;
+
+    &--active,
+    &:hover{
+      background: rgba(#fff, .9);
+    }
+  }
+
+
+  &__image{
+    width: 80%;
+    margin-top: 160px;
+  }
+
+  &__text{
+    margin-left: 60px;
+  }
+
+  h2{
+
+  }
+
+  &__tags{
+
+  }
+
+  &__tag{
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__tag__stripe{
+    width: 30px;
+    height: 2px;
+    background: #000;
+  }
+
+  &__tag__title__container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  &__tag__title{
+    font-weight: 600;
+    line-height: 0.5;
+    margin-bottom: 5px;
+  }
+}
+
+#project-slide--axis{
+  .project-slide__backdrop{
+    background: #FE244D;
+
+    &__number{
+      color: rgba(0,0,0, .12);
+    }
+  }
+}
+
+#project-slide--greenegg{
+  .project-slide__backdrop{
+    background: #004A42;
+  }
+}
+
+#project-slide--vissenkoppen{
+  .project-slide__backdrop{
+    background: #0D3643;
+  }
+
+  .project-slide__image{
+    position: absolute;
+    width: 480px;
+    bottom: -60px;
+  }
+
+  .project-slide__text{
+    margin-left: 500px;
+  }
+
+}

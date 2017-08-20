@@ -1,0 +1,13 @@
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+
+  img{
+    width: 50px;
+  }
+}

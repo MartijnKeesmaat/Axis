@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 // Colors names
-$valencia                    : #EE154A;
+$valencia                    : #FE2237;
 $oxford                      : #1C1E23;
 $charade                     : #282C37;
 $bayoux                      : #38415F;
@@ -60,10 +60,11 @@ $overlay-horizontal        : linear-gradient(to right, rgba($color-overlay, .6),
 \*------------------------------------*/
 
 // Fonts
-$font-header					     : Montserrat, Helvetica, Arial, Sans-Serif;
-$font-body						     : brandon_grotesque_regularRg, Helvetica, Arial, Sans-Serif;
-$font-body--medium			   : brandon_grotesquemedium, Helvetica, Arial, Sans-Serif;
-$font-body--bold					 : brandon_grotesquebold, Helvetica, Arial, Sans-Serif;
+$font-header					     : 'Montserrat', sans-serif;
+$font-accent               : 'Playfair Display', serif;
+$font-body						     : 'Montserrat', sans-serif;
+$font-body--medium			   : 'Montserrat', sans-serif;
+$font-body--bold					 : 'Montserrat', sans-serif;
 
 
 

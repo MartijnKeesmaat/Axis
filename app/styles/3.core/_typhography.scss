@@ -4,10 +4,9 @@
 
 body{
 	font-family: $font-body;
-	color: $color-body;
 	font-weight: 400;
 	line-height: 1.6;
-	font-size: 1.9rem;
+	font-size: 1.8rem;
 }
 
 h1, h2, h3, h4, h5, h6, th{
@@ -23,7 +22,8 @@ h1, .h1{
 }
 
 h2, .h2{
-	font-size: 4.8rem;
+	font-size: 5.4rem;
+	font-weight: 700;
 }
 
 h3, .h3{

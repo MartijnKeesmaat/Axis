@@ -1,0 +1,84 @@
+.hero-unit{
+  background: #000;
+  height: 90vh;
+  position: relative;
+
+  .wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__sub-title{
+    margin-bottom: 60px;
+    max-width: initial;
+  }
+
+  p{
+    font-family: $font-accent;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__title{
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+
+    &:after{
+      content: 'Goedemorgen';
+      position: absolute;
+      font-family: $font-accent;
+      left: 0;
+      right: 0;
+      color: rgba(255, 255, 255, 0.12);
+      opacity: 10;
+      font-size: 12.3rem;
+      top: -56px;
+    }
+  }
+
+  &__circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid $color-main;
+    margin: 10px auto 40px;
+  }
+
+  &__projecten{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+
+    a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &:hover{
+        .hero-unit__stripe{
+          background: #fff;
+          height: 40px;
+        }
+      }
+    }
+
+    p{
+      transform: rotate(-90deg);
+      margin-bottom: 40px;
+    }
+  }
+
+  &__stripe{
+    width: 1px;
+    height: 30px;
+    background: $color-main;
+    transition: $transition1;
+  }
+}
