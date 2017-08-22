@@ -1,6 +1,6 @@
 .hero-unit{
   background: #000;
-  height: 90vh;
+  height: 100vh;
   position: relative;
 
   .wrapper{
@@ -11,8 +11,9 @@
   }
 
   &__sub-title{
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     max-width: initial;
+    font-size: 2.1rem;
   }
 
   p{
@@ -25,18 +26,22 @@
     color: #fff;
     font-weight: 600;
     text-align: center;
-    position: relative;
 
-    &:after{
-      content: 'Goedemorgen';
+    &-container{
+      position: relative;
+    }
+
+    &-backdrop{
       position: absolute;
+      font-weight: bold;
+      text-align: center;
       font-family: $font-accent;
       left: 0;
       right: 0;
       color: rgba(255, 255, 255, 0.12);
       opacity: 10;
-      font-size: 12.3rem;
-      top: -56px;
+      font-size: 13rem;
+      top: -88px;
     }
   }
 
@@ -64,7 +69,7 @@
       &:hover{
         .hero-unit__stripe{
           background: #fff;
-          height: 40px;
+          height: 20px;
         }
       }
     }
@@ -82,3 +87,30 @@
     transition: $transition1;
   }
 }
+
+
+
+/* Config */
+$color-bg: #1e1e1e;
+$color-particle: #fff;
+$spacing: 2560px;
+$time-1: 60s;
+$time-2: 120s;
+$time-3: 180s;
+$time-4: 600s;
+
+/* Pauls awesome mixin */
+@function particles($max) {
+   $val: 0px 0px $color-particle;
+   @for $i from 1 through $max {
+      $val: #{$val},
+      random($spacing)+px random($spacing)+px $color-particle;
+   }
+   @return $val;
+}
+
+@mixin particles($max) {
+   box-shadow: particles($max);
+}
+
+@import 'particles';

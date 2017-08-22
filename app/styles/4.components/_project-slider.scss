@@ -10,6 +10,10 @@
     margin-left: $dots-width;
   }
 
+  &:focus{
+    outline: none;
+  }
+
   &__link{
     margin: 0 auto;
   }
@@ -84,19 +88,11 @@
 
   &__image{
     width: 80%;
-    margin-top: 160px;
+    margin-top: 240px;
   }
 
   &__text{
     margin-left: 60px;
-  }
-
-  h2{
-
-  }
-
-  &__tags{
-
   }
 
   &__tag{
@@ -146,8 +142,8 @@
 
   .project-slide__image{
     position: absolute;
-    width: 480px;
-    bottom: -60px;
+    width: 460px;
+    bottom: -80px;
   }
 
   .project-slide__text{

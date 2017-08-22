@@ -1,0 +1,96 @@
+.footer{
+  background: #000;
+  height: 100vh;
+  position: relative;
+
+  .wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__sub-title{
+    margin-bottom: 80px;
+    max-width: initial;
+    font-size: 2.1rem;
+  }
+
+  p{
+    font-family: $font-accent;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__title{
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+
+    &-container{
+      position: relative;
+    }
+
+    &-backdrop{
+      position: absolute;
+      font-weight: bold;
+      text-align: center;
+      font-family: $font-accent;
+      left: 0;
+      right: 0;
+      color: rgba(255, 255, 255, 0.12);
+      opacity: 10;
+      font-size: 13rem;
+      top: -88px;
+    }
+  }
+
+  &__social{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin: 10px auto 40px;
+
+    figure {
+      display: flex;
+      align-items: center;
+    }
+
+     a {
+      margin-right: 30px;
+      display: flex;
+      align-items: center;
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+
+/* Config */
+$color-bg: #1e1e1e;
+$color-particle: #fff;
+$spacing: 2560px;
+$time-1: 60s;
+$time-2: 120s;
+$time-3: 180s;
+$time-4: 600s;
+
+/* Pauls awesome mixin */
+@function particles($max) {
+   $val: 0px 0px $color-particle;
+   @for $i from 1 through $max {
+      $val: #{$val},
+      random($spacing)+px random($spacing)+px $color-particle;
+   }
+   @return $val;
+}
+
+@mixin particles($max) {
+   box-shadow: particles($max);
+}
+
+@import 'particles';

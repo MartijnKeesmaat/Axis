@@ -7,7 +7,7 @@
 		<meta name="description" content="Axis">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<meta name="author" content="Martijn Keesmaat">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700|Playfair+Display" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700|Playfair+Display:400,700" rel="stylesheet">
 		<link rel="stylesheet" href="styles/main.min.css">
 	</head>
 
@@ -21,19 +21,29 @@
 		<main class="content">
 
 			<div class="section hero-unit home-slide">
-				<div class="wrapper">
-					<p class="hero-unit__sub-title">Martijn Keesmaat</p>
-					<h1 class="hero-unit__title">
-						Creative developer
-					</h1>
-					<div class="hero-unit__circle"></div>
-				</div>
+				<div class="animation-wrapper">
+					<div class="wrapper">
 
-				<div class="hero-unit__projecten">
-					<a href="#project-slide--axis">
-						<p>Projecten</p>
-						<div class="hero-unit__stripe"></div>
-					</a>
+						<p class="hero-unit__sub-title reveal-hero">Martijn Keesmaat</p>
+						<div class="hero-unit__title-container">
+							<h1 class="hero-unit__title reveal-hero">Creative developer</h1>
+							<span class="hero-unit__title-backdrop reveal-hero">Goedendag</span>
+						</div>
+
+						<div class="hero-unit__circle reveal-hero"></div>
+					</div>
+
+					<div class="hero-unit__projecten reveal-hero">
+						<a href="#project-slide--axis">
+							<p>Projecten</p>
+							<div class="hero-unit__stripe"></div>
+						</a>
+					</div>
+
+				  <div class="particle particle-1"></div>
+				  <div class="particle particle-2"></div>
+				  <div class="particle particle-3"></div>
+				  <div class="particle particle-4"></div>
 				</div>
 			</div>
 
@@ -59,7 +69,7 @@
 
 						<a href="#" class="project-slide__link">
 							<div class="project-slide__wrapper">
-								<figure class="project-slide__image" data-scroll-speed="10">
+								<figure class="project-slide__image" data-scroll-speed="8">
 									<img src="./assets/images/slider-axis.png" alt="">
 								</figure>
 
@@ -111,7 +121,7 @@
 
 						<a href="#" class="project-slide__link">
 							<div class="project-slide__wrapper">
-								<figure class="project-slide__image" data-scroll-speed="10">
+								<figure class="project-slide__image" data-scroll-speed="8">
 									<img src="./assets/images/slider-greenegg.png" alt="">
 								</figure>
 
@@ -163,7 +173,7 @@
 
 						<a href="#" class="project-slide__link">
 							<div class="project-slide__wrapper">
-								<figure class="project-slide__image" data-scroll-speed="10">
+								<figure class="project-slide__image" data-scroll-speed="8">
 									<img src="./assets/images/slider-vissenkoppen.png" alt="">
 								</figure>
 
@@ -195,10 +205,38 @@
 				</div>
 			</div>
 
+
+			<div class="section footer home-slide">
+				<div class="animation-wrapper">
+					<div class="wrapper">
+
+						<p class="footer__sub-title reveal-footer">mpkeesmaat@gmail.com</p>
+						<div class="footer__title-container">
+							<h1 class="footer__title reveal-footer">Contact</h1>
+							<span class="footer__title-backdrop reveal-footer">Samenwerken</span>
+						</div>
+
+						<div class="footer__social">
+							<a href="#"><figure><img src="assets/icons/mail.png" alt=""></figure></a>
+							<a href="#"><figure><img src="assets/icons/linked-in.png" alt=""></figure></a>
+							<a href="#"><figure><img src="assets/icons/behance.png" alt=""></figure></a>
+							<a href="#"><figure><img src="assets/icons/codepen.png" alt=""></figure></a>
+							<a href="#"><figure><img src="assets/icons/github.png" alt=""></figure></a>
+						</div>
+					</div>
+
+					<div class="particle particle-1"></div>
+					<div class="particle particle-2"></div>
+					<div class="particle particle-3"></div>
+					<div class="particle particle-4"></div>
+				</div>
+			</div>
+
 		</main> <!-- End content -->
 
 
-		<script src="scripts/dist/main.min.js"></script>
+		<script src="scripts/dist/main.js"></script>
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
 	</body>
 </html>
