@@ -11,7 +11,7 @@ var animating = false;
         if (!animating) {
             $.data(this, 'scrollTimer', setTimeout(function() {
                 items.each(function(key, value) {
-                    if ($(window).scrollTop() < $(value).offset().top+200 && $(window).scrollTop() > $(value).offset().top-200 ) {
+                    if ($(window).scrollTop() < $(value).offset().top+120 && $(window).scrollTop() > $(value).offset().top-120 ) {
                         animating = true;
                         $('body').animate( { scrollTop: $(value).offset().top + 'px' }, 250);
                         setTimeout(function() { animating = false; }, 300);
@@ -92,10 +92,44 @@ $(function(){
 });
 
 
-// JavaScript
+// ScrollReveal
 window.sr = ScrollReveal();
 sr.reveal('.reveal-hero', { duration: 2000 }, 50);
 sr.reveal('.reveal-footer', { duration: 2000 }, 50);
+
+
+// Nav activate
+$(function() {
+    var body = $("body");
+    var offsetHeight = document.getElementById('hero-unit').offsetHeight - 50;
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= offsetHeight) {
+            body.removeClass('preHeader').addClass("scrolledPastHeader");
+        } else {
+            body.removeClass("scrolledPastHeader").addClass('preHeader');
+        }
+    });
+});
+
+
+var elementPosition = $('#hero-circle').offset();
+
+$(window).scroll(function(){
+  if($(window).scrollTop() + 10 > elementPosition.top){
+    $('#hero-circle').addClass('fixScroll')
+  } else {
+    $('#hero-circle').removeClass('fixScroll');
+  }
+});
+
+
+$('.hero-unit__circle a').click(function(e) {
+  e.preventDefault();
+  $(this).parent().toggleClass('navigation--is-active');
+  $('body').toggleClass('body-navigation--is-active');
+})
 
 // Greeting
 const today = new Date();

@@ -51,6 +51,10 @@
     border-radius: 50%;
     border: 2px solid $color-main;
     margin: 10px auto 40px;
+    transition: $transition2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__projecten{
@@ -87,6 +91,102 @@
     transition: $transition1;
   }
 }
+
+
+.hero-unit__circle.fixScroll{
+  position: fixed;
+  top: 10px;
+  right: 50%;
+  transform: translateX(50%) !important;
+  z-index: 99;
+}
+
+.hamburger{
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transition: $transition2;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__stripe{
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    bottom: 23px;
+    transition: $transition1;
+
+    &:first-child{
+      top: 16px;
+    }
+
+    &:last-child{
+      bottom: 15px;
+    }
+  }
+}
+
+.scrolledPastHeader{
+
+  .hero-unit .hero-unit__circle{
+    background: $color-main;
+    right: 30px;
+    transform: translateX(0%) !important;
+    top: 30px;
+    left: initial;
+    width: 55px;
+    height: 55px;
+  }
+
+  .hero-unit .hero-unit__circle.navigation--is-active{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    border: none;
+    top: -10px;
+    border-radius: 0;
+    right: 0;
+    display: block;
+
+    .hamburger{
+      right: 30px;
+      top: 30px;
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__stripe{
+        transform: rotate(45deg);
+
+        &:first-child{
+          top: initial;
+          bottom: 23px;
+          transform: rotate(45deg);
+        }
+
+        &:last-child{
+          bottom: 23px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  .hamburger{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+
 
 
 
