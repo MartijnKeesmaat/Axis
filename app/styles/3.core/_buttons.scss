@@ -167,6 +167,10 @@
   border-bottom: 2px solid;
   padding-bottom: 1px;
 	margin-right: 18px;
+	letter-spacing: .4px;
+	font-size: 2rem;
+	font-family: $font-accent;
+	font-weight: 600;
 
 	&:last-child{
 		margin-right:  0;
