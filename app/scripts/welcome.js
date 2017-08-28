@@ -1,19 +1,21 @@
 // Greeting
-const today = new Date();
-const hourNow = today.getHours();
-let greeting;
+var today = new Date();
+var hourNow = today.getHours();
+var greeting;
 
 // check for time
 if (hourNow >= 17.5){
-  greeting = 'Goedenavond ';
+  greeting = 'Goedenavond';
 }
 
 else if (hourNow  >= 12){
-  greeting = 'Goedemiddag ';
+  greeting = 'Goedemiddag';
 }
 
 else if (hourNow >= 0){
-  greeting = 'Goedemorgen ';
+  greeting = 'Goedemorgen';
+} else {
+  greeting = 'Goededag';
 }
 
 $('.hero-unit__title-backdrop').text(greeting);

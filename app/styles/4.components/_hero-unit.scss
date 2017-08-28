@@ -1,3 +1,5 @@
+@import 'particles';
+
 .hero-unit{
   background: #000;
   height: 100vh;
@@ -41,7 +43,16 @@
       color: rgba(255, 255, 255, 0.12);
       opacity: 10;
       font-size: 13rem;
-      top: -88px;
+      top: -90px;
+
+      @media (max-width: 800px){
+        font-size: 10.8rem;
+        top: -66px;
+      }
+
+      @media (max-width: 720px){
+        display: none;
+      }
     }
   }
 
@@ -186,31 +197,140 @@
 }
 
 
+.hero-unit__circle.not-index{
+  position: fixed;
+  z-index: 99;
+  background: $color-main;
+  right: 30px;
+  transform: translateX(0%) !important;
+  top: 30px;
+  left: initial;
+  width: 55px;
+  height: 55px;
+  transition: $transition2;
 
+  .hamburger{
+    position: relative;
+    transition: $transition2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
 
+    &__stripe{
+      position: absolute;
+      width: 20px;
+      height: 3px;
+      background: #fff;
+      bottom: 23px;
+      transition: $transition1;
 
+      &:first-child{
+        top: 16px;
+      }
 
-/* Config */
-$color-bg: #1e1e1e;
-$color-particle: #fff;
-$spacing: 2560px;
-$time-1: 60s;
-$time-2: 120s;
-$time-3: 180s;
-$time-4: 600s;
+      &:last-child{
+        bottom: 15px;
+      }
+    }
+  }
 
-/* Pauls awesome mixin */
-@function particles($max) {
-   $val: 0px 0px $color-particle;
-   @for $i from 1 through $max {
-      $val: #{$val},
-      random($spacing)+px random($spacing)+px $color-particle;
-   }
-   @return $val;
+  &.navigation--is-active{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    border: none;
+    top: -10px;
+    border-radius: 0;
+    right: 0;
+    display: block;
+
+    .hamburger{
+      right: 30px;
+      top: 30px;
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__stripe{
+        transform: rotate(45deg);
+
+        &:first-child{
+          top: initial;
+          bottom: 23px;
+          transform: rotate(45deg);
+        }
+
+        &:last-child{
+          bottom: 23px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
 }
 
-@mixin particles($max) {
-   box-shadow: particles($max);
+#page-greenegg{
+  .hero-unit__circle.not-index{
+    background: $greenegg;
+    border-color: $greenegg;
+  }
+
+  .hero-unit__circle.navigation--is-active{
+    background: #000;
+  }
 }
 
-@import 'particles';
+
+.hero-unit__nav{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.navigation--is-active .hero-unit__nav{
+  display: flex;
+}
+
+.hero-unit__nav-link{
+  visibility: hidden;
+  opacity: 0;
+  transition: $transition1;
+  transform: translateY(10px);
+  color: #fff;
+  font-family: $font-accent;
+  font-weight: 600;
+  font-size: 3.5rem;
+  margin-bottom: 0.4em;
+
+  &--is-active{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+  }
+}
+
+.body-navigation--is-active{
+  overflow: hidden;
+}
+
+
+#project-slide--vissenkoppen.detail-slide {
+  .project-slide__wrapper__inner{
+    align-items: center;
+  }
+
+  .project-slide__image{
+    position: initial;
+    width: 65%;
+  }
+}

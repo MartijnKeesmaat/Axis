@@ -41,7 +41,7 @@
       color: rgba(255, 255, 255, 0.12);
       opacity: 10;
       font-size: 13rem;
-      top: -88px;
+      top: -90px;
     }
   }
 
@@ -50,6 +50,8 @@
     align-items: center;
     margin: 0 auto;
     margin: 10px auto 40px;
+    position: relative;
+    z-index: 1;
 
     figure {
       display: flex;
@@ -67,30 +69,3 @@
     }
   }
 }
-
-
-
-/* Config */
-$color-bg: #1e1e1e;
-$color-particle: #fff;
-$spacing: 2560px;
-$time-1: 60s;
-$time-2: 120s;
-$time-3: 180s;
-$time-4: 600s;
-
-/* Pauls awesome mixin */
-@function particles($max) {
-   $val: 0px 0px $color-particle;
-   @for $i from 1 through $max {
-      $val: #{$val},
-      random($spacing)+px random($spacing)+px $color-particle;
-   }
-   @return $val;
-}
-
-@mixin particles($max) {
-   box-shadow: particles($max);
-}
-
-@import 'particles';

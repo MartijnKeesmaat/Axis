@@ -164,7 +164,6 @@
 
 .btn-text {
   color: $color-main;
-  border-bottom: 2px solid;
   padding-bottom: 1px;
 	margin-right: 18px;
 	letter-spacing: .4px;
@@ -176,8 +175,22 @@
 		margin-right:  0;
 	}
 
+	&:after{
+		content: '';
+    width: 82%;
+    background: #FE2237;
+    height: 2px;
+    display: block;
+    margin-top: 3px;
+		transition: $transition1;
+	}
+
 	&:hover{
 		color: $color-main--dark;
 		border-color: $color-main--dark;
+
+		&:after{
+			width: 100%;
+		}
 	}
 }

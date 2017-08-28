@@ -7,7 +7,10 @@
     height: 100%;
     display: flex;
     align-items: center;
-    margin-left: $dots-width;
+    margin-left: calc(#{$dots-width} - 20px);
+    margin-right: calc(#{$dots-width} - 20px);
+    max-width: 1200px;
+    padding: 80px;
   }
 
   &:focus{
@@ -122,6 +125,99 @@
     line-height: 0.5;
     margin-bottom: 5px;
   }
+
+  @media (max-width: 870px) {
+    overflow: hidden;
+    max-height: 100vh;
+
+    &__image{
+      transform: initial !important;
+      bottom: initial;
+      position: initial !important;
+      margin-top: 0 !important;
+      width: 100%;
+    }
+
+    &__wrapper{
+      flex-direction: column;
+    }
+
+    .wrapper{
+      margin-left: 50px;
+    }
+
+    &__dots__container{
+
+    }
+
+    &__dot{
+      background-color: rgba(#000, .2);
+
+      &--active{
+        background-color: rgba(#000, .9);
+      }
+    }
+
+    &__tags{
+      margin-top: 22px;
+      margin-left: 39px;
+    }
+
+    &__text{
+      margin-left: 0;
+      display: flex;
+    }
+
+    &__backdrop{
+      transform: skew(0deg,-11deg);
+      left: 0;
+      right: 0;
+      top: -100px;
+      margin-left: 0;
+      width: 100%;
+      padding: 0;
+      max-height: 310px;
+
+      &__number{
+        transform: skew(0deg,12deg);
+      }
+    }
+  }
+
+  @media (max-width: 550px){
+    &__text{
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .wrapper{
+      margin: 0;
+      padding: 60px;
+    }
+
+    &__tags{
+      margin-top: 0px;
+      margin-left: 0;
+    }
+
+    &__backdrop__number{
+      font-size: 19.3rem;
+      letter-spacing: -13px;
+
+      &__container{
+        position: absolute;
+        bottom: -60px;
+        left: -75px;
+      }
+    }
+  }
+
+  @media (max-width: 400px){
+    .wrapper{
+      padding: 50px 20px 20px 20px;
+      margin: 0;
+    }
+  }
 }
 
 #project-slide--axis{
@@ -136,11 +232,15 @@
   .btn-text{
     color: #FE244D;
   }
+
+  .btn-text:after{
+    background: #FE244D;
+  }
 }
 
 #project-slide--greenegg{
   .project-slide__backdrop{
-    background: #004A42;
+    background: $greenegg;
   }
 
   .project-slide__image{
@@ -148,7 +248,11 @@
   }
 
   .btn-text{
-    color: #004A42;
+    color: $greenegg;
+  }
+
+  .btn-text:after{
+    background: $greenegg;
   }
 }
 
@@ -165,5 +269,52 @@
 
   .btn-text{
     color: #0D3643;
+  }
+
+  .btn-text:after{
+    background: #0D3643;
+  }
+
+    @media (max-width: 1100px){
+    .project-slide__image{
+      position: relative;
+      width: 370px;
+      bottom: -280px;
+    }
+
+    h2{
+      font-size: 3.8rem;
+    }
+  }
+}
+
+
+
+
+.detail-slide{
+  .project-slide__image{
+    margin-top: 0 !important;
+  }
+
+  .wrapper{
+    margin-left: 0;
+  }
+
+  .project-slide__wrapper__inner {
+    display: flex;
+  }
+
+  h2{
+    margin-bottom: 15px;
+  }
+
+  .btn-text{
+    display: table;
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+
+  .project-slide__tag__title__container{
+    margin-left: 0;
   }
 }
