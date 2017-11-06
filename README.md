@@ -45,4 +45,3 @@ You choose which elements you want, so that you only get the elements you actual
 - [Project structure](https://github.com/MartijnKeesmaat/Axis/wiki/Project-structure)
 - [Organizing code with comments](https://github.com/MartijnKeesmaat/Axis/wiki/Organizing-code-with-comments)
 - [Gulp commands](https://github.com/MartijnKeesmaat/Axis/wiki/Gulp)
-- [Mixins](https://git
