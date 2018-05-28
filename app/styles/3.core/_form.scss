@@ -5,33 +5,31 @@
 textarea,
 select,
 input {
-  background: $color-white--alt;
-  border: 2px solid $color-white--alt;
+  background: #f6f6f6;
+  border: 2px solid #f6f6f6;
   transition: $transition1;
   outline: none;
   display: block;
   width: 100%;
-  padding: 0.45em .9em;
+  padding: 0.45em 0.9em;
 
   font-weight: 400;
   max-width: 300px;
   box-sizing: border-box;
 
-  &:focus{
+  &:focus {
     border-bottom: 2px solid $color-border;
   }
 }
 
-input[type=submit],
-input[type=radio],
-input[type=checkbox]{
+input[type='submit'],
+input[type='radio'],
+input[type='checkbox'] {
   width: initial;
 }
 
-input[type=submit] {
+input[type='submit'] {
   @extend .btn;
-  @extend .btn--rounded;
-  @extend .btn--big;
   border: none;
   margin-top: 15px;
 }
@@ -41,24 +39,24 @@ label {
   display: block;
 }
 
-input[type=radio]~label {
+input[type='radio'] ~ label {
   display: initial;
 }
 
 .checkbox,
-.radio{
+.radio {
   display: flex;
   align-items: center;
   cursor: pointer;
   user-select: none;
 
-  input[type="checkbox"],
-  input[type="radio"]{
+  input[type='checkbox'],
+  input[type='radio'] {
     margin: 0 10px 0 0;
   }
 }
 
-.input{
+.input {
   margin-bottom: 2.5rem;
 }
 

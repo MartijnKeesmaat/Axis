@@ -2,31 +2,31 @@
   #GLOBAL STYLES
 \*------------------------------------*/
 
-*{
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
-html{
-	font-size: 62.5%;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-	@include mq-mobile {
-		font-size: 56%;
-	}
-} 
+  @include mq-mobile {
+    font-size: 56%;
+  }
+}
 
-::selection{
-	background: $color-selection;
-	text-shadow: $text-shadow-sm;
-	color: #fff;
+::selection {
+  background: $color-selection;
+  text-shadow: $text-shadow-sm;
+  color: #fff;
 }
 
 ::-webkit-scrollbar {
   width: 5px;
-	background: $color-white--alt;
+  background: #f6f6f6;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -34,32 +34,33 @@ html{
 }
 
 // img reset
-img{
-	max-width: 100%;
+img {
+  max-width: 100%;
   height: auto;
 }
 
 // basic hr
-hr, .hr{
-	display: block;
-	height: .1rem;
-	border: 0;
-	margin: 0;
-	padding: 0;
-	background: $color-border;
+hr,
+.hr {
+  display: block;
+  height: 0.1rem;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: $color-border;
 }
 
 // wrapper
-.wrapper{
-	padding: 30px;
-	max-width: 1000px;
-	margin: 0 auto;
+.wrapper {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
 
-	@include mq-mobile {
-		padding: 20px;
-	}
+  @include mq-mobile {
+    padding: 20px;
+  }
 }
 
-figure{
-	margin: 0;
+figure {
+  margin: 0;
 }

@@ -27,7 +27,14 @@
     "type": "git",
     "url": "git+https://github.com/MartijnKeesmaat/Axis.git"
   },
-  "keywords": ["Starterkit", "smacss", "bem", "sass", "boilerplate", "gulp"],
+  "keywords": [
+    "Starterkit",
+    "smacss",
+    "bem",
+    "sass",
+    "boilerplate",
+    "gulp"
+  ],
   "author": "Martijn Keesmaat (http://martijnkeesmaat.nl/)",
   "license": "ISC",
   "bugs": {
